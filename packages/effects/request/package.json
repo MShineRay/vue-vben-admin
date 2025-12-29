@@ -1,12 +1,6 @@
 {
   "name": "@edp/request",
   "version": "5.5.9",
-
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/edpjs/vue-edp-admin.git",
-    "directory": "packages/effects/request"
-  },
   "license": "MIT",
   "type": "module",
   "sideEffects": [

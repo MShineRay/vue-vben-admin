@@ -1,12 +1,6 @@
 {
   "name": "@edp/layouts",
   "version": "5.5.9",
-
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/edpjs/vue-edp-admin.git",
-    "directory": "packages/effects/layouts"
-  },
   "license": "MIT",
   "type": "module",
   "sideEffects": [
@@ -37,6 +31,7 @@
     "@edp/utils": "workspace:*",
     "@vueuse/core": "catalog:",
     "vue": "catalog:",
+    "element-plus": "catalog:",
     "vue-router": "catalog:"
   }
 }

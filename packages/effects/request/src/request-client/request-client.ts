@@ -60,10 +60,16 @@ class RequestClient {
     const defaultConfig: RequestClientOptions = {
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
+        // "x-edp-app-key": import.meta.env.VITE_EDP_APP_KEY,
+        'x-edp-device-id': deviceIdGetter(),
+        // "x-edp-platform": "windows",
+        // "x-edp-sdk": "postman-scripts",
+        'x-edp-sdk-version': '0.0.1',
+        'x-edp-trace-id': uuidV4(),
       },
       responseReturn: 'raw',
       // 默认超时时间
-      timeout: 10_000,
+      timeout: 60 * 1000,
     };
     const { ...axiosConfig } = options;
     const requestConfig = merge(axiosConfig, defaultConfig);

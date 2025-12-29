@@ -3,12 +3,6 @@
   "version": "5.5.9",
   "#main": "./dist/index.mjs",
   "#module": "./dist/index.mjs",
-
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/edpjs/vue-edp-admin.git",
-    "directory": "packages/@edp-core/uikit/shadcn-ui"
-  },
   "license": "MIT",
   "type": "module",
   "scripts": {

@@ -1,12 +1,6 @@
 {
   "name": "@edp/common-ui",
   "version": "5.5.9",
-
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/edpjs/vue-edp-admin.git",
-    "directory": "packages/effects/common-ui"
-  },
   "license": "MIT",
   "type": "module",
   "sideEffects": [
@@ -45,6 +39,7 @@
     "vue": "catalog:",
     "vue-json-viewer": "catalog:",
     "vue-router": "catalog:",
+        "element-plus": "catalog:",
     "vue-tippy": "catalog:"
   },
   "devDependencies": {

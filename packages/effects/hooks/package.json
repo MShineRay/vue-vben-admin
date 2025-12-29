@@ -1,12 +1,6 @@
 {
   "name": "@edp/hooks",
   "version": "5.5.9",
-
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/edpjs/vue-edp-admin.git",
-    "directory": "packages/effects/hooks"
-  },
   "license": "MIT",
   "type": "module",
   "sideEffects": [

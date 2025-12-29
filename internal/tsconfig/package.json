@@ -2,12 +2,6 @@
   "name": "@edp/tsconfig",
   "version": "5.5.9",
   "private": true,
-
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/edpjs/vue-edp-admin.git",
-    "directory": "internal/tsconfig"
-  },
   "license": "MIT",
   "type": "module",
   "files": [
