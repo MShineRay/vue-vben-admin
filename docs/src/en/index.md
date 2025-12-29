@@ -4,12 +4,12 @@ layout: home
 sidebar: false
 
 hero:
-  name: EDP Admin
+  name: EDP Console
   text: Enterprise-Level Management System Framework
   tagline: Fully Upgraded, Ready to Use, Simple and Efficient
   image:
     src: https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-v1.webp
-    alt: EDP Admin
+    alt: EDP Console
   actions:
     - theme: brand
       text: Get Started ->

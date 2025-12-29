@@ -44,7 +44,7 @@ function defineApplicationConfig(userConfigPromise?: DefineApplicationOptions) {
       nitroMockOptions: {},
       print: !isBuild,
       printInfoMap: {
-        'EDP Admin Docs': 'https://doc.edp.pro',
+        'EDP Console Docs': 'https://doc.edp.pro',
       },
       pwa: true,
       pwaOptions: getDefaultPwaOptions(appTitle),

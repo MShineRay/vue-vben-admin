@@ -2,10 +2,11 @@ import type { AxiosInstance, AxiosResponse } from 'axios';
 
 import type { RequestClientConfig, RequestClientOptions } from './types';
 
-import { bindMethods, isString, merge } from '@edp/utils';
+import { bindMethods, deviceIdGetter, isString, merge } from '@edp/utils';
 
 import axios from 'axios';
 import qs from 'qs';
+import { v4 as uuidV4 } from 'uuid';
 
 import { FileDownloader } from './modules/downloader';
 import { InterceptorManager } from './modules/interceptor';

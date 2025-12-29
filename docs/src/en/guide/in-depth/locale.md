@@ -64,7 +64,7 @@ To add new translation texts, simply find `src/locales/langs/` in the correspond
 ```json
 {
   "about": {
-    "desc": "EDP Admin 是一个现代的管理模版。"
+    "desc": "EDP Console 是一个现代的管理模版。"
   }
 }
 ````
@@ -75,7 +75,7 @@ To add new translation texts, simply find `src/locales/langs/` in the correspond
 ```json
 {
   "about": {
-    "desc": "EDP Admin is a modern management template."
+    "desc": "EDP Console is a modern management template."
   }
 }
 ````

@@ -30,7 +30,7 @@ async function viteLicensePlugin(
       handler: (_options: NormalizedOutputOptions, bundle: OutputBundle) => {
         const date = dateUtil().format('YYYY-MM-DD ');
         const copyrightText = `/*!
-  * EDP Admin
+  * EDP Console
   * Version: ${version}
   * Author: edp
   * Copyright (C) 2024 EDP

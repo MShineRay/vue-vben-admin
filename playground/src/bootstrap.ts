@@ -5,7 +5,6 @@ import { registerLoadingDirective } from '@edp/common-ui';
 import { preferences } from '@edp/preferences';
 import { initStores } from '@edp/stores';
 import '@edp/styles';
-import '@edp/styles/antd';
 
 import { useTitle } from '@vueuse/core';
 

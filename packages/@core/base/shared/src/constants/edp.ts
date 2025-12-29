@@ -15,7 +15,7 @@ export const EDP_LOGO_URL =
   'https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-v1.webp';
 
 /**
- * @zh_CN EDP Admin 首页地址
+ * @zh_CN EDP Console 首页地址
  */
 export const EDP_PREVIEW_URL = 'https://www.edp.pro';
 

@@ -2,7 +2,7 @@ import { defineEventHandler } from 'h3';
 
 export default defineEventHandler(() => {
   return `
-<h1>Hello EDP Admin</h1>
+<h1>Hello EDP Console</h1>
 <h2>Mock service is starting</h2>
 <ul>
 <li><a href="/api/user">/api/user/info</a></li>

@@ -27,7 +27,7 @@ const defaultPreferences: Preferences = {
     layout: 'sidebar-nav',
     locale: 'zh-CN',
     loginExpiredMode: 'page',
-    name: 'EDP Admin',
+    name: 'EDP Console',
     preferencesButtonPosition: 'auto',
     watermark: false,
     watermarkContent: '',

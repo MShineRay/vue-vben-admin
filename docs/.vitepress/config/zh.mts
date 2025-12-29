@@ -5,7 +5,7 @@ import { defineConfig } from 'vitepress';
 import { version } from '../../../package.json';
 
 export const zh = defineConfig({
-  description: 'EDP Admin & 企业级管理系统框架',
+  description: 'EDP Console & 企业数字管理平台',
   lang: 'zh-Hans',
   themeConfig: {
     darkModeSwitchLabel: '主题',
@@ -56,7 +56,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         {
           link: 'introduction/edp',
-          text: '关于 EDP Admin',
+          text: '关于 EDP Console',
         },
         {
           link: 'introduction/why',
@@ -232,7 +232,7 @@ function nav(): DefaultTheme.NavItem[] {
       text: '演示',
       items: [
         {
-          text: 'EDP Admin',
+          text: 'EDP Console',
           items: [
             {
               link: 'https://www.edp.pro',
@@ -257,7 +257,7 @@ function nav(): DefaultTheme.NavItem[] {
           items: [
             {
               link: 'https://edp.vvbin.cn',
-              text: 'EDP Admin 2.x',
+              text: 'EDP Console 2.x',
             },
           ],
         },

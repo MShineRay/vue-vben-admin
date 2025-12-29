@@ -4,12 +4,12 @@ layout: home
 sidebar: false
 
 hero:
-  name: EDP Admin
-  text: 企业级管理系统框架
+  name: EDP Console
+  text: 企业数字管理平台
   tagline: 全新升级，开箱即用，简单高效
   image:
     src: https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-v1.webp
-    alt: EDP Admin
+    alt: EDP Console
   actions:
     - theme: brand
       text: 快速开始 ->
@@ -89,7 +89,7 @@ const members = [
     avatar: 'https://avatars.githubusercontent.com/u/28132598?v=4',
     name: 'EDP',
     title: '创建者',
-    desc: 'EDP Admin以及相关生态的作者，负责项目的整体开发。',
+    desc: 'EDP Console以及相关生态的作者，负责项目的整体开发。',
     links: [
       { icon: 'github', link: 'https://github.com/anncwb' },
     ]

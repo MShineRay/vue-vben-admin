@@ -44,12 +44,12 @@ export const shared = defineConfig({
       },
       provider: 'local',
     },
-    siteTitle: 'EDP Admin',
+    siteTitle: 'EDP Console',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/edpjs/vue-edp-admin' },
     ],
   },
-  title: 'EDP Admin',
+  title: 'EDP Console',
   vite: {
     build: {
       chunkSizeWarningLimit: Infinity,
@@ -128,7 +128,7 @@ function head(): HeadConfig[] {
         name: 'viewport',
       },
     ],
-    ['meta', { content: 'edp admin docs', name: 'keywords' }],
+    ['meta', { content: 'EDP Console docs', name: 'keywords' }],
     ['link', { href: '/favicon.ico', rel: 'icon' }],
     // [
     //   'script',
@@ -144,7 +144,7 @@ function pwa(): PwaOptions {
     includeManifestIcons: false,
     manifest: {
       description:
-        'EDP Admin is a modern admin dashboard template based on Vue 3. ',
+        'EDP Console is a modern admin dashboard template based on Vue 3. ',
       icons: [
         {
           sizes: '192x192',
@@ -158,7 +158,7 @@ function pwa(): PwaOptions {
         },
       ],
       id: '/',
-      name: 'EDP Admin Doc',
+      name: 'EDP Console Doc',
       short_name: 'edp_admin_doc',
       theme_color: '#ffffff',
     },

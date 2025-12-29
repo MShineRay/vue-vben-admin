@@ -5,7 +5,7 @@ import { defineConfig } from 'vitepress';
 import { version } from '../../../package.json';
 
 export const en = defineConfig({
-  description: 'EDP Admin & Enterprise level management system framework',
+  description: 'EDP Console & Enterprise level management system framework',
   lang: 'en-US',
   themeConfig: {
     darkModeSwitchLabel: 'Theme',
@@ -55,7 +55,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         {
           link: 'introduction/edp',
-          text: 'About EDP Admin',
+          text: 'About EDP Console',
         },
         {
           link: 'introduction/why',
@@ -163,7 +163,7 @@ function nav(): DefaultTheme.NavItem[] {
       text: 'Demo',
       items: [
         {
-          text: 'EDP Admin',
+          text: 'EDP Console',
           items: [
             {
               link: 'https://www.edp.pro',
@@ -188,7 +188,7 @@ function nav(): DefaultTheme.NavItem[] {
           items: [
             {
               link: 'https://edp.vvbin.cn',
-              text: 'EDP Admin 2.x',
+              text: 'EDP Console 2.x',
             },
           ],
         },

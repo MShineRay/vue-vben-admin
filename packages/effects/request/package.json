@@ -16,7 +16,8 @@
     "@edp/locales": "workspace:*",
     "@edp/utils": "workspace:*",
     "axios": "catalog:",
-    "qs": "catalog:"
+    "qs": "catalog:",
+    "uuid": "catalog:"
   },
   "devDependencies": {
     "@types/qs": "catalog:",

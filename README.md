@@ -7,7 +7,7 @@
 
 [![license](https://img.shields.io/github/license/anncwb/vue-edp-admin.svg)](LICENSE)
 
-  <h1>Vue EDP Admin</h1>
+  <h1>Vue EDP Console</h1>
 </div>
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=edpjs_vue-edp-admin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=edpjs_vue-edp-admin) ![codeql](https://github.com/edpjs/vue-edp-admin/actions/workflows/codeql.yml/badge.svg) ![build](https://github.com/edpjs/vue-edp-admin/actions/workflows/build.yml/badge.svg) ![ci](https://github.com/edpjs/vue-edp-admin/actions/workflows/ci.yml/badge.svg) ![deploy](https://github.com/edpjs/vue-edp-admin/actions/workflows/deploy.yml/badge.svg)
@@ -16,7 +16,7 @@
 
 ## 简介
 
-Vue EDP Admin 是 Vue EDP Admin 的升级版本。作为一个免费开源的中后台模板，它采用了最新的 Vue 3、Vite、TypeScript 等主流技术开发，开箱即用，可用于中后台前端开发，也适合学习参考。
+Vue EDP Console 是 Vue EDP Console 的升级版本。作为一个免费开源的中后台模板，它采用了最新的 Vue 3、Vite、TypeScript 等主流技术开发，开箱即用，可用于中后台前端开发，也适合学习参考。
 
 ## 升级提示
 
@@ -32,7 +32,7 @@ Vue EDP Admin 是 Vue EDP Admin 的升级版本。作为一个免费开源的中
 
 ## 预览
 
-- [EDP Admin](https://edp.pro/) - 完整版中文站点
+- [EDP Console](https://edp.pro/) - 完整版中文站点
 
 测试账号：edp/123456
 
