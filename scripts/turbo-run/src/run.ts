@@ -50,18 +50,3 @@ export async function run(options: RunOptions) {
     stdio: 'inherit',
   });
 }
-
-/**
- * 过滤app包
- * @param root
- * @param packages
- */
-// async function findApps(root: string, packages: Package[]) {
-//   // apps内的
-//   const appPackages = packages.filter((pkg) => {
-//     const viteConfigExists = fs.existsSync(join(pkg.dir, 'vite.config.mts'));
-//     return pkg.dir.startsWith(join(root, 'apps')) && viteConfigExists;
-//   });
-
-//   return appPackages;
-// }

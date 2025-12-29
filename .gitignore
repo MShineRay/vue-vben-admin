@@ -1,8 +1,11 @@
 node_modules
+# macOS system files
 .DS_Store
+**/.DS_Store
 dist
 dist-ssr
 dist.zip
+dist*.zip
 dist.tar
 dist.war
 .nitro
@@ -26,6 +29,7 @@ package-lock.json
 # local env files
 .env.local
 .env.*.local
+.env.deploy
 .eslintcache
 
 logs
@@ -49,4 +53,6 @@ vite.config.ts.*
 *.sln
 *.sw?
 .history
+./dist-console-dev*.zip
+./dist-console-production*.zip
 .cursor

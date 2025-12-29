@@ -113,8 +113,10 @@ catalog:
   h3: ^1.15.3
   happy-dom: ^17.6.3
   html-minifier-terser: ^7.2.0
+  husky: ^9.1.6
   is-ci: ^4.1.0
   jiti: ^2.6.1
+  lint-staged: ^15.2.10
   json-bigint: ^1.0.0
   jsonc-eslint-parser: ^2.4.1
   jsonwebtoken: ^9.0.2
@@ -195,3 +197,5 @@ catalog:
   zod: ^3.25.67
   zod-defaults: 0.1.3
   es-toolkit: ^1.41.0
+  uuid: 11.0.3
+  '@fingerprintjs/fingerprintjs': ^4.5.1
