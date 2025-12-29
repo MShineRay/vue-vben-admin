@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@vben/common-ui';
-import type { BasicOption, Recordable } from '@vben/types';
+import type { VbenFormSchema } from '@edp/common-ui';
+import type { BasicOption, Recordable } from '@edp/types';
 
 import { computed, markRaw, useTemplateRef } from 'vue';
 
-import { AuthenticationLogin, SliderCaptcha, z } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { AuthenticationLogin, SliderCaptcha, z } from '@edp/common-ui';
+import { $t } from '@edp/locales';
 
 import { useAuthStore } from '#/store';
 
@@ -16,7 +16,7 @@ const authStore = useAuthStore();
 const MOCK_USER_OPTIONS: BasicOption[] = [
   {
     label: 'Super',
-    value: 'vben',
+    value: 'edp',
   },
   {
     label: 'Admin',
@@ -59,7 +59,7 @@ const formSchema = computed((): VbenFormSchema[] => {
         .string()
         .min(1, { message: $t('authentication.selectAccount') })
         .optional()
-        .default('vben'),
+        .default('edp'),
     },
     {
       component: 'VbenInput',

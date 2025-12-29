@@ -4,22 +4,22 @@ layout: home
 sidebar: false
 
 hero:
-  name: Vben Admin
+  name: EDP Admin
   text: Enterprise-Level Management System Framework
   tagline: Fully Upgraded, Ready to Use, Simple and Efficient
   image:
     src: https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp
-    alt: Vben Admin
+    alt: EDP Admin
   actions:
     - theme: brand
       text: Get Started ->
-      link: /en/guide/introduction/vben
+      link: /en/guide/introduction/edp
     - theme: alt
       text: Live Preview
-      link: https://www.vben.pro
+      link: https://www.edp.pro
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vbenjs/vue-vben-admin
+      link: https://github.com/vbenjs/vue-edp-admin
 
 features:
   - icon: 🚀

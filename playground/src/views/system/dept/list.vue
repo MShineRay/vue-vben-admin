@@ -5,8 +5,8 @@ import type {
 } from '#/adapter/vxe-table';
 import type { SystemDeptApi } from '#/api/system/dept';
 
-import { Page, useVbenModal } from '@vben/common-ui';
-import { Plus } from '@vben/icons';
+import { Page, useVbenModal } from '@edp/common-ui';
+import { Plus } from '@edp/icons';
 
 import { Button, message } from 'ant-design-vue';
 

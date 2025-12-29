@@ -17,7 +17,6 @@ The directory uses Monorepo management, and the project structure is as follows:
 ├── eslint.config.mjs # ESLint configuration file
 ├── internal # Internal tools directory
 │   ├── lint-configs # Code linting configurations
-│   │   ├── commitlint-config # Commitlint configuration
 │   │   ├── eslint-config # ESLint configuration
 │   │   ├── prettier-config # Prettier configuration
 │   │   └── stylelint-config # Stylelint configuration
@@ -63,6 +62,6 @@ The directory uses Monorepo management, and the project structure is as follows:
 │   └── vsh # VSH script
 ├── stylelint.config.mjs # Stylelint configuration file
 ├── turbo.json # Turbo configuration file
-├── vben-admin.code-workspace # VS Code workspace configuration file
+├── edp-admin.code-workspace # VS Code workspace configuration file
 └── vitest.config.ts # Vite configuration file
 ```

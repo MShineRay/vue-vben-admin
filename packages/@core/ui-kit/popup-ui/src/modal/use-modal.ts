@@ -10,7 +10,7 @@ import {
   ref,
 } from 'vue';
 
-import { useStore } from '@vben-core/shared/store';
+import { useStore } from '@edp-core/shared/store';
 
 import { ModalApi } from './modal-api';
 import VbenModal from './modal.vue';
@@ -144,7 +144,7 @@ async function checkProps(api: ExtendedModalApi, attrs: Record<string, any>) {
     if (stateKeys.has(attr) && !['class'].includes(attr)) {
       // connectedComponent存在时，不要传入Modal的props，会造成复杂度提升，如果你需要修改Modal的props，请使用 useModal 或者api
       console.warn(
-        `[Vben Modal]: When 'connectedComponent' exists, do not set props or slots '${attr}', which will increase complexity. If you need to modify the props of Modal, please use useVbenModal or api.`,
+        `[EDP Modal]: When 'connectedComponent' exists, do not set props or slots '${attr}', which will increase complexity. If you need to modify the props of Modal, please use useVbenModal or api.`,
       );
     }
   }

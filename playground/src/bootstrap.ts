@@ -1,11 +1,11 @@
 import { createApp, watchEffect } from 'vue';
 
-import { registerAccessDirective } from '@vben/access';
-import { registerLoadingDirective } from '@vben/common-ui';
-import { preferences } from '@vben/preferences';
-import { initStores } from '@vben/stores';
-import '@vben/styles';
-import '@vben/styles/antd';
+import { registerAccessDirective } from '@edp/access';
+import { registerLoadingDirective } from '@edp/common-ui';
+import { preferences } from '@edp/preferences';
+import { initStores } from '@edp/stores';
+import '@edp/styles';
+import '@edp/styles/antd';
 
 import { useTitle } from '@vueuse/core';
 
@@ -54,7 +54,7 @@ async function bootstrap(namespace: string) {
   registerAccessDirective(app);
 
   // 初始化 tippy
-  const { initTippy } = await import('@vben/common-ui/es/tippy');
+  const { initTippy } = await import('@edp/common-ui/es/tippy');
   initTippy(app);
 
   // 配置路由及路由守卫
@@ -65,7 +65,7 @@ async function bootstrap(namespace: string) {
   app.use(VueQueryPlugin);
 
   // 配置Motion插件
-  const { MotionPlugin } = await import('@vben/plugins/motion');
+  const { MotionPlugin } = await import('@edp/plugins/motion');
   app.use(MotionPlugin);
 
   // 动态更新标题

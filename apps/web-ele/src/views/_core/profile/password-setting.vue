@@ -3,7 +3,7 @@ import type { VbenFormSchema } from '#/adapter/form';
 
 import { computed, ref } from 'vue';
 
-import { ProfilePasswordSetting, z } from '@vben/common-ui';
+import { ProfilePasswordSetting, z } from '@edp/common-ui';
 
 import { ElMessage } from 'element-plus';
 

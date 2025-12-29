@@ -1,22 +1,22 @@
 <script lang="ts" setup>
-import type { NotificationItem } from '@vben/layouts';
+import type { NotificationItem } from '@edp/layouts';
 
 import { computed, onBeforeMount, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { AuthenticationLoginExpiredModal } from '@vben/common-ui';
-import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@vben/constants';
-import { useWatermark } from '@vben/hooks';
-import { BookOpenText, CircleHelp, SvgGithubIcon } from '@vben/icons';
+import { AuthenticationLoginExpiredModal } from '@edp/common-ui';
+import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@edp/constants';
+import { useWatermark } from '@edp/hooks';
+import { BookOpenText, CircleHelp, SvgGithubIcon } from '@edp/icons';
 import {
   BasicLayout,
   LockScreen,
   Notification,
   UserDropdown,
-} from '@vben/layouts';
-import { preferences } from '@vben/preferences';
-import { useAccessStore, useTabbarStore, useUserStore } from '@vben/stores';
-import { openWindow } from '@vben/utils';
+} from '@edp/layouts';
+import { preferences } from '@edp/preferences';
+import { useAccessStore, useTabbarStore, useUserStore } from '@edp/stores';
+import { openWindow } from '@edp/utils';
 
 import { $t } from '#/locales';
 import { useAuthStore } from '#/store';
@@ -84,7 +84,7 @@ const notifications = ref<NotificationItem[]>([
     isRead: false,
     message: '描述信息描述信息描述信息',
     title: '跳转外部链接示例',
-    link: 'https://doc.vben.pro',
+    link: 'https://doc.edp.pro',
   },
 ]);
 
@@ -201,7 +201,7 @@ onBeforeMount(() => {
         :avatar
         :menus
         :text="userStore.userInfo?.realName"
-        description="ann.vben@gmail.com"
+        description="ann.edp@gmail.com"
         tag-text="Pro"
         trigger="both"
         @logout="handleLogout"

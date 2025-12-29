@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Vben Form 表单
+# EDP Form 表单
 
 框架提供的表单组件，可适配 `Element Plus`、`Ant Design Vue`、`Naive UI` 等框架。
 
@@ -28,12 +28,12 @@ outline: deep
 import type {
   VbenFormSchema as FormSchema,
   VbenFormProps,
-} from '@vben/common-ui';
+} from '@edp/common-ui';
 
 import type { ComponentType } from './component';
 
-import { setupVbenForm, useVbenForm as useForm, z } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { setupVbenForm, useVbenForm as useForm, z } from '@edp/common-ui';
+import { $t } from '@edp/locales';
 
 setupVbenForm<ComponentType>({
   config: {
@@ -79,16 +79,16 @@ export type { VbenFormProps };
 ```ts
 /**
  * 通用组件共同的使用的基础组件，原先放在 adapter/form 内部，限制了使用范围，这里提取出来，方便其他地方使用
- * 可用于 vben-form、vben-modal、vben-drawer 等组件使用,
+ * 可用于 edp-form、edp-modal、edp-drawer 等组件使用,
  */
 
-import type { BaseFormComponentType } from '@vben/common-ui';
+import type { BaseFormComponentType } from '@edp/common-ui';
 
 import type { Component, SetupContext } from 'vue';
 import { h } from 'vue';
 
-import { globalShareState, IconPicker } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { globalShareState, IconPicker } from '@edp/common-ui';
+import { $t } from '@edp/locales';
 
 const AutoComplete = defineAsyncComponent(
   () => import('ant-design-vue/es/auto-complete'),
@@ -242,19 +242,19 @@ export { initComponentAdapter };
 
 使用 `useVbenForm` 创建最基础的表单。
 
-<DemoPreview dir="demos/vben-form/basic" />
+<DemoPreview dir="demos/edp-form/basic" />
 
 ## 查询表单
 
 查询表单是一种特殊的表单，用于查询数据。查询表单不会触发表单验证，只会触发查询事件。
 
-<DemoPreview dir="demos/vben-form/query" />
+<DemoPreview dir="demos/edp-form/query" />
 
 ## 表单校验
 
 表单校验是一个非常重要的功能，可以通过 `rules` 属性进行校验。
 
-<DemoPreview dir="demos/vben-form/rules" />
+<DemoPreview dir="demos/edp-form/rules" />
 
 ## 表单联动
 
@@ -262,19 +262,19 @@ export { initComponentAdapter };
 
 _注意_ 需要指定 `dependencies` 的 `triggerFields` 属性，设置由谁的改动来触发，以便表单组件能够正确的联动。
 
-<DemoPreview dir="demos/vben-form/dynamic" />
+<DemoPreview dir="demos/edp-form/dynamic" />
 
 ## 自定义组件
 
 如果你的业务组件库没有提供某个组件，你可以自行封装一个组件，然后加到表单内部。
 
-<DemoPreview dir="demos/vben-form/custom" />
+<DemoPreview dir="demos/edp-form/custom" />
 
 ## 操作
 
 一些常见的表单操作。
 
-<DemoPreview dir="demos/vben-form/api" />
+<DemoPreview dir="demos/edp-form/api" />
 
 ## API
 

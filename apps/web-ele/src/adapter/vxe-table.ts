@@ -1,8 +1,8 @@
-import type { VxeTableGridOptions } from '@vben/plugins/vxe-table';
+import type { VxeTableGridOptions } from '@edp/plugins/vxe-table';
 
 import { h } from 'vue';
 
-import { setupVbenVxeTable, useVbenVxeGrid } from '@vben/plugins/vxe-table';
+import { setupVbenVxeTable, useVbenVxeGrid } from '@edp/plugins/vxe-table';
 
 import { ElButton, ElImage } from 'element-plus';
 
@@ -68,4 +68,4 @@ setupVbenVxeTable({
 
 export { useVbenVxeGrid };
 
-export type * from '@vben/plugins/vxe-table';
+export type * from '@edp/plugins/vxe-table';

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { useVbenDrawer, VbenButton } from '@vben/common-ui';
+import { useVbenDrawer, VbenButton } from '@edp/common-ui';
 
 const list = ref<number[]>([]);
 

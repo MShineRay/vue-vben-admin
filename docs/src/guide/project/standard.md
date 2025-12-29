@@ -81,10 +81,6 @@ Prettier 配置文件为 `.prettier.mjs`，其核心配置放在`internal/lint-c
 
 在一个团队中，每个人的 git 的 commit 信息都不一样，五花八门，没有一个机制很难保证规范化，如何才能规范化呢？可能你想到的是 git 的 hook 机制，去写 shell 脚本去实现。这当然可以，其实 JavaScript 有一个很好的工具可以实现这个模板，它就是 commitlint（用于校验 git 提交信息规范）。
 
-### 配置
-
-CommitLint 配置文件为 `.commitlintrc.mjs`，其核心配置放在`internal/lint-configs/commitlint-config`目录下，可以根据项目需求进行修改。
-
 ### Git 提交规范
 
 参考 [Angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular)

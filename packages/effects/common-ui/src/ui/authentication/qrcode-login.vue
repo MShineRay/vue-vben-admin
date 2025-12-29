@@ -2,9 +2,9 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
-import { $t } from '@vben/locales';
+import { $t } from '@edp/locales';
 
-import { VbenButton } from '@vben-core/shadcn-ui';
+import { VbenButton } from '@edp-core/shadcn-ui';
 
 import { useQRCode } from '@vueuse/integrations/useQRCode';
 
@@ -57,7 +57,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 const router = useRouter();
 
-const text = ref('https://vben.vvbin.cn');
+const text = ref('https://edp.vvbin.cn');
 
 const qrcode = useQRCode(text, {
   errorCorrectionLevel: 'H',

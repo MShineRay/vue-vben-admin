@@ -1,11 +1,10 @@
 {
-  "name": "@vben-core/composables",
+  "name": "@edp-core/composables",
   "version": "5.5.9",
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "url": "git+https://github.com/vbenjs/vue-edp-admin.git",
     "directory": "packages/@core/composables"
   },
   "license": "MIT",
@@ -35,7 +34,7 @@
     }
   },
   "dependencies": {
-    "@vben-core/shared": "workspace:*",
+    "@edp-core/shared": "workspace:*",
     "@vueuse/core": "catalog:",
     "reka-ui": "catalog:",
     "sortablejs": "catalog:",

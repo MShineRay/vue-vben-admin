@@ -56,17 +56,17 @@ pnpm install
 ```json
 {
   "scripts": {
-    "build:antd": "pnpm run build --filter=@vben/web-antd",
-    "build:docs": "pnpm run build --filter=@vben/docs",
-    "build:ele": "pnpm run build --filter=@vben/web-ele",
-    "build:naive": "pnpm run build --filter=@vben/web-naive",
-    "build:tdesign": "pnpm run build --filter=@vben/web-tdesign",
-    "build:play": "pnpm run build --filter=@vben/playground",
-    "dev:antd": "pnpm -F @vben/web-antd run dev",
-    "dev:docs": "pnpm -F @vben/docs run dev",
-    "dev:ele": "pnpm -F @vben/web-ele run dev",
-    "dev:play": "pnpm -F @vben/playground run dev",
-    "dev:naive": "pnpm -F @vben/web-naive run dev"
+    "build:antd": "pnpm run build --filter=@edp/web-antd",
+    "build:docs": "pnpm run build --filter=@edp/docs",
+    "build:ele": "pnpm run build --filter=@edp/web-ele",
+    "build:naive": "pnpm run build --filter=@edp/web-naive",
+    "build:tdesign": "pnpm run build --filter=@edp/web-tdesign",
+    "build:play": "pnpm run build --filter=@edp/playground",
+    "dev:antd": "pnpm -F @edp/web-antd run dev",
+    "dev:docs": "pnpm -F @edp/docs run dev",
+    "dev:ele": "pnpm -F @edp/web-ele run dev",
+    "dev:play": "pnpm -F @edp/playground run dev",
+    "dev:naive": "pnpm -F @edp/web-naive run dev"
   }
 }
 ```
@@ -88,7 +88,7 @@ pnpm install
 
 - 在应用的 `src/router/routes` 文件中，你可以删除不需要的路由。其中 `core` 文件夹内，如果只需要登录和忘记密码，你可以删除其他路由，如忘记密码、注册等。路由删除后，你可以删除对应的页面文件，在 `src/views/_core` 文件夹中。
 
-- 在应用的 `src/router/routes` 文件中，你可以按需求删除不需要的路由，如`demos`、`vben` 目录等。路由删除后，你可以在 `src/views` 文件夹中删除对应的页面文件。
+- 在应用的 `src/router/routes` 文件中，你可以按需求删除不需要的路由，如`demos`、`edp` 目录等。路由删除后，你可以在 `src/views` 文件夹中删除对应的页面文件。
 
 ### 删除不需要的组件
 

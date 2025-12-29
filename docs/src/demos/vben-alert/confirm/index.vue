@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { h, ref } from 'vue';
 
-import { alert, confirm, VbenButton } from '@vben/common-ui';
+import { alert, confirm, VbenButton } from '@edp/common-ui';
 
 import { Checkbox, message } from 'ant-design-vue';
 

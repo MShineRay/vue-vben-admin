@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { h } from 'vue';
 
-import { Page, useVbenDrawer } from '@vben/common-ui';
+import { Page, useVbenDrawer } from '@edp/common-ui';
 
 import { ElButton, ElCard, ElCheckbox, ElMessage } from 'element-plus';
 

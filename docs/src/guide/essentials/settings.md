@@ -31,10 +31,10 @@
 
 ```bash [.env]
 # 应用标题
-VITE_APP_TITLE=Vben Admin
+VITE_APP_TITLE=EDP Admin
 
 # 应用命名空间，用于缓存、store等功能的前缀，确保隔离
-VITE_APP_NAMESPACE=vben-web-antd
+VITE_APP_NAMESPACE=edp-web-antd
 ```
 
 ```bash [.env.development]
@@ -63,7 +63,7 @@ VITE_INJECT_APP_LOADING=true
 VITE_BASE=/
 
 # 接口地址
-VITE_GLOB_API_URL=https://mock-napi.vben.pro/api
+VITE_GLOB_API_URL=https://mock-napi.edp.pro/api
 
 # 是否开启压缩，可以设置为 none, brotli, gzip
 VITE_COMPRESS=gzip
@@ -92,7 +92,7 @@ VITE_ARCHIVER=true
 
 ```ts
 window._VBEN_ADMIN_PRO_APP_CONF_ = {
-  VITE_GLOB_API_URL: 'https://mock-napi.vben.pro/api',
+  VITE_GLOB_API_URL: 'https://mock-napi.edp.pro/api',
 };
 Object.freeze(window._VBEN_ADMIN_PRO_APP_CONF_);
 Object.defineProperty(window, '_VBEN_ADMIN_PRO_APP_CONF_', {
@@ -107,7 +107,7 @@ Object.defineProperty(window, '_VBEN_ADMIN_PRO_APP_CONF_', {
 
 ### 使用
 
-想要获取 `_app.config.js` 内的变量，需要使用`@vben/hooks`提供的 `useAppConfig`方法。
+想要获取 `_app.config.js` 内的变量，需要使用`@edp/hooks`提供的 `useAppConfig`方法。
 
 ```ts
 const { apiURL } = useAppConfig(import.meta.env, import.meta.env.PROD);
@@ -120,7 +120,7 @@ const { apiURL } = useAppConfig(import.meta.env, import.meta.env.PROD);
 - 首先在 `.env` 或者对应的开发环境配置文件内，新增需要可动态配置的变量，需要以 `VITE_GLOB_*` 开头的变量，如：
 
   ```bash
-  VITE_GLOB_OTHER_API_URL=https://mock-napi.vben.pro/other-api
+  VITE_GLOB_OTHER_API_URL=https://mock-napi.edp.pro/other-api
   ```
 
 - 在 `packages/types/global.d.ts`,新增对应的类型定义，如：
@@ -179,8 +179,8 @@ const { otherApiURL } = useAppConfig(import.meta.env, import.meta.env.PROD);
 如果你找不到文档说明，可以尝试自己配置好以后，点击`复制偏好设置`，覆盖项目默认即可。配置文件位于应用目录下的`preferences.ts`，在这里，你可以覆盖框架默认的配置，实现自定义配置。
 
 ```ts
-import { useAppConfig } from '@vben/hooks';
-import { defineOverridesPreferences } from '@vben/preferences';
+import { useAppConfig } from '@edp/hooks';
+import { defineOverridesPreferences } from '@edp/preferences';
 
 /**
  * @description 项目配置文件
@@ -223,7 +223,7 @@ const defaultPreferences: Preferences = {
     layout: 'sidebar-nav',
     locale: 'zh-CN',
     loginExpiredMode: 'page',
-    name: 'Vben Admin',
+    name: 'EDP Admin',
     preferencesButtonPosition: 'auto',
     watermark: false,
     zIndex: 200,
@@ -236,8 +236,8 @@ const defaultPreferences: Preferences = {
     styleType: 'normal',
   },
   copyright: {
-    companyName: 'Vben',
-    companySiteLink: 'https://www.vben.pro',
+    companyName: 'EDP',
+    companySiteLink: 'https://www.edp.pro',
     date: '2024',
     enable: true,
     icp: '',

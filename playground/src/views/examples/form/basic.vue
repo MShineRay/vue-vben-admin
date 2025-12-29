@@ -3,7 +3,7 @@ import type { UploadFile } from 'ant-design-vue';
 
 import { h, ref, toRaw } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@edp/common-ui';
 
 import { useDebounceFn } from '@vueuse/core';
 import { Button, Card, message, Spin, Tag } from 'ant-design-vue';
@@ -435,7 +435,7 @@ function handleSetFormValue() {
       </div>
     </template>
     <template #extra>
-      <DocButton class="mb-2" path="/components/common-ui/vben-form" />
+      <DocButton class="mb-2" path="/components/common-ui/edp-form" />
     </template>
     <Card title="基础示例">
       <template #extra>

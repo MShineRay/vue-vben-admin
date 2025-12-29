@@ -2,11 +2,11 @@
 outline: deep
 ---
 
-# Vben Vxe Table 表格
+# EDP Vxe Table 表格
 
-框架提供的Table 列表组件基于 [vxe-table](https://vxetable.cn/v4/#/grid/api?apiKey=grid)，结合`Vben Form 表单`进行了二次封装。
+框架提供的Table 列表组件基于 [vxe-table](https://vxetable.cn/v4/#/grid/api?apiKey=grid)，结合`EDP Form 表单`进行了二次封装。
 
-其中，表头的 **表单搜索** 部分采用了`Vben Form表单`，表格主体部分使用了`vxe-grid`组件，支持表格的分页、排序、筛选等功能。
+其中，表头的 **表单搜索** 部分采用了`EDP Form表单`，表格主体部分使用了`vxe-grid`组件，支持表格的分页、排序、筛选等功能。
 
 > 如果文档内没有参数说明，可以尝试在在线示例或者在 [vxe-grid 官方API 文档](https://vxetable.cn/v4/#/grid/api?apiKey=grid) 内寻找
 
@@ -29,7 +29,7 @@ outline: deep
 ```ts
 import { h } from 'vue';
 
-import { setupVbenVxeTable, useVbenVxeGrid } from '@vben/plugins/vxe-table';
+import { setupVbenVxeTable, useVbenVxeGrid } from '@edp/plugins/vxe-table';
 
 import { Button, Image } from 'ant-design-vue';
 
@@ -93,7 +93,7 @@ setupVbenVxeTable({
 
 export { useVbenVxeGrid };
 
-export type * from '@vben/plugins/vxe-table';
+export type * from '@edp/plugins/vxe-table';
 ```
 
 :::
@@ -102,13 +102,13 @@ export type * from '@vben/plugins/vxe-table';
 
 使用 `useVbenVxeGrid` 创建最基础的表格。
 
-<DemoPreview dir="demos/vben-vxe-table/basic" />
+<DemoPreview dir="demos/edp-vxe-table/basic" />
 
 ## 远程加载
 
 通过指定 `proxyConfig.ajax` 的 `query` 方法，可以实现远程加载数据。
 
-<DemoPreview dir="demos/vben-vxe-table/remote" />
+<DemoPreview dir="demos/edp-vxe-table/remote" />
 
 ## 树形表格
 
@@ -122,13 +122,13 @@ treeConfig: {
 },
 ```
 
-<DemoPreview dir="demos/vben-vxe-table/tree" />
+<DemoPreview dir="demos/edp-vxe-table/tree" />
 
 ## 固定表头/列
 
 列固定可选参数： `'left' | 'right' | '' | null`
 
-<DemoPreview dir="demos/vben-vxe-table/fixed" />
+<DemoPreview dir="demos/edp-vxe-table/fixed" />
 
 ## 自定义单元格
 
@@ -159,11 +159,11 @@ vxeUI.renderer.add('CellLink', {
 });
 ```
 
-<DemoPreview dir="demos/vben-vxe-table/custom-cell" />
+<DemoPreview dir="demos/edp-vxe-table/custom-cell" />
 
 ## 搜索表单
 
-**表单搜索** 部分采用了`Vben Form 表单`，参考 [Vben Form 表单文档](/components/common-ui/vben-form)。
+**表单搜索** 部分采用了`EDP Form 表单`，参考 [EDP Form 表单文档](/components/common-ui/edp-form)。
 
 当启用了表单搜索时，可以在toolbarConfig中配置`search`为`true`来让表格在工具栏区域显示一个搜索表单控制按钮。表格的所有以`form-`开头的命名插槽都会被传递给搜索表单。
 
@@ -184,19 +184,19 @@ const [Grid] = useVbenVxeGrid({
 });
 ```
 
-<DemoPreview dir="demos/vben-vxe-table/form" />
+<DemoPreview dir="demos/edp-vxe-table/form" />
 
 ## 单元格编辑
 
 通过指定`editConfig.mode`为`cell`，可以实现单元格编辑。
 
-<DemoPreview dir="demos/vben-vxe-table/edit-cell" />
+<DemoPreview dir="demos/edp-vxe-table/edit-cell" />
 
 ## 行编辑
 
 通过指定`editConfig.mode`为`row`，可以实现行编辑。
 
-<DemoPreview dir="demos/vben-vxe-table/edit-row" />
+<DemoPreview dir="demos/edp-vxe-table/edit-row" />
 
 ## 虚拟滚动
 
@@ -204,7 +204,7 @@ const [Grid] = useVbenVxeGrid({
 
 > 参考 [vxe-table 官方文档 - 虚拟滚动](https://vxetable.cn/v4/#/component/grid/scroll/vertical)。
 
-<DemoPreview dir="demos/vben-vxe-table/virtual" />
+<DemoPreview dir="demos/edp-vxe-table/virtual" />
 
 ## API
 

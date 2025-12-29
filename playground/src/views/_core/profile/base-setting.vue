@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { BasicOption } from '@vben/types';
+import type { BasicOption } from '@edp/types';
 
 import type { VbenFormSchema } from '#/adapter/form';
 
 import { computed, onMounted, ref } from 'vue';
 
-import { ProfileBaseSetting } from '@vben/common-ui';
+import { ProfileBaseSetting } from '@edp/common-ui';
 
 import { getUserInfoApi } from '#/api';
 

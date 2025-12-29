@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Vben CountToAnimator 数字动画
+# EDP CountToAnimator 数字动画
 
 框架提供的数字动画组件，支持数字动画效果。
 
@@ -18,13 +18,13 @@ outline: deep
 
 通过 `start-val` 和 `end-val`设置数字动画的开始值和结束值， 持续时间`3000`ms。
 
-<DemoPreview dir="demos/vben-count-to-animator/basic" />
+<DemoPreview dir="demos/edp-count-to-animator/basic" />
 
 ## 自定义前缀及分隔符
 
 通过 `prefix` 和 `separator` 设置数字动画的前缀和分隔符。
 
-<DemoPreview dir="demos/vben-count-to-animator/custom" />
+<DemoPreview dir="demos/edp-count-to-animator/custom" />
 
 ### Props
 

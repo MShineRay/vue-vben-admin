@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { cn } from '@vben-core/shared/utils';
+import { cn } from '@edp-core/shared/utils';
 
 defineOptions({ name: 'VbenButtonGroup' });
 
@@ -16,7 +16,7 @@ withDefaults(
   <div
     :class="
       cn(
-        'vben-button-group rounded-md',
+        'edp-button-group rounded-md',
         `size-${size}`,
         gap ? 'with-gap' : 'no-gap',
         $attrs.class as string,
@@ -29,7 +29,7 @@ withDefaults(
 </template>
 
 <style lang="scss" scoped>
-.vben-button-group {
+.edp-button-group {
   display: inline-flex;
 
   &.size-large :deep(button) {

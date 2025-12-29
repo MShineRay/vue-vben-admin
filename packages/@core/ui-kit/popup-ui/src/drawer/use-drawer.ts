@@ -14,7 +14,7 @@ import {
   ref,
 } from 'vue';
 
-import { useStore } from '@vben-core/shared/store';
+import { useStore } from '@edp-core/shared/store';
 
 import { DrawerApi } from './drawer-api';
 import VbenDrawer from './drawer.vue';
@@ -135,7 +135,7 @@ async function checkProps(api: ExtendedDrawerApi, attrs: Record<string, any>) {
     if (stateKeys.has(attr) && !['class'].includes(attr)) {
       // connectedComponent存在时，不要传入Drawer的props，会造成复杂度提升，如果你需要修改Drawer的props，请使用 useVbenDrawer 或者api
       console.warn(
-        `[Vben Drawer]: When 'connectedComponent' exists, do not set props or slots '${attr}', which will increase complexity. If you need to modify the props of Drawer, please use useVbenDrawer or api.`,
+        `[EDP Drawer]: When 'connectedComponent' exists, do not set props or slots '${attr}', which will increase complexity. If you need to modify the props of Drawer, please use useVbenDrawer or api.`,
       );
     }
   }

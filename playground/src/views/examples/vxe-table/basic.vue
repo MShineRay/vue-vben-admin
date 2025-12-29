@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { VxeGridListeners, VxeGridProps } from '#/adapter/vxe-table';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@edp/common-ui';
 
 import { Button, message } from 'ant-design-vue';
 
@@ -89,7 +89,7 @@ function changeLoading() {
     title="表格基础示例"
   >
     <template #extra>
-      <DocButton path="/components/common-ui/vben-vxe-table" />
+      <DocButton path="/components/common-ui/edp-vxe-table" />
     </template>
     <Grid table-title="基础列表" table-title-help="提示">
       <!-- <template #toolbar-actions>

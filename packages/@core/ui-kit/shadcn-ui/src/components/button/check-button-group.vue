@@ -5,8 +5,8 @@ import type { ValueType, VbenButtonGroupProps } from './button';
 
 import { computed, ref, watch } from 'vue';
 
-import { Circle, CircleCheckBig, LoaderCircle } from '@vben-core/icons';
-import { cn, isFunction } from '@vben-core/shared/utils';
+import { Circle, CircleCheckBig, LoaderCircle } from '@edp-core/icons';
+import { cn, isFunction } from '@edp-core/shared/utils';
 
 import { objectOmit } from '@vueuse/core';
 
@@ -108,7 +108,7 @@ async function onBtnClick(value: ValueType) {
   <VbenButtonGroup
     :size="props.size"
     :gap="props.gap"
-    class="vben-check-button-group"
+    class="edp-check-button-group"
   >
     <Button
       v-for="(btn, index) in props.options"
@@ -145,7 +145,7 @@ async function onBtnClick(value: ValueType) {
   </VbenButtonGroup>
 </template>
 <style lang="scss" scoped>
-.vben-check-button-group {
+.edp-check-button-group {
   display: flex;
   flex-wrap: wrap;
 

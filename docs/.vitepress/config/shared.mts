@@ -6,7 +6,7 @@ import { resolve } from 'node:path';
 import {
   viteArchiverPlugin,
   viteVxeTableImportsPlugin,
-} from '@vben/vite-config';
+} from '@edp/vite-config';
 
 import {
   GitChangelog,
@@ -44,12 +44,12 @@ export const shared = defineConfig({
       },
       provider: 'local',
     },
-    siteTitle: 'Vben Admin',
+    siteTitle: 'EDP Admin',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vbenjs/vue-vben-admin' },
+      { icon: 'github', link: 'https://github.com/vbenjs/vue-edp-admin' },
     ],
   },
-  title: 'Vben Admin',
+  title: 'EDP Admin',
   vite: {
     build: {
       chunkSizeWarningLimit: Infinity,
@@ -75,8 +75,8 @@ export const shared = defineConfig({
       GitChangelog({
         mapAuthors: [
           {
-            mapByNameAliases: ['Vben'],
-            name: 'vben',
+            mapByNameAliases: ['EDP'],
+            name: 'edp',
             username: 'anncwb',
           },
           {
@@ -88,7 +88,7 @@ export const shared = defineConfig({
             username: 'likui628',
           },
         ],
-        repoURL: () => 'https://github.com/vbenjs/vue-vben-admin',
+        repoURL: () => 'https://github.com/vbenjs/vue-edp-admin',
       }),
       GitChangelogMarkdownSection(),
       viteArchiverPlugin({ outputDir: '.vitepress' }),
@@ -115,7 +115,7 @@ function head(): HeadConfig[] {
     [
       'meta',
       {
-        content: 'vben, vitejs, vite, shacdn-ui, vue',
+        content: 'edp, vitejs, vite, shacdn-ui, vue',
         name: 'keywords',
       },
     ],
@@ -128,7 +128,7 @@ function head(): HeadConfig[] {
         name: 'viewport',
       },
     ],
-    ['meta', { content: 'vben admin docs', name: 'keywords' }],
+    ['meta', { content: 'edp admin docs', name: 'keywords' }],
     ['link', { href: '/favicon.ico', rel: 'icon' }],
     // [
     //   'script',
@@ -144,7 +144,7 @@ function pwa(): PwaOptions {
     includeManifestIcons: false,
     manifest: {
       description:
-        'Vben Admin is a modern admin dashboard template based on Vue 3. ',
+        'EDP Admin is a modern admin dashboard template based on Vue 3. ',
       icons: [
         {
           sizes: '192x192',
@@ -158,7 +158,7 @@ function pwa(): PwaOptions {
         },
       ],
       id: '/',
-      name: 'Vben Admin Doc',
+      name: 'EDP Admin Doc',
       short_name: 'vben_admin_doc',
       theme_color: '#ffffff',
     },

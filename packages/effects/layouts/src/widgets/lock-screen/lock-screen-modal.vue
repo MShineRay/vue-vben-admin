@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@edp/types';
 
 import { computed, reactive } from 'vue';
 
-import { $t } from '@vben/locales';
+import { $t } from '@edp/locales';
 
-import { useVbenForm, z } from '@vben-core/form-ui';
-import { useVbenModal } from '@vben-core/popup-ui';
-import { VbenAvatar, VbenButton } from '@vben-core/shadcn-ui';
+import { useVbenForm, z } from '@edp-core/form-ui';
+import { useVbenModal } from '@edp-core/popup-ui';
+import { VbenAvatar, VbenButton } from '@edp-core/shadcn-ui';
 
 interface Props {
   avatar?: string;

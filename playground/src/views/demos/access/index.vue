@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import type { Recordable } from '@vben/types';
+import type { Recordable } from '@edp/types';
 
 import { useRouter } from 'vue-router';
 
-import { useAccess } from '@vben/access';
-import { Page } from '@vben/common-ui';
-import { resetAllStores, useUserStore } from '@vben/stores';
+import { useAccess } from '@edp/access';
+import { Page } from '@edp/common-ui';
+import { resetAllStores, useUserStore } from '@edp/stores';
 
 import { Button, Card } from 'ant-design-vue';
 
@@ -18,7 +18,7 @@ const accounts: Record<string, Recordable<any>> = {
   },
   super: {
     password: '123456',
-    username: 'vben',
+    username: 'edp',
   },
   user: {
     password: '123456',

@@ -81,10 +81,6 @@ The Prettier configuration file is `.prettier.mjs`, with its core configuration 
 
 In a team, everyone's git commit messages can vary widely, making it difficult to ensure standardization without a mechanism. How can standardization be achieved? You might think of using git's hook mechanism to write shell scripts to implement this. Of course, this is possible, but actually, JavaScript has a great tool for implementing this template, which is commitlint (used for verifying the standard of git commit messages).
 
-### Configuration
-
-The CommitLint configuration file is `.commitlintrc.mjs`, with its core configuration located in the `internal/lint-configs/commitlint-config` directory, which can be modified according to project needs.
-
 ### Git Commit Standards
 
 Refer to [Angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular)

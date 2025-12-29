@@ -10,7 +10,7 @@ import type {
 
 import type { SetupContext } from 'vue';
 
-import type { VbenFormProps } from '@vben-core/form-ui';
+import type { VbenFormProps } from '@edp-core/form-ui';
 
 import type { ExtendedVxeGridApi, VxeGridProps } from './types';
 
@@ -25,19 +25,19 @@ import {
   watch,
 } from 'vue';
 
-import { usePriorityValues } from '@vben/hooks';
-import { EmptyIcon } from '@vben/icons';
-import { $t } from '@vben/locales';
-import { usePreferences } from '@vben/preferences';
+import { usePriorityValues } from '@edp/hooks';
+import { EmptyIcon } from '@edp/icons';
+import { $t } from '@edp/locales';
+import { usePreferences } from '@edp/preferences';
 import {
   cloneDeep,
   cn,
   isBoolean,
   isEqual,
   mergeWithArrayOverride,
-} from '@vben/utils';
+} from '@edp/utils';
 
-import { VbenHelpTooltip, VbenLoading } from '@vben-core/shadcn-ui';
+import { VbenHelpTooltip, VbenLoading } from '@edp-core/shadcn-ui';
 
 import { VxeButton } from 'vxe-pc-ui';
 import { VxeGrid, VxeUI } from 'vxe-table';
@@ -306,17 +306,17 @@ async function init() {
     // props.api.reload(formApi.form?.values ?? {});
   }
 
-  // form 由 vben-form代替，所以不适配formConfig，这里给出警告
+  // form 由 edp-form代替，所以不适配formConfig，这里给出警告
   const formConfig = gridOptions.value?.formConfig;
   // 处理某个页面加载多个Table时，第2个之后的Table初始化报出警告
   // 因为第一次初始化之后会把defaultGridOptions和gridOptions合并后缓存进State
   if (formConfig && formConfig.enabled) {
     console.warn(
-      '[Vben Vxe Table]: The formConfig in the grid is not supported, please use the `formOptions` props',
+      '[EDP Vxe Table]: The formConfig in the grid is not supported, please use the `formOptions` props',
     );
   }
   props.api?.setState?.({ gridOptions: defaultGridOptions });
-  // form 由 vben-form 代替，所以需要保证query相关事件可以拿到参数
+  // form 由 edp-form 代替，所以需要保证query相关事件可以拿到参数
   extendProxyOptions(props.api, defaultGridOptions, () =>
     formApi.getLatestSubmissionValues(),
   );

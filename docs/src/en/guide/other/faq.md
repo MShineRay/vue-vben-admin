@@ -2,7 +2,7 @@
 
 ::: tip Listed are some common questions
 
-If you have a question, you can first look here. If not found, you can search or submit your question on [GitHub Issue](https://github.com/vbenjs/vue-vben-admin/issues), or if it's a discussion-type question, you can go to [GitHub Discussions](https://github.com/vbenjs/vue-vben-admin/discussions)
+If you have a question, you can first look here. If not found, you can search or submit your question on [GitHub Issue](https://github.com/vbenjs/vue-edp-admin/issues), or if it's a discussion-type question, you can go to [GitHub Discussions](https://github.com/vbenjs/vue-edp-admin/discussions)
 
 :::
 
@@ -10,11 +10,11 @@ If you have a question, you can first look here. If not found, you can search or
 
 If you encounter a problem, you can start looking from the following aspects:
 
-1. Search the corresponding module's GitHub repository [issue](https://github.com/vbenjs/vue-vben-admin/issues)
+1. Search the corresponding module's GitHub repository [issue](https://github.com/vbenjs/vue-edp-admin/issues)
 2. Search for the problem on [Google](https://www.google.com)
 3. Search for the problem on [Baidu](https://www.baidu.com)
-4. If you can't find the issue in the list below, you can ask in [issues](https://github.com/vbenjs/vue-vben-admin/issues)
-5. If it's not a problem type and needs discussion, please go to [discussions](https://github.com/vbenjs/vue-vben-admin/discussions) to discuss
+4. If you can't find the issue in the list below, you can ask in [issues](https://github.com/vbenjs/vue-edp-admin/issues)
+5. If it's not a problem type and needs discussion, please go to [discussions](https://github.com/vbenjs/vue-edp-admin/discussions) to discuss
 
 ## Dependency Issues
 
@@ -110,7 +110,7 @@ registry = https://registry.npmmirror.com/
 If you encounter errors similar to the following, please check that the full project path (including all parent paths) does not contain Chinese, Japanese, or Korean characters. Otherwise, you will encounter a 404 error for the path, leading to the following issue:
 
 ```ts
-[vite] Failed to resolve module import "ant-design-vue/dist/antd.css-vben-adminode_modulesant-design-vuedistantd.css". (imported by /@/setup/ant-design-vue/index.ts)
+[vite] Failed to resolve module import "ant-design-vue/dist/antd.css-edp-adminode_modulesant-design-vuedistantd.css". (imported by /@/setup/ant-design-vue/index.ts)
 ```
 
 ## Console Route Warning Issue
@@ -129,8 +129,8 @@ If you encounter the following error message, please check if your nodejs versio
 
 ```bash
 TypeError: str.matchAll is not a function
-at Object.extractor (vue-vben-admin-main\node_modules@purge-icons\core\dist\index.js:146:27)
-at Extract (vue-vben-admin-main\node_modules@purge-icons\core\dist\index.js:173:54)
+at Object.extractor (vue-edp-admin-main\node_modules@purge-icons\core\dist\index.js:146:27)
+at Extract (vue-edp-admin-main\node_modules@purge-icons\core\dist\index.js:173:54)
 ```
 
 ## nginx Deployment

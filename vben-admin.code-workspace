@@ -1,175 +1,160 @@
 {
   "folders": [
     {
-      "name": "@vben/backend-mock",
+      "name": "@edp/backend-mock",
       "path": "apps/backend-mock",
     },
     {
-      "name": "@vben/web-antd",
+      "name": "@edp/web-antd",
       "path": "apps/web-antd",
     },
     {
-      "name": "@vben/web-ele",
+      "name": "@edp/web-ele",
       "path": "apps/web-ele",
     },
     {
-      "name": "@vben/web-naive",
+      "name": "@edp/web-naive",
       "path": "apps/web-naive",
     },
     {
-      "name": "@vben/web-tdesign",
+      "name": "@edp/web-tdesign",
       "path": "apps/web-tdesign",
     },
     {
-      "name": "@vben/docs",
+      "name": "@edp/docs",
       "path": "docs",
     },
+
     {
-      "name": "@vben/commitlint-config",
-      "path": "internal/lint-configs/commitlint-config",
-    },
-    {
-      "name": "@vben/eslint-config",
-      "path": "internal/lint-configs/eslint-config",
-    },
-    {
-      "name": "@vben/prettier-config",
-      "path": "internal/lint-configs/prettier-config",
-    },
-    {
-      "name": "@vben/stylelint-config",
-      "path": "internal/lint-configs/stylelint-config",
-    },
-    {
-      "name": "@vben/node-utils",
+      "name": "@edp/node-utils",
       "path": "internal/node-utils",
     },
     {
-      "name": "@vben/tailwind-config",
+      "name": "@edp/tailwind-config",
       "path": "internal/tailwind-config",
     },
     {
-      "name": "@vben/tsconfig",
+      "name": "@edp/tsconfig",
       "path": "internal/tsconfig",
     },
     {
-      "name": "@vben/vite-config",
+      "name": "@edp/vite-config",
       "path": "internal/vite-config",
     },
     {
-      "name": "@vben-core/design",
+      "name": "@edp-core/design",
       "path": "packages/@core/base/design",
     },
     {
-      "name": "@vben-core/icons",
+      "name": "@edp-core/icons",
       "path": "packages/@core/base/icons",
     },
     {
-      "name": "@vben-core/shared",
+      "name": "@edp-core/shared",
       "path": "packages/@core/base/shared",
     },
     {
-      "name": "@vben-core/typings",
+      "name": "@edp-core/typings",
       "path": "packages/@core/base/typings",
     },
     {
-      "name": "@vben-core/composables",
+      "name": "@edp-core/composables",
       "path": "packages/@core/composables",
     },
     {
-      "name": "@vben-core/preferences",
+      "name": "@edp-core/preferences",
       "path": "packages/@core/preferences",
     },
     {
-      "name": "@vben-core/form-ui",
+      "name": "@edp-core/form-ui",
       "path": "packages/@core/ui-kit/form-ui",
     },
     {
-      "name": "@vben-core/layout-ui",
+      "name": "@edp-core/layout-ui",
       "path": "packages/@core/ui-kit/layout-ui",
     },
     {
-      "name": "@vben-core/menu-ui",
+      "name": "@edp-core/menu-ui",
       "path": "packages/@core/ui-kit/menu-ui",
     },
     {
-      "name": "@vben-core/popup-ui",
+      "name": "@edp-core/popup-ui",
       "path": "packages/@core/ui-kit/popup-ui",
     },
     {
-      "name": "@vben-core/shadcn-ui",
+      "name": "@edp-core/shadcn-ui",
       "path": "packages/@core/ui-kit/shadcn-ui",
     },
     {
-      "name": "@vben-core/tabs-ui",
+      "name": "@edp-core/tabs-ui",
       "path": "packages/@core/ui-kit/tabs-ui",
     },
     {
-      "name": "@vben/constants",
+      "name": "@edp/constants",
       "path": "packages/constants",
     },
     {
-      "name": "@vben/access",
+      "name": "@edp/access",
       "path": "packages/effects/access",
     },
     {
-      "name": "@vben/common-ui",
+      "name": "@edp/common-ui",
       "path": "packages/effects/common-ui",
     },
     {
-      "name": "@vben/hooks",
+      "name": "@edp/hooks",
       "path": "packages/effects/hooks",
     },
     {
-      "name": "@vben/layouts",
+      "name": "@edp/layouts",
       "path": "packages/effects/layouts",
     },
     {
-      "name": "@vben/plugins",
+      "name": "@edp/plugins",
       "path": "packages/effects/plugins",
     },
     {
-      "name": "@vben/request",
+      "name": "@edp/request",
       "path": "packages/effects/request",
     },
     {
-      "name": "@vben/icons",
+      "name": "@edp/icons",
       "path": "packages/icons",
     },
     {
-      "name": "@vben/locales",
+      "name": "@edp/locales",
       "path": "packages/locales",
     },
     {
-      "name": "@vben/preferences",
+      "name": "@edp/preferences",
       "path": "packages/preferences",
     },
     {
-      "name": "@vben/stores",
+      "name": "@edp/stores",
       "path": "packages/stores",
     },
     {
-      "name": "@vben/styles",
+      "name": "@edp/styles",
       "path": "packages/styles",
     },
     {
-      "name": "@vben/types",
+      "name": "@edp/types",
       "path": "packages/types",
     },
     {
-      "name": "@vben/utils",
+      "name": "@edp/utils",
       "path": "packages/utils",
     },
     {
-      "name": "@vben/playground",
+      "name": "@edp/playground",
       "path": "playground",
     },
     {
-      "name": "@vben/turbo-run",
+      "name": "@edp/turbo-run",
       "path": "scripts/turbo-run",
     },
     {
-      "name": "@vben/vsh",
+      "name": "@edp/vsh",
       "path": "scripts/vsh",
     },
   ],

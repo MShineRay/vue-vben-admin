@@ -8,7 +8,7 @@ import {
   Page,
   prompt,
   useVbenModal,
-} from '@vben/common-ui';
+} from '@edp/common-ui';
 
 import { Button, Card, Flex, message } from 'ant-design-vue';
 
@@ -179,7 +179,7 @@ async function openPrompt() {
     title="弹窗组件示例"
   >
     <template #extra>
-      <DocButton path="/components/common-ui/vben-modal" />
+      <DocButton path="/components/common-ui/edp-modal" />
     </template>
     <BaseModal />
     <InContentModal />
@@ -264,7 +264,7 @@ async function openPrompt() {
       </Card>
       <Card class="w-[300px]" title="轻量提示弹窗">
         <template #extra>
-          <DocButton path="/components/common-ui/vben-alert" />
+          <DocButton path="/components/common-ui/edp-alert" />
         </template>
         <p>通过快捷方法创建动态提示弹窗，适合一些轻量的提示和确认、输入等</p>
         <template #actions>

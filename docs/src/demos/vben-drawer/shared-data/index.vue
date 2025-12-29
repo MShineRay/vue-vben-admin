@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useVbenDrawer, VbenButton } from '@vben/common-ui';
+import { useVbenDrawer, VbenButton } from '@edp/common-ui';
 
 import ExtraDrawer from './drawer.vue';
 

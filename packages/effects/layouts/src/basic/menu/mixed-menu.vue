@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import type { MenuRecordRaw } from '@vben/types';
+import type { MenuRecordRaw } from '@edp/types';
 
-import type { NormalMenuProps } from '@vben-core/menu-ui';
+import type { NormalMenuProps } from '@edp-core/menu-ui';
 
 import { onBeforeMount } from 'vue';
 import { useRoute } from 'vue-router';
 
-import { findMenuByPath } from '@vben/utils';
+import { findMenuByPath } from '@edp/utils';
 
-import { NormalMenu } from '@vben-core/menu-ui';
+import { NormalMenu } from '@edp-core/menu-ui';
 
 interface Props extends NormalMenuProps {}
 

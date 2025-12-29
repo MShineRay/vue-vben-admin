@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useVbenModal, VbenButton } from '@vben/common-ui';
+import { useVbenModal, VbenButton } from '@edp/common-ui';
 
 import ExtraModal from './modal.vue';
 

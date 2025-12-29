@@ -2,7 +2,7 @@
 
 ::: tip 列举了一些常见的问题
 
-有问题可以先来这里寻找，如果没有可以在 [GitHub Issue](https://github.com/vbenjs/vue-vben-admin/issues) 搜索或者提交你的问题, 如果是讨论性的问题可以在 [GitHub Discussions](https://github.com/vbenjs/vue-vben-admin/discussions)
+有问题可以先来这里寻找，如果没有可以在 [GitHub Issue](https://github.com/vbenjs/vue-edp-admin/issues) 搜索或者提交你的问题, 如果是讨论性的问题可以在 [GitHub Discussions](https://github.com/vbenjs/vue-edp-admin/discussions)
 
 :::
 
@@ -10,11 +10,11 @@
 
 遇到问题,可以先从以下几个方面查找
 
-1. 对应模块的 GitHub 仓库 [issue](https://github.com/vbenjs/vue-vben-admin/issues) 搜索
+1. 对应模块的 GitHub 仓库 [issue](https://github.com/vbenjs/vue-edp-admin/issues) 搜索
 2. 从[google](https://www.google.com)搜索问题
 3. 从[百度](https://www.baidu.com)搜索问题
-4. 在下面列表找不到问题可以到 issue 提问 [issues](https://github.com/vbenjs/vue-vben-admin/issues)
-5. 如果不是问题类型的，需要讨论的，请到 [discussions](https://github.com/vbenjs/vue-vben-admin/discussions) 讨论
+4. 在下面列表找不到问题可以到 issue 提问 [issues](https://github.com/vbenjs/vue-edp-admin/issues)
+5. 如果不是问题类型的，需要讨论的，请到 [discussions](https://github.com/vbenjs/vue-edp-admin/discussions) 讨论
 
 ## 依赖问题
 
@@ -110,7 +110,7 @@ registry = https://registry.npmmirror.com/
 如果出现类似以下错误，请检查项目全路径（包含所有父级路径）不能出现中文、日文、韩文。否则将会出现路径访问 404 导致以下问题
 
 ```ts
-[vite] Failed to resolve module import "ant-design-vue/dist/antd.css-vben-adminode_modulesant-design-vuedistantd.css". (imported by /@/setup/ant-design-vue/index.ts)
+[vite] Failed to resolve module import "ant-design-vue/dist/antd.css-edp-adminode_modulesant-design-vuedistantd.css". (imported by /@/setup/ant-design-vue/index.ts)
 ```
 
 ## 控制台路由警告问题
@@ -129,8 +129,8 @@ registry = https://registry.npmmirror.com/
 
 ```bash
 TypeError: str.matchAll is not a function
-at Object.extractor (vue-vben-admin-main\node_modules@purge-icons\core\dist\index.js:146:27)
-at Extract (vue-vben-admin-main\node_modules@purge-icons\core\dist\index.js:173:54)
+at Object.extractor (vue-edp-admin-main\node_modules@purge-icons\core\dist\index.js:146:27)
+at Extract (vue-edp-admin-main\node_modules@purge-icons\core\dist\index.js:173:54)
 ```
 
 ## nginx 部署

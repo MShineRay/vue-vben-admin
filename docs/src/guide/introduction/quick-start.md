@@ -32,13 +32,13 @@ git -v
 
 ```sh [GitHub]
 # clone 代码
-git clone https://github.com/vbenjs/vue-vben-admin.git
+git clone https://github.com/vbenjs/vue-edp-admin.git
 ```
 
 ```sh [Gitee]
 # clone 代码
 # Gitee 的代码可能不是最新的
-git clone https://gitee.com/annsion/vue-vben-admin.git
+git clone https://gitee.com/annsion/vue-edp-admin.git
 ```
 
 :::
@@ -55,7 +55,7 @@ git clone https://gitee.com/annsion/vue-vben-admin.git
 
 ```bash
 # 进入项目目录
-cd vue-vben-admin
+cd vue-edp-admin
 
 # 使用项目指定的pnpm版本进行依赖安装
 npm i -g corepack
@@ -88,11 +88,11 @@ pnpm dev
 ```bash
 │
 ◆  Select the app you need to run [dev]:
-│  ○ @vben/web-antd
-│  ○ @vben/web-ele
-│  ○ @vben/web-naive
-│  ○ @vben/docs
-│  ● @vben/playground
+│  ○ @edp/web-antd
+│  ○ @edp/web-ele
+│  ○ @edp/web-naive
+│  ○ @edp/docs
+│  ● @edp/playground
 └
 ```
 

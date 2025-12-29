@@ -1,14 +1,7 @@
 {
-  "name": "@vben/vite-config",
+  "name": "@edp/vite-config",
   "version": "5.5.9",
   "private": true,
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
-    "directory": "internal/vite-config"
-  },
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -42,7 +35,7 @@
     "@pnpm/workspace.read-manifest": "catalog:",
     "@types/archiver": "catalog:",
     "@types/html-minifier-terser": "catalog:",
-    "@vben/node-utils": "workspace:*",
+    "@edp/node-utils": "workspace:*",
     "@vitejs/plugin-vue": "catalog:",
     "@vitejs/plugin-vue-jsx": "catalog:",
     "dayjs": "catalog:",

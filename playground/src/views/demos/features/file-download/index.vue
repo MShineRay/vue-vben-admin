@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@edp/common-ui';
 import {
   downloadFileFromBase64,
   downloadFileFromBlobPart,
   downloadFileFromImageUrl,
   downloadFileFromUrl,
-} from '@vben/utils';
+} from '@edp/utils';
 
 import { Button, Card } from 'ant-design-vue';
 
@@ -38,7 +38,7 @@ function getResponse() {
         @click="
           downloadFileFromUrl({
             source:
-              'https://codeload.github.com/vbenjs/vue-vben-admin-doc/zip/main',
+              'https://codeload.github.com/vbenjs/vue-edp-admin-doc/zip/main',
             target: '_self',
           })
         "
@@ -54,7 +54,7 @@ function getResponse() {
           downloadFileFromImageUrl({
             source:
               'https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp',
-            fileName: 'vben-logo.png',
+            fileName: 'edp-logo.png',
           })
         "
       >

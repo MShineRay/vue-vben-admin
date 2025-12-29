@@ -1,4 +1,4 @@
-import { setTimezoneHandler } from '@vben/stores';
+import { setTimezoneHandler } from '@edp/stores';
 
 import { getTimezoneApi, getTimezoneOptionsApi, setTimezoneApi } from '#/api';
 

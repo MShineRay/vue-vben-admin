@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { DropdownMenuProps } from '@vben-core/shadcn-ui';
+import type { DropdownMenuProps } from '@edp-core/shadcn-ui';
 
-import { ChevronDown } from '@vben-core/icons';
-import { VbenDropdownMenu } from '@vben-core/shadcn-ui';
+import { ChevronDown } from '@edp-core/icons';
+import { VbenDropdownMenu } from '@edp-core/shadcn-ui';
 
 defineProps<DropdownMenuProps>();
 </script>

@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import type { AlertDialogContentEmits, AlertDialogContentProps } from 'reka-ui';
 
-import type { ClassType } from '@vben-core/typings';
+import type { ClassType } from '@edp-core/typings';
 
 import { computed, ref } from 'vue';
 
-import { cn } from '@vben-core/shared/utils';
+import { cn } from '@edp-core/shared/utils';
 
 import {
   AlertDialogContent,

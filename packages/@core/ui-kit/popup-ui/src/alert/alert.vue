@@ -5,7 +5,7 @@ import type { AlertProps } from './alert';
 
 import { computed, h, nextTick, ref } from 'vue';
 
-import { useSimpleLocale } from '@vben-core/composables';
+import { useSimpleLocale } from '@edp-core/composables';
 import {
   CircleAlert,
   CircleCheckBig,
@@ -13,7 +13,7 @@ import {
   CircleX,
   Info,
   X,
-} from '@vben-core/icons';
+} from '@edp-core/icons';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -24,9 +24,9 @@ import {
   VbenButton,
   VbenLoading,
   VbenRenderContent,
-} from '@vben-core/shadcn-ui';
-import { globalShareState } from '@vben-core/shared/global-state';
-import { cn } from '@vben-core/shared/utils';
+} from '@edp-core/shadcn-ui';
+import { globalShareState } from '@edp-core/shared/global-state';
+import { cn } from '@edp-core/shared/utils';
 
 import { provideAlertContext } from './alert';
 

@@ -5,7 +5,7 @@ import { defineConfig } from 'vitepress';
 import { version } from '../../../package.json';
 
 export const en = defineConfig({
-  description: 'Vben Admin & Enterprise level management system framework',
+  description: 'EDP Admin & Enterprise level management system framework',
   lang: 'en-US',
   themeConfig: {
     darkModeSwitchLabel: 'Theme',
@@ -16,11 +16,11 @@ export const en = defineConfig({
     },
     editLink: {
       pattern:
-        'https://github.com/vbenjs/vue-vben-admin/edit/main/docs/src/:path',
+        'https://github.com/vbenjs/vue-edp-admin/edit/main/docs/src/:path',
       text: 'Edit this page on GitHub',
     },
     footer: {
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Vben`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} EDP`,
       message: 'Released under the MIT License.',
     },
     langMenuLabel: 'Language',
@@ -54,8 +54,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: 'Introduction',
       items: [
         {
-          link: 'introduction/vben',
-          text: 'About Vben Admin',
+          link: 'introduction/edp',
+          text: 'About EDP Admin',
         },
         {
           link: 'introduction/why',
@@ -140,7 +140,7 @@ function nav(): DefaultTheme.NavItem[] {
       items: [
         {
           activeMatch: '^/en/guide/',
-          link: '/en/guide/introduction/vben',
+          link: '/en/guide/introduction/edp',
           text: 'Guide',
         },
         // {
@@ -163,22 +163,22 @@ function nav(): DefaultTheme.NavItem[] {
       text: 'Demo',
       items: [
         {
-          text: 'Vben Admin',
+          text: 'EDP Admin',
           items: [
             {
-              link: 'https://www.vben.pro',
+              link: 'https://www.edp.pro',
               text: 'Demo Version',
             },
             {
-              link: 'https://ant.vben.pro',
+              link: 'https://ant.edp.pro',
               text: 'Ant Design Vue Version',
             },
             {
-              link: 'https://naive.vben.pro',
+              link: 'https://naive.edp.pro',
               text: 'Naive Version',
             },
             {
-              link: 'https://ele.vben.pro',
+              link: 'https://ele.edp.pro',
               text: 'Element Plus Version',
             },
           ],
@@ -187,8 +187,8 @@ function nav(): DefaultTheme.NavItem[] {
           text: 'Others',
           items: [
             {
-              link: 'https://vben.vvbin.cn',
-              text: 'Vben Admin 2.x',
+              link: 'https://edp.vvbin.cn',
+              text: 'EDP Admin 2.x',
             },
           ],
         },
@@ -198,7 +198,7 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/vbenjs/vue-vben-admin/releases',
+          link: 'https://github.com/vbenjs/vue-edp-admin/releases',
           text: 'Changelog',
         },
         {
@@ -206,7 +206,7 @@ function nav(): DefaultTheme.NavItem[] {
           text: 'Roadmap',
         },
         {
-          link: 'https://github.com/vbenjs/vue-vben-admin/blob/main/.github/contributing.md',
+          link: 'https://github.com/vbenjs/vue-edp-admin/blob/main/.github/contributing.md',
           text: 'Contribution',
         },
       ],

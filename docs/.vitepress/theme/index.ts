@@ -6,7 +6,7 @@ import DefaultTheme from 'vitepress/theme';
 
 import { DemoPreview } from '../components';
 import SiteLayout from './components/site-layout.vue';
-import VbenContributors from './components/vben-contributors.vue';
+import VbenContributors from './components/edp-contributors.vue';
 import { initHmPlugin } from './plugins/hm';
 
 import './styles';

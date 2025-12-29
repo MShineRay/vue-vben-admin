@@ -11,13 +11,13 @@ import type {
 
 import { computed } from 'vue';
 
-import { Form } from '@vben-core/shadcn-ui';
+import { Form } from '@edp-core/shadcn-ui';
 import {
   cn,
   isFunction,
   isString,
   mergeWithArrayOverride,
-} from '@vben-core/shared/utils';
+} from '@edp-core/shared/utils';
 
 import { provideFormRenderProps } from './context';
 import { useExpandable } from './expandable';

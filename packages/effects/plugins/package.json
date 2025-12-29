@@ -1,11 +1,10 @@
 {
-  "name": "@vben/plugins",
+  "name": "@edp/plugins",
   "version": "5.5.9",
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "url": "git+https://github.com/vbenjs/vue-edp-admin.git",
     "directory": "packages/effects/plugins"
   },
   "license": "MIT",
@@ -28,15 +27,15 @@
     }
   },
   "dependencies": {
-    "@vben-core/form-ui": "workspace:*",
-    "@vben-core/shadcn-ui": "workspace:*",
-    "@vben-core/shared": "workspace:*",
-    "@vben/hooks": "workspace:*",
-    "@vben/icons": "workspace:*",
-    "@vben/locales": "workspace:*",
-    "@vben/preferences": "workspace:*",
-    "@vben/types": "workspace:*",
-    "@vben/utils": "workspace:*",
+    "@edp-core/form-ui": "workspace:*",
+    "@edp-core/shadcn-ui": "workspace:*",
+    "@edp-core/shared": "workspace:*",
+    "@edp/hooks": "workspace:*",
+    "@edp/icons": "workspace:*",
+    "@edp/locales": "workspace:*",
+    "@edp/preferences": "workspace:*",
+    "@edp/types": "workspace:*",
+    "@edp/utils": "workspace:*",
     "@vueuse/core": "catalog:",
     "@vueuse/motion": "catalog:",
     "echarts": "catalog:",

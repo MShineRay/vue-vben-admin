@@ -3,15 +3,15 @@ import type { NotificationItem } from './types';
 
 import { useRouter } from 'vue-router';
 
-import { Bell, CircleCheckBig, CircleX, MailCheck } from '@vben/icons';
-import { $t } from '@vben/locales';
+import { Bell, CircleCheckBig, CircleX, MailCheck } from '@edp/icons';
+import { $t } from '@edp/locales';
 
 import {
   VbenButton,
   VbenIconButton,
   VbenPopover,
   VbenScrollbar,
-} from '@vben-core/shadcn-ui';
+} from '@edp-core/shadcn-ui';
 
 import { useToggle } from '@vueuse/core';
 

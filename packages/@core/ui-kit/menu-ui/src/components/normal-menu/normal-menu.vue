@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { MenuRecordRaw } from '@vben-core/typings';
+import type { MenuRecordRaw } from '@edp-core/typings';
 
 import type { NormalMenuProps } from './normal-menu';
 
-import { useNamespace } from '@vben-core/composables';
-import { VbenIcon } from '@vben-core/shadcn-ui';
+import { useNamespace } from '@edp-core/composables';
+import { VbenIcon } from '@edp-core/shadcn-ui';
 
 interface Props extends NormalMenuProps {}
 
@@ -58,7 +58,7 @@ function menuIcon(menu: MenuRecordRaw) {
   </ul>
 </template>
 <style lang="scss" scoped>
-$namespace: vben;
+$namespace: edp;
 
 .#{$namespace}-normal-menu {
   --menu-item-margin-y: 4px;

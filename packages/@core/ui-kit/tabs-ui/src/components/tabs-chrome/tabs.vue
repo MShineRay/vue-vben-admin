@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { TabDefinition } from '@vben-core/typings';
+import type { TabDefinition } from '@edp-core/typings';
 
 import type { TabConfig, TabsProps } from '../../types';
 
 import { computed, ref } from 'vue';
 
-import { Pin, X } from '@vben-core/icons';
-import { VbenContextMenu, VbenIcon } from '@vben-core/shadcn-ui';
+import { Pin, X } from '@edp-core/icons';
+import { VbenContextMenu, VbenIcon } from '@edp-core/shadcn-ui';
 
 interface Props extends TabsProps {}
 
@@ -16,7 +16,7 @@ defineOptions({
 });
 
 const props = withDefaults(defineProps<Props>(), {
-  contentClass: 'vben-tabs-content',
+  contentClass: 'edp-tabs-content',
   contextMenus: () => [],
   gap: 7,
   tabs: () => [],

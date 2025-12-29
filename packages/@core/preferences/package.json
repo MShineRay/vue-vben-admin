@@ -1,11 +1,10 @@
 {
-  "name": "@vben-core/preferences",
+  "name": "@edp-core/preferences",
   "version": "5.5.9",
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "url": "git+https://github.com/vbenjs/vue-edp-admin.git",
     "directory": "packages/@core/preferences"
   },
   "license": "MIT",
@@ -29,8 +28,8 @@
     }
   },
   "dependencies": {
-    "@vben-core/shared": "workspace:*",
-    "@vben-core/typings": "workspace:*",
+    "@edp-core/shared": "workspace:*",
+    "@edp-core/typings": "workspace:*",
     "@vueuse/core": "catalog:",
     "vue": "catalog:"
   }

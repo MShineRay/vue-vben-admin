@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Page } from '@vben/common-ui';
+import { Page } from '@edp/common-ui';
 
 import { Card, message } from 'ant-design-vue';
 

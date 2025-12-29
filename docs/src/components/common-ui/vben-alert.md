@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Vben Alert 轻量提示框
+# EDP Alert 轻量提示框
 
 框架提供的一些用于轻量提示的弹窗，仅使用js代码即可快速动态创建提示而不需要在template写任何代码。
 
@@ -28,15 +28,15 @@ Alert提供的快捷方法alert、confirm、prompt动态创建的弹窗在已打
 
 使用 `alert` 创建只有一个确认按钮的提示框。
 
-<DemoPreview dir="demos/vben-alert/alert" />
+<DemoPreview dir="demos/edp-alert/alert" />
 
 使用 `confirm` 创建有确认和取消按钮的提示框。
 
-<DemoPreview dir="demos/vben-alert/confirm" />
+<DemoPreview dir="demos/edp-alert/confirm" />
 
 使用 `prompt` 创建有确认和取消按钮、接受用户输入的提示框。
 
-<DemoPreview dir="demos/vben-alert/prompt" />
+<DemoPreview dir="demos/edp-alert/prompt" />
 
 ## useAlertContext
 

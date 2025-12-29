@@ -17,7 +17,6 @@
 ├── eslint.config.mjs # ESLint 配置文件
 ├── internal # 内部工具目录
 │   ├── lint-configs # 代码检查配置
-│   │   ├── commitlint-config # Commitlint 配置
 │   │   ├── eslint-config # ESLint 配置
 │   │   ├── prettier-config # Prettier 配置
 │   │   └── stylelint-config # Stylelint 配置
@@ -63,6 +62,6 @@
 │   └── vsh # VSH 脚本
 ├── stylelint.config.mjs # Stylelint 配置文件
 ├── turbo.json # Turbo 配置文件
-├── vben-admin.code-workspace # VS Code 工作区配置文件
+├── edp-admin.code-workspace # VS Code 工作区配置文件
 └── vitest.config.ts # Vite 配置文件
 ```

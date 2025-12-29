@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { reactive, ref } from 'vue';
 
-import { ColPage } from '@vben/common-ui';
-import { IconifyIcon } from '@vben/icons';
+import { ColPage } from '@edp/common-ui';
+import { IconifyIcon } from '@edp/icons';
 
 import {
   Alert,

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SupportedLanguagesType } from '@vben/locales';
+import type { SupportedLanguagesType } from '@edp/locales';
 import type {
   BreadcrumbStyleType,
   BuiltinThemeType,
@@ -10,28 +10,28 @@ import type {
   NavigationStyleType,
   PreferencesButtonPositionType,
   ThemeModeType,
-} from '@vben/types';
+} from '@edp/types';
 
-import type { SegmentedItem } from '@vben-core/shadcn-ui';
+import type { SegmentedItem } from '@edp-core/shadcn-ui';
 
 import { computed, ref } from 'vue';
 
-import { Copy, Pin, PinOff, RotateCw } from '@vben/icons';
-import { $t, loadLocaleMessages } from '@vben/locales';
+import { Copy, Pin, PinOff, RotateCw } from '@edp/icons';
+import { $t, loadLocaleMessages } from '@edp/locales';
 import {
   clearPreferencesCache,
   preferences,
   resetPreferences,
   usePreferences,
-} from '@vben/preferences';
+} from '@edp/preferences';
 
-import { useVbenDrawer } from '@vben-core/popup-ui';
+import { useVbenDrawer } from '@edp-core/popup-ui';
 import {
   VbenButton,
   VbenIconButton,
   VbenSegmented,
-} from '@vben-core/shadcn-ui';
-import { globalShareState } from '@vben-core/shared/global-state';
+} from '@edp-core/shadcn-ui';
+import { globalShareState } from '@edp-core/shared/global-state';
 
 import { useClipboard } from '@vueuse/core';
 

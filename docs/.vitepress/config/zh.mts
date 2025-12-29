@@ -5,7 +5,7 @@ import { defineConfig } from 'vitepress';
 import { version } from '../../../package.json';
 
 export const zh = defineConfig({
-  description: 'Vben Admin & 企业级管理系统框架',
+  description: 'EDP Admin & 企业级管理系统框架',
   lang: 'zh-Hans',
   themeConfig: {
     darkModeSwitchLabel: '主题',
@@ -16,11 +16,11 @@ export const zh = defineConfig({
     },
     editLink: {
       pattern:
-        'https://github.com/vbenjs/vue-vben-admin/edit/main/docs/src/:path',
+        'https://github.com/vbenjs/vue-edp-admin/edit/main/docs/src/:path',
       text: '在 GitHub 上编辑此页面',
     },
     footer: {
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Vben`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} EDP`,
       message: '基于 MIT 许可发布.',
     },
     langMenuLabel: '多语言',
@@ -55,8 +55,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: '简介',
       items: [
         {
-          link: 'introduction/vben',
-          text: '关于 Vben Admin',
+          link: 'introduction/edp',
+          text: '关于 EDP Admin',
         },
         {
           link: 'introduction/why',
@@ -165,35 +165,35 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
       text: '通用组件',
       items: [
         {
-          link: 'common-ui/vben-api-component',
+          link: 'common-ui/edp-api-component',
           text: 'ApiComponent Api组件包装器',
         },
         {
-          link: 'common-ui/vben-alert',
+          link: 'common-ui/edp-alert',
           text: 'Alert 轻量提示框',
         },
         {
-          link: 'common-ui/vben-modal',
+          link: 'common-ui/edp-modal',
           text: 'Modal 模态框',
         },
         {
-          link: 'common-ui/vben-drawer',
+          link: 'common-ui/edp-drawer',
           text: 'Drawer 抽屉',
         },
         {
-          link: 'common-ui/vben-form',
+          link: 'common-ui/edp-form',
           text: 'Form 表单',
         },
         {
-          link: 'common-ui/vben-vxe-table',
+          link: 'common-ui/edp-vxe-table',
           text: 'Vxe Table 表格',
         },
         {
-          link: 'common-ui/vben-count-to-animator',
+          link: 'common-ui/edp-count-to-animator',
           text: 'CountToAnimator 数字动画',
         },
         {
-          link: 'common-ui/vben-ellipsis-text',
+          link: 'common-ui/edp-ellipsis-text',
           text: 'EllipsisText 省略文本',
         },
       ],
@@ -209,7 +209,7 @@ function nav(): DefaultTheme.NavItem[] {
       items: [
         {
           activeMatch: '^/guide/',
-          link: '/guide/introduction/vben',
+          link: '/guide/introduction/edp',
           text: '指南',
         },
         {
@@ -232,22 +232,22 @@ function nav(): DefaultTheme.NavItem[] {
       text: '演示',
       items: [
         {
-          text: 'Vben Admin',
+          text: 'EDP Admin',
           items: [
             {
-              link: 'https://www.vben.pro',
+              link: 'https://www.edp.pro',
               text: '演示版本',
             },
             {
-              link: 'https://ant.vben.pro',
+              link: 'https://ant.edp.pro',
               text: 'Ant Design Vue 版本',
             },
             {
-              link: 'https://naive.vben.pro',
+              link: 'https://naive.edp.pro',
               text: 'Naive 版本',
             },
             {
-              link: 'https://ele.vben.pro',
+              link: 'https://ele.edp.pro',
               text: 'Element Plus版本',
             },
           ],
@@ -256,8 +256,8 @@ function nav(): DefaultTheme.NavItem[] {
           text: '其他',
           items: [
             {
-              link: 'https://vben.vvbin.cn',
-              text: 'Vben Admin 2.x',
+              link: 'https://edp.vvbin.cn',
+              text: 'EDP Admin 2.x',
             },
           ],
         },
@@ -267,7 +267,7 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/vbenjs/vue-vben-admin/releases',
+          link: 'https://github.com/vbenjs/vue-edp-admin/releases',
           text: '更新日志',
         },
         {
@@ -275,7 +275,7 @@ function nav(): DefaultTheme.NavItem[] {
           text: '路线图',
         },
         {
-          link: 'https://github.com/vbenjs/vue-vben-admin/blob/main/.github/contributing.md',
+          link: 'https://github.com/vbenjs/vue-edp-admin/blob/main/.github/contributing.md',
           text: '贡献',
         },
       ],

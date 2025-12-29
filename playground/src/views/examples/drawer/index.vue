@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import type { DrawerPlacement, DrawerState } from '@vben/common-ui';
+import type { DrawerPlacement, DrawerState } from '@edp/common-ui';
 
-import { Page, useVbenDrawer } from '@vben/common-ui';
+import { Page, useVbenDrawer } from '@edp/common-ui';
 
 import { Button, Card } from 'ant-design-vue';
 
@@ -102,7 +102,7 @@ function openFormDrawer() {
     title="抽屉组件示例"
   >
     <template #extra>
-      <DocButton path="/components/common-ui/vben-drawer" />
+      <DocButton path="/components/common-ui/edp-drawer" />
     </template>
     <BaseDrawer />
     <InContentDrawer />

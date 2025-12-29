@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { useAppConfig } from '@vben/hooks';
+import { useAppConfig } from '@edp/hooks';
 import {
   SvgGithubIcon,
   SvgGoogleIcon,
   SvgQQChatIcon,
   SvgWeChatIcon,
-} from '@vben/icons';
-import { $t } from '@vben/locales';
+} from '@edp/icons';
+import { $t } from '@edp/locales';
 
-import { VbenIconButton } from '@vben-core/shadcn-ui';
+import { VbenIconButton } from '@edp-core/shadcn-ui';
 
 import DingdingLogin from './dingding-login.vue';
 

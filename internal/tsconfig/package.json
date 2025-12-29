@@ -1,12 +1,11 @@
 {
-  "name": "@vben/tsconfig",
+  "name": "@edp/tsconfig",
   "version": "5.5.9",
   "private": true,
-  "homepage": "https://github.com/vbenjs/vue-vben-admin",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "url": "git+https://github.com/vbenjs/vue-edp-admin.git",
     "directory": "internal/tsconfig"
   },
   "license": "MIT",
@@ -19,7 +18,7 @@
     "web.json"
   ],
   "dependencies": {
-    "@vben/types": "workspace:*",
+    "@edp/types": "workspace:*",
     "vite": "catalog:"
   }
 }

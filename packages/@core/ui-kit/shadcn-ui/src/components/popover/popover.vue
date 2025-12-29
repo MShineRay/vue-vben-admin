@@ -5,7 +5,7 @@ import type {
   PopoverRootProps,
 } from 'reka-ui';
 
-import type { ClassType } from '@vben-core/typings';
+import type { ClassType } from '@edp-core/typings';
 
 import { computed } from 'vue';
 

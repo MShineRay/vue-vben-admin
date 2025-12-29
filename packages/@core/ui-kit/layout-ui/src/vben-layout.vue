@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { CSSProperties } from 'vue';
 
-import type { VbenLayoutProps } from './vben-layout';
+import type { VbenLayoutProps } from './edp-layout';
 
 import { computed, ref, watch } from 'vue';
 
@@ -9,10 +9,10 @@ import {
   SCROLL_FIXED_CLASS,
   useLayoutFooterStyle,
   useLayoutHeaderStyle,
-} from '@vben-core/composables';
-import { IconifyIcon } from '@vben-core/icons';
-import { VbenIconButton } from '@vben-core/shadcn-ui';
-import { ELEMENT_ID_MAIN_CONTENT } from '@vben-core/shared/constants';
+} from '@edp-core/composables';
+import { IconifyIcon } from '@edp-core/icons';
+import { VbenIconButton } from '@edp-core/shadcn-ui';
+import { ELEMENT_ID_MAIN_CONTENT } from '@edp-core/shared/constants';
 
 import { useMouse, useScroll, useThrottleFn } from '@vueuse/core';
 

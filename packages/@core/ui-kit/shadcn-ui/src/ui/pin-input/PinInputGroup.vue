@@ -3,7 +3,7 @@ import type { PrimitiveProps } from 'reka-ui';
 
 import { computed } from 'vue';
 
-import { cn } from '@vben-core/shared/utils';
+import { cn } from '@edp-core/shared/utils';
 
 import { Primitive, useForwardProps } from 'reka-ui';
 

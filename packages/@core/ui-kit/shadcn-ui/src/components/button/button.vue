@@ -3,8 +3,8 @@ import type { VbenButtonProps } from './button';
 
 import { computed } from 'vue';
 
-import { LoaderCircle } from '@vben-core/icons';
-import { cn } from '@vben-core/shared/utils';
+import { LoaderCircle } from '@edp-core/icons';
+import { cn } from '@edp-core/shared/utils';
 
 import { Primitive } from 'reka-ui';
 

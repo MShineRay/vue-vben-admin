@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Vben Modal 模态框
+# EDP Modal 模态框
 
 框架提供的模态框组件，支持`拖拽`、`全屏`、`自动高度`、`loading`等功能。
 
@@ -24,37 +24,37 @@ outline: deep
 
 使用 `useVbenModal` 创建最基础的模态框。
 
-<DemoPreview dir="demos/vben-modal/basic" />
+<DemoPreview dir="demos/edp-modal/basic" />
 
 ## 组件抽离
 
 Modal 内的内容一般业务中，会比较复杂，所以我们可以将 modal 内的内容抽离出来，也方便复用。通过 `connectedComponent` 参数，可以将内外组件进行连接，而不用其他任何操作。
 
-<DemoPreview dir="demos/vben-modal/extra" />
+<DemoPreview dir="demos/edp-modal/extra" />
 
 ## 开启拖拽
 
 通过 `draggable` 参数，可开启拖拽功能。
 
-<DemoPreview dir="demos/vben-modal/draggable" />
+<DemoPreview dir="demos/edp-modal/draggable" />
 
 ## 自动计算高度
 
 弹窗会自动计算内容高度，超过一定高度会出现滚动条，同时结合 `loading` 效果以及使用 `prepend-footer` 插槽。
 
-<DemoPreview dir="demos/vben-modal/auto-height" />
+<DemoPreview dir="demos/edp-modal/auto-height" />
 
 ## 使用 Api
 
 通过 `modalApi` 可以调用 modal 的方法以及使用 `setState` 更新 modal 的状态。
 
-<DemoPreview dir="demos/vben-modal/dynamic" />
+<DemoPreview dir="demos/edp-modal/dynamic" />
 
 ## 数据共享
 
 如果你使用了 `connectedComponent` 参数，那么内外组件会共享数据，比如一些表单回填等操作。可以用 `modalApi` 来获取数据和设置数据，配合 `onOpenChange`，可以满足大部分的需求。
 
-<DemoPreview dir="demos/vben-modal/shared-data" />
+<DemoPreview dir="demos/edp-modal/shared-data" />
 
 ## 动画类型
 
@@ -63,7 +63,7 @@ Modal 内的内容一般业务中，会比较复杂，所以我们可以将 moda
 - `slide`（默认）：从顶部向下滑动进入/退出
 - `scale`：缩放淡入/淡出效果
 
-<DemoPreview dir="demos/vben-modal/animation-type" />
+<DemoPreview dir="demos/edp-modal/animation-type" />
 
 ::: info 注意
 

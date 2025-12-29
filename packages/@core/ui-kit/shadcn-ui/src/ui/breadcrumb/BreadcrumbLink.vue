@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { PrimitiveProps } from 'reka-ui';
 
-import { cn } from '@vben-core/shared/utils';
+import { cn } from '@edp-core/shared/utils';
 
 import { Primitive } from 'reka-ui';
 

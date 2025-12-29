@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@vben/common-ui';
-import type { Recordable } from '@vben/types';
+import type { VbenFormSchema } from '@edp/common-ui';
+import type { Recordable } from '@edp/types';
 
 import { computed, ref, useTemplateRef } from 'vue';
 
-import { AuthenticationCodeLogin, z } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { AuthenticationCodeLogin, z } from '@edp/common-ui';
+import { $t } from '@edp/locales';
 
 import { message } from 'ant-design-vue';
 

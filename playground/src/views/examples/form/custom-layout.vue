@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { h } from 'vue';
 
-import { Page } from '@vben/common-ui';
+import { Page } from '@edp/common-ui';
 
 import { Card } from 'ant-design-vue';
 
@@ -102,7 +102,7 @@ const [CustomLayoutForm] = useVbenForm({
       </div>
     </template>
     <template #extra>
-      <DocButton class="mb-2" path="/components/common-ui/vben-form" />
+      <DocButton class="mb-2" path="/components/common-ui/edp-form" />
     </template>
     <Card title="使用tailwind自定义布局">
       <CustomLayoutForm />

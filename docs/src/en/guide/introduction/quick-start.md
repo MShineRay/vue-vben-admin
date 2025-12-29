@@ -32,13 +32,13 @@ git -v
 
 ```bash [GitHub]
 # Clone the code
-git clone https://github.com/vbenjs/vue-vben-admin.git
+git clone https://github.com/vbenjs/vue-edp-admin.git
 ```
 
 ```bash [Gitee]
 # Clone the code
 # The Gitee repository may not have the latest code
-git clone https://gitee.com/annsion/vue-vben-admin.git
+git clone https://gitee.com/annsion/vue-edp-admin.git
 ```
 
 :::
@@ -55,7 +55,7 @@ Open a terminal in your code directory and execute the following commands:
 
 ```bash
 # Enter the project directory
-cd vue-vben-admin
+cd vue-edp-admin
 
 # Enable the project-specified version of pnpm
 npm i -g corepack
@@ -84,11 +84,11 @@ You will see an output similar to the following, allowing you to select the proj
 ```bash
 │
 ◆  Select the app you need to run [dev]:
-│  ● @vben/web-antd
-│  ○ @vben/web-ele
-│  ○ @vben/web-naive
-│  ○ @vben/docs
-│  ○ @vben/playground
+│  ● @edp/web-antd
+│  ○ @edp/web-ele
+│  ○ @edp/web-naive
+│  ○ @edp/docs
+│  ○ @edp/playground
 └
 ```
 

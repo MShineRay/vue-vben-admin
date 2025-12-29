@@ -1,12 +1,12 @@
 import type {
   VbenFormSchema as FormSchema,
   VbenFormProps,
-} from '@vben/common-ui';
+} from '@edp/common-ui';
 
 import type { ComponentType } from './component';
 
-import { setupVbenForm, useVbenForm as useForm, z } from '@vben/common-ui';
-import { $t } from '@vben/locales';
+import { setupVbenForm, useVbenForm as useForm, z } from '@edp/common-ui';
+import { $t } from '@edp/locales';
 
 import { initComponentAdapter } from './component';
 
