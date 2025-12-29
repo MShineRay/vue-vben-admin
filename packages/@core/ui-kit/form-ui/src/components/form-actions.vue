@@ -2,7 +2,7 @@
 import { computed, toRaw, unref, watch } from 'vue';
 
 import { useSimpleLocale } from '@edp-core/composables';
-import { VbenExpandableArrow } from '@edp-core/shadcn-ui';
+import { EDPExpandableArrow } from '@edp-core/shadcn-ui';
 import { cn, isFunction, triggerWindowResize } from '@edp-core/shared/utils';
 
 import { COMPONENT_MAP } from '../config';
@@ -174,13 +174,13 @@ defineExpose({
     <!-- 展开按钮前 -->
     <slot name="expand-before"></slot>
 
-    <VbenExpandableArrow
+    <EDPExpandableArrow
       class="ml-[-0.3em]"
       v-if="rootProps.showCollapseButton"
       v-model:model-value="collapsed"
     >
       <span>{{ collapsed ? $t('expand') : $t('collapse') }}</span>
-    </VbenExpandableArrow>
+    </EDPExpandableArrow>
 
     <!-- 展开按钮后 -->
     <slot name="expand-after"></slot>

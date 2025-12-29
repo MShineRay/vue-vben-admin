@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/anncwb/vue-edp-admin">
-    <img alt="VbenAdmin Logo" width="215" src="https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp">
+    <img alt="EDPAdmin Logo" width="215" src="https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-v1.webp">
   </a>
   <br>
   <br>
@@ -10,7 +10,7 @@
   <h1>Vue EDP Admin</h1>
 </div>
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vbenjs_vue-edp-admin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=vbenjs_vue-edp-admin) ![codeql](https://github.com/vbenjs/vue-edp-admin/actions/workflows/codeql.yml/badge.svg) ![build](https://github.com/vbenjs/vue-edp-admin/actions/workflows/build.yml/badge.svg) ![ci](https://github.com/vbenjs/vue-edp-admin/actions/workflows/ci.yml/badge.svg) ![deploy](https://github.com/vbenjs/vue-edp-admin/actions/workflows/deploy.yml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=edpjs_vue-edp-admin&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=edpjs_vue-edp-admin) ![codeql](https://github.com/edpjs/vue-edp-admin/actions/workflows/codeql.yml/badge.svg) ![build](https://github.com/edpjs/vue-edp-admin/actions/workflows/build.yml/badge.svg) ![ci](https://github.com/edpjs/vue-edp-admin/actions/workflows/ci.yml/badge.svg) ![deploy](https://github.com/edpjs/vue-edp-admin/actions/workflows/deploy.yml/badge.svg)
 
 **中文** | [English](./README.md) | [日本語](./README.ja-JP.md)
 
@@ -20,7 +20,7 @@ Vue EDP Admin 是 Vue EDP Admin 的升级版本。作为一个免费开源的中
 
 ## 升级提示
 
-该版本为最新版本 `5.0`，与其他版本不兼容，如果你是新项目，建议使用最新版本。如果你想查看旧版本，请使用 [v2 分支](https://github.com/vbenjs/vue-edp-admin/tree/v2)
+该版本为最新版本 `5.0`，与其他版本不兼容，如果你是新项目，建议使用最新版本。如果你想查看旧版本，请使用 [v2 分支](https://github.com/edpjs/vue-edp-admin/tree/v2)
 
 ## 特性
 
@@ -37,16 +37,16 @@ Vue EDP Admin 是 Vue EDP Admin 的升级版本。作为一个免费开源的中
 测试账号：edp/123456
 
 <div align="center">
-  <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview1.png">
-  <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview2.png">
-  <img alt="VbenAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview3.png">
+  <img alt="EDPAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview1.png">
+  <img alt="EDPAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview2.png">
+  <img alt="EDPAdmin Logo" width="100%" src="https://anncwb.github.io/anncwb/images/preview3.png">
 </div>
 
 ### 使用 Gitpod
 
 在 Gitpod（适用于 GitHub 的免费在线开发环境）中打开项目，并立即开始编码。
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/vbenjs/vue-edp-admin)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/edpjs/vue-edp-admin)
 
 ## 文档
 
@@ -57,7 +57,7 @@ Vue EDP Admin 是 Vue EDP Admin 的升级版本。作为一个免费开源的中
 1. 获取项目代码
 
 ```bash
-git clone https://github.com/vbenjs/vue-edp-admin.git
+git clone https://github.com/edpjs/vue-edp-admin.git
 ```
 
 2. 安装依赖
@@ -82,7 +82,7 @@ pnpm build
 
 ## 更新日志
 
-[CHANGELOG](https://github.com/vbenjs/vue-edp-admin/releases)
+[CHANGELOG](https://github.com/edpjs/vue-edp-admin/releases)
 
 ## 如何贡献
 
@@ -128,24 +128,24 @@ pnpm build
 
 ## Star 历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=vbenjs/vue-edp-admin&type=Date)](https://star-history.com/#vbenjs/vue-edp-admin&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=edpjs/vue-edp-admin&type=Date)](https://star-history.com/#edpjs/vue-edp-admin&Date)
 
 ## 捐赠
 
 如果你觉得这个项目对你有帮助，你可以帮作者买一杯咖啡表示支持！
 
-![donate](https://unpkg.com/@vbenjs/static-source@0.1.7/source/sponsor.png)
+![donate](https://unpkg.com/@edpjs/static-source@0.1.7/source/sponsor.png)
 
-<a style="display: block;width: 100px;height: 50px;line-height: 50px; color: #fff;text-align: center; background: #408aed;border-radius: 4px;" href="https://www.paypal.com/paypalme/cvvben">Paypal Me</a>
+<a style="display: block;width: 100px;height: 50px;line-height: 50px; color: #fff;text-align: center; background: #408aed;border-radius: 4px;" href="https://www.paypal.com/paypalme/cvedp">Paypal Me</a>
 
 ## 贡献者
 
-<a href="https://openomy.app/github/vbenjs/vue-edp-admin" target="_blank" style="display: block; width: 100%;" align="center">
-  <img src="https://openomy.app/svg?repo=vbenjs/vue-edp-admin&chart=bubble&latestMonth=3" target="_blank" alt="Contribution Leaderboard" style="display: block; width: 100%;" />
+<a href="https://openomy.app/github/edpjs/vue-edp-admin" target="_blank" style="display: block; width: 100%;" align="center">
+  <img src="https://openomy.app/svg?repo=edpjs/vue-edp-admin&chart=bubble&latestMonth=3" target="_blank" alt="Contribution Leaderboard" style="display: block; width: 100%;" />
  </a>
 
-<a href="https://github.com/vbenjs/vue-edp-admin/graphs/contributors">
-  <img alt="Contributors" src="https://contrib.rocks/image?repo=vbenjs/vue-edp-admin" />
+<a href="https://github.com/edpjs/vue-edp-admin/graphs/contributors">
+  <img alt="Contributors" src="https://contrib.rocks/image?repo=edpjs/vue-edp-admin" />
 </a>
 
 ## Discord

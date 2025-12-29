@@ -92,11 +92,11 @@ When executing `pnpm build` in the root directory of the monorepo, a `dist/_app.
 `_app.config.js` is a dynamic configuration file that allows for modifications to the configuration dynamically based on different environments after the project has been built. The content is as follows:
 
 ```ts
-window._VBEN_ADMIN_PRO_APP_CONF_ = {
+window._EDP_ADMIN_PRO_APP_CONF_ = {
   VITE_GLOB_API_URL: 'https://mock-napi.edp.pro/api',
 };
-Object.freeze(window._VBEN_ADMIN_PRO_APP_CONF_);
-Object.defineProperty(window, '_VBEN_ADMIN_PRO_APP_CONF_', {
+Object.freeze(window._EDP_ADMIN_PRO_APP_CONF_);
+Object.defineProperty(window, '_EDP_ADMIN_PRO_APP_CONF_', {
   configurable: false,
   writable: false,
 });
@@ -127,7 +127,7 @@ To add a new dynamically modifiable configuration item, simply follow the steps 
 - In `packages/types/global.d.ts`, add the corresponding type definition, such as:
 
   ```ts
-  export interface VbenAdminProAppConfigRaw {
+  export interface EDPAdminProAppConfigRaw {
     VITE_GLOB_API_URL: string;
     VITE_GLOB_OTHER_API_URL: string; // [!code ++]
   }
@@ -145,10 +145,10 @@ To add a new dynamically modifiable configuration item, simply follow the steps 
     env: Record<string, any>,
     isProduction: boolean,
   ): ApplicationConfig {
-    // In production environment, directly use the window._VBEN_ADMIN_PRO_APP_CONF_ global variable
+    // In production environment, directly use the window._EDP_ADMIN_PRO_APP_CONF_ global variable
     const config = isProduction
-      ? window._VBEN_ADMIN_PRO_APP_CONF_
-      : (env as VbenAdminProAppConfigRaw);
+      ? window._EDP_ADMIN_PRO_APP_CONF_
+      : (env as EDPAdminProAppConfigRaw);
 
     const { VITE_GLOB_API_URL, VITE_GLOB_OTHER_API_URL } = config; // [!code ++]
 
@@ -214,7 +214,7 @@ const defaultPreferences: Preferences = {
     contentPaddingRight: 0,
     contentPaddingTop: 0,
     defaultAvatar:
-      'https://unpkg.com/@vbenjs/static-source@0.1.7/source/avatar-v1.webp',
+      'https://unpkg.com/@edpjs/static-source@0.1.7/source/avatar-v1.webp',
     defaultHomePath: '/analytics',
     dynamicTitle: true,
     enableCheckUpdates: true,
@@ -260,8 +260,8 @@ const defaultPreferences: Preferences = {
   logo: {
     enable: true,
     fit: 'contain',
-    source: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp',
-    // sourceDark: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-dark.webp', // Optional: Dark theme logo
+    source: 'https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-v1.webp',
+    // sourceDark: 'https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-dark.webp', // Optional: Dark theme logo
   },
   navigation: {
     accordion: true,

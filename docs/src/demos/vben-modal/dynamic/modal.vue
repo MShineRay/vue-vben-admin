@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { useVbenModal, VbenButton } from '@edp/common-ui';
+import { useEDPModal, EDPButton } from '@edp/common-ui';
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useEDPModal({
   draggable: true,
   onCancel() {
     modalApi.close();
@@ -27,12 +27,12 @@ function handleToggleFullscreen() {
 <template>
   <Modal>
     <div class="flex-col-center">
-      <VbenButton class="mb-3" type="primary" @click="handleUpdateTitle()">
+      <EDPButton class="mb-3" type="primary" @click="handleUpdateTitle()">
         内部动态修改标题
-      </VbenButton>
-      <VbenButton class="mb-3" @click="handleToggleFullscreen()">
+      </EDPButton>
+      <EDPButton class="mb-3" @click="handleToggleFullscreen()">
         {{ state.fullscreen ? '退出全屏' : '打开全屏' }}
-      </VbenButton>
+      </EDPButton>
     </div>
   </Modal>
 </template>

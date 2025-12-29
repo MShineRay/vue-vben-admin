@@ -1,10 +1,10 @@
 {
   "name": "@edp-core/popup-ui",
   "version": "5.2.1",
-  
+
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-edp-admin.git",
+    "url": "git+https://github.com/edpjs/vue-edp-admin.git",
     "directory": "packages/@edp-core/uikit/popup-ui"
   },
   "license": "MIT",

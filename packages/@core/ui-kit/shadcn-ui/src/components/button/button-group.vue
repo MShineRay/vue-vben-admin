@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { cn } from '@edp-core/shared/utils';
 
-defineOptions({ name: 'VbenButtonGroup' });
+defineOptions({ name: 'EDPButtonGroup' });
 
 withDefaults(
   defineProps<{

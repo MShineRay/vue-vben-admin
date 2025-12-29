@@ -1,4 +1,4 @@
-export const useVbenForm = () => {};
+export const useEDPForm = () => {};
 export const z = {};
-export type VbenFormSchema = any;
-export type VbenFormProps = any;
+export type EDPFormSchema = any;
+export type EDPFormProps = any;

@@ -8,7 +8,7 @@ import {
   updatePreferences,
 } from '@edp/preferences';
 
-import { VbenIconButton } from '@edp-core/shadcn-ui';
+import { EDPIconButton } from '@edp-core/shadcn-ui';
 
 defineOptions({
   name: 'AuthenticationColorToggle',
@@ -30,7 +30,7 @@ function handleUpdate(colorPrimary: string, type: BuiltinThemeType) {
       class="flex w-0 overflow-hidden transition-all duration-500 ease-out group-hover:w-60"
     >
       <template v-for="preset in COLOR_PRESETS" :key="preset.color">
-        <VbenIconButton
+        <EDPIconButton
           class="flex-center flex-shrink-0"
           @click="handleUpdate(preset.color, preset.type)"
         >
@@ -53,12 +53,12 @@ function handleUpdate(colorPrimary: string, type: BuiltinThemeType) {
               />
             </svg>
           </div>
-        </VbenIconButton>
+        </EDPIconButton>
       </template>
     </div>
 
-    <VbenIconButton>
+    <EDPIconButton>
       <Palette class="text-primary size-4" />
-    </VbenIconButton>
+    </EDPIconButton>
   </div>
 </template>

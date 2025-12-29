@@ -4,17 +4,17 @@ import type { TreeProps } from '@edp-core/shadcn-ui';
 import { Inbox } from '@edp/icons';
 import { $t } from '@edp/locales';
 
-import { treePropsDefaults, VbenTree } from '@edp-core/shadcn-ui';
+import { treePropsDefaults, EDPTree } from '@edp-core/shadcn-ui';
 
 const props = withDefaults(defineProps<TreeProps>(), treePropsDefaults());
 </script>
 
 <template>
-  <VbenTree v-if="props.treeData?.length > 0" v-bind="props">
+  <EDPTree v-if="props.treeData?.length > 0" v-bind="props">
     <template v-for="(_, key) in $slots" :key="key" #[key]="slotProps">
       <slot :name="key" v-bind="slotProps"> </slot>
     </template>
-  </VbenTree>
+  </EDPTree>
   <div
     v-else
     class="flex-col-center text-muted-foreground cursor-pointer rounded-lg border p-10 text-sm font-medium"

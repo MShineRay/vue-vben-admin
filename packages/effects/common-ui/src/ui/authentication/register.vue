@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import type { Recordable } from '@edp/types';
 
-import type { VbenFormSchema } from '@edp-core/form-ui';
+import type { EDPFormSchema } from '@edp-core/form-ui';
 
 import { computed, reactive } from 'vue';
 import { useRouter } from 'vue-router';
 
 import { $t } from '@edp/locales';
 
-import { useVbenForm } from '@edp-core/form-ui';
-import { VbenButton } from '@edp-core/shadcn-ui';
+import { useEDPForm } from '@edp-core/form-ui';
+import { EDPButton } from '@edp-core/shadcn-ui';
 
 import Title from './auth-title.vue';
 
 interface Props {
-  formSchema?: VbenFormSchema[];
+  formSchema?: EDPFormSchema[];
   /**
    * @zh_CN 是否处于加载处理状态
    */
@@ -54,7 +54,7 @@ const emit = defineEmits<{
   submit: [Recordable<any>];
 }>();
 
-const [Form, formApi] = useVbenForm(
+const [Form, formApi] = useEDPForm(
   reactive({
     commonConfig: {
       hideLabel: true,
@@ -98,7 +98,7 @@ defineExpose({
     </Title>
     <Form />
 
-    <VbenButton
+    <EDPButton
       :class="{
         'cursor-wait': loading,
       }"
@@ -110,7 +110,7 @@ defineExpose({
       <slot name="submitButtonText">
         {{ submitButtonText || $t('authentication.signUp') }}
       </slot>
-    </VbenButton>
+    </EDPButton>
     <div class="mt-4 text-center text-sm">
       {{ $t('authentication.alreadyHaveAccount') }}
       <span class="edp-link text-sm font-normal" @click="goToLogin()">

@@ -9,11 +9,11 @@ import type { Ref } from 'vue';
 
 import type { ClassType, DeepPartial } from '@edp/types';
 
-import type { BaseFormComponentType, VbenFormProps } from '@edp-core/form-ui';
+import type { BaseFormComponentType, EDPFormProps } from '@edp-core/form-ui';
 
 import type { VxeGridApi } from './api';
 
-import { useVbenForm } from '@edp-core/form-ui';
+import { useEDPForm } from '@edp-core/form-ui';
 
 export interface VxePaginationInfo {
   currentPage: number;
@@ -67,7 +67,7 @@ export interface VxeGridProps<
   /**
    * 表单配置
    */
-  formOptions?: VbenFormProps<D>;
+  formOptions?: EDPFormProps<D>;
   /**
    * 显示搜索表单
    */
@@ -89,5 +89,5 @@ export type ExtendedVxeGridApi<
 
 export interface SetupVxeTable {
   configVxeTable: (ui: VxeUIExport) => void;
-  useVbenForm: typeof useVbenForm;
+  useEDPForm: typeof useEDPForm;
 }

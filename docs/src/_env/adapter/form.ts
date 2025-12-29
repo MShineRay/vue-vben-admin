@@ -1,17 +1,17 @@
 import type {
-  VbenFormSchema as FormSchema,
-  VbenFormProps,
+  EDPFormSchema as FormSchema,
+  EDPFormProps,
 } from '@edp/common-ui';
 
 import type { ComponentType } from './component';
 
-import { setupVbenForm, useVbenForm as useForm, z } from '@edp/common-ui';
+import { setupEDPForm, useEDPForm as useForm, z } from '@edp/common-ui';
 import { $t } from '@edp/locales';
 
 import { initComponentAdapter } from './component';
 
 initComponentAdapter();
-setupVbenForm<ComponentType>({
+setupEDPForm<ComponentType>({
   config: {
     baseModelPropName: 'value',
     // naive-ui组件的空值为null,不能是undefined，否则重置表单时不生效
@@ -39,9 +39,9 @@ setupVbenForm<ComponentType>({
   },
 });
 
-const useVbenForm = useForm<ComponentType>;
+const useEDPForm = useForm<ComponentType>;
 
-export { useVbenForm, z };
+export { useEDPForm, z };
 
-export type VbenFormSchema = FormSchema<ComponentType>;
-export type { VbenFormProps };
+export type EDPFormSchema = FormSchema<ComponentType>;
+export type { EDPFormProps };

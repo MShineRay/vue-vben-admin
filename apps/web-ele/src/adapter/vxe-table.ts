@@ -2,13 +2,13 @@ import type { VxeTableGridOptions } from '@edp/plugins/vxe-table';
 
 import { h } from 'vue';
 
-import { setupVbenVxeTable, useVbenVxeGrid } from '@edp/plugins/vxe-table';
+import { setupEDPVxeTable, useEDPVxeGrid } from '@edp/plugins/vxe-table';
 
 import { ElButton, ElImage } from 'element-plus';
 
-import { useVbenForm } from './form';
+import { useEDPForm } from './form';
 
-setupVbenVxeTable({
+setupEDPVxeTable({
   configVxeTable: (vxeUI) => {
     vxeUI.setConfig({
       grid: {
@@ -63,9 +63,9 @@ setupVbenVxeTable({
     // 这里可以自行扩展 vxe-table 的全局配置，比如自定义格式化
     // vxeUI.formats.add
   },
-  useVbenForm,
+  useEDPForm,
 });
 
-export { useVbenVxeGrid };
+export { useEDPVxeGrid };
 
 export type * from '@edp/plugins/vxe-table';

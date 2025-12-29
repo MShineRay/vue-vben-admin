@@ -13,7 +13,7 @@ import {
 import { $t } from '@edp/locales';
 import { isWindowsOs } from '@edp/utils';
 
-import { useVbenModal } from '@edp-core/popup-ui';
+import { useEDPModal } from '@edp-core/popup-ui';
 
 import { useMagicKeys, whenever } from '@vueuse/core';
 
@@ -34,7 +34,7 @@ const props = withDefaults(
 const keyword = ref('');
 const searchInputRef = ref<HTMLInputElement>();
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useEDPModal({
   onCancel() {
     modalApi.close();
   },

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { h } from 'vue';
 
-import { alert, VbenButton } from '@edp/common-ui';
+import { alert, EDPButton } from '@edp/common-ui';
 
 import { Result } from 'ant-design-vue';
 
@@ -29,8 +29,8 @@ function showCustomAlert() {
 </script>
 <template>
   <div class="flex gap-4">
-    <VbenButton @click="showAlert">Alert</VbenButton>
-    <VbenButton @click="showIconAlert">Alert With Icon</VbenButton>
-    <VbenButton @click="showCustomAlert">Alert With Custom Content</VbenButton>
+    <EDPButton @click="showAlert">Alert</EDPButton>
+    <EDPButton @click="showIconAlert">Alert With Icon</EDPButton>
+    <EDPButton @click="showCustomAlert">Alert With Custom Content</EDPButton>
   </div>
 </template>

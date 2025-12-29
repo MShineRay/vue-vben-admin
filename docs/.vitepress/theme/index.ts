@@ -6,7 +6,7 @@ import DefaultTheme from 'vitepress/theme';
 
 import { DemoPreview } from '../components';
 import SiteLayout from './components/site-layout.vue';
-import VbenContributors from './components/edp-contributors.vue';
+import EDPContributors from './components/edp-contributors.vue';
 import { initHmPlugin } from './plugins/hm';
 
 import './styles';
@@ -17,7 +17,7 @@ import '@nolebase/vitepress-plugin-git-changelog/client/style.css';
 export default {
   async enhanceApp(ctx: EnhanceAppContext) {
     const { app } = ctx;
-    app.component('VbenContributors', VbenContributors);
+    app.component('EDPContributors', EDPContributors);
     app.component('DemoPreview', DemoPreview);
     app.use(NolebaseGitChangelogPlugin);
 

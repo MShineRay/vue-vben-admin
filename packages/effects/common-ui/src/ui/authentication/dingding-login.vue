@@ -4,8 +4,8 @@ import { useRoute } from 'vue-router';
 import { SvgDingDingIcon } from '@edp/icons';
 import { $t } from '@edp/locales';
 
-import { alert, useVbenModal } from '@edp-core/popup-ui';
-import { VbenIconButton } from '@edp-core/shadcn-ui';
+import { alert, useEDPModal } from '@edp-core/popup-ui';
+import { EDPIconButton } from '@edp-core/shadcn-ui';
 import { loadScript } from '@edp-core/shared/utils';
 
 interface Props {
@@ -21,7 +21,7 @@ const props = defineProps<Props>();
 
 const route = useRoute();
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useEDPModal({
   header: false,
   footer: false,
   fullscreenButton: false,
@@ -91,13 +91,13 @@ const handleLogin = () => {
 
 <template>
   <div>
-    <VbenIconButton
+    <EDPIconButton
       @click="handleLogin"
       :tooltip="$t('authentication.dingdingLogin')"
       tooltip-side="top"
     >
       <SvgDingDingIcon />
-    </VbenIconButton>
+    </EDPIconButton>
     <Modal>
       <div id="dingding_qrcode_login_element"></div>
     </Modal>

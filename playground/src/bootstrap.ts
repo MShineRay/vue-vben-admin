@@ -13,7 +13,7 @@ import { $t, setupI18n } from '#/locales';
 import { router } from '#/router';
 
 import { initComponentAdapter } from './adapter/component';
-import { initSetupVbenForm } from './adapter/form';
+import { initSetupEDPForm } from './adapter/form';
 import App from './app.vue';
 import { initTimezone } from './timezone-init';
 
@@ -22,7 +22,7 @@ async function bootstrap(namespace: string) {
   await initComponentAdapter();
 
   // 初始化表单组件
-  await initSetupVbenForm();
+  await initSetupEDPForm();
 
   // 设置弹窗的默认配置
   // setDefaultModalProps({

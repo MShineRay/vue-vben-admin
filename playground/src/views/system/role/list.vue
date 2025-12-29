@@ -7,24 +7,24 @@ import type {
 } from '#/adapter/vxe-table';
 import type { SystemRoleApi } from '#/api';
 
-import { Page, useVbenDrawer } from '@edp/common-ui';
+import { Page, useEDPDrawer } from '@edp/common-ui';
 import { Plus } from '@edp/icons';
 
 import { Button, message, Modal } from 'ant-design-vue';
 
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useEDPVxeGrid } from '#/adapter/vxe-table';
 import { deleteRole, getRoleList, updateRole } from '#/api';
 import { $t } from '#/locales';
 
 import { useColumns, useGridFormSchema } from './data';
 import Form from './modules/form.vue';
 
-const [FormDrawer, formDrawerApi] = useVbenDrawer({
+const [FormDrawer, formDrawerApi] = useEDPDrawer({
   connectedComponent: Form,
   destroyOnClose: true,
 });
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useEDPVxeGrid({
   formOptions: {
     fieldMappingTime: [['createTime', ['startTime', 'endTime']]],
     schema: useGridFormSchema(),

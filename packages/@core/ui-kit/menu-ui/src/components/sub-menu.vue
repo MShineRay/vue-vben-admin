@@ -6,7 +6,7 @@ import type { MenuItemRegistered, MenuProvider, SubMenuProps } from '../types';
 import { computed, onBeforeUnmount, onMounted, reactive, ref } from 'vue';
 
 import { useNamespace } from '@edp-core/composables';
-import { VbenHoverCard } from '@edp-core/shadcn-ui';
+import { EDPHoverCard } from '@edp-core/shadcn-ui';
 
 import {
   createSubMenuContext,
@@ -202,7 +202,7 @@ onBeforeUnmount(() => {
     @mouseleave="() => handleMouseleave()"
   >
     <template v-if="rootMenu.isMenuPopup">
-      <VbenHoverCard
+      <EDPHoverCard
         :content-class="[
           rootMenu.theme,
           nsMenu.e('popup-container'),
@@ -243,7 +243,7 @@ onBeforeUnmount(() => {
             <slot></slot>
           </ul>
         </div>
-      </VbenHoverCard>
+      </EDPHoverCard>
     </template>
 
     <template v-else>

@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { useVbenModal } from '@edp/common-ui';
+import { useEDPModal } from '@edp/common-ui';
 
 import { Button, message } from 'ant-design-vue';
 
 const list = ref<number[]>([]);
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useEDPModal({
   onCancel() {
     modalApi.close();
   },

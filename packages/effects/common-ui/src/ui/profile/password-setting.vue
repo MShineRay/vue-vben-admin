@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import type { Recordable } from '@edp/types';
 
-import type { VbenFormSchema } from '@edp-core/form-ui';
+import type { EDPFormSchema } from '@edp-core/form-ui';
 
 import { computed, reactive } from 'vue';
 
-import { useVbenForm } from '@edp-core/form-ui';
-import { VbenButton } from '@edp-core/shadcn-ui';
+import { useEDPForm } from '@edp-core/form-ui';
+import { EDPButton } from '@edp-core/shadcn-ui';
 
 interface Props {
-  formSchema?: VbenFormSchema[];
+  formSchema?: EDPFormSchema[];
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -20,7 +20,7 @@ const emit = defineEmits<{
   submit: [Recordable<any>];
 }>();
 
-const [Form, formApi] = useVbenForm(
+const [Form, formApi] = useEDPForm(
   reactive({
     commonConfig: {
       // 所有表单项
@@ -49,8 +49,8 @@ defineExpose({
 <template>
   <div>
     <Form />
-    <VbenButton type="submit" class="mt-4" @click="handleSubmit">
+    <EDPButton type="submit" class="mt-4" @click="handleSubmit">
       更新密码
-    </VbenButton>
+    </EDPButton>
   </div>
 </template>

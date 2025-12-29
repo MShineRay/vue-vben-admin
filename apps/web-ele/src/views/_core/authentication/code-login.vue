@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@edp/common-ui';
+import type { EDPFormSchema } from '@edp/common-ui';
 import type { Recordable } from '@edp/types';
 
 import { computed, ref } from 'vue';
@@ -12,10 +12,10 @@ defineOptions({ name: 'CodeLogin' });
 const loading = ref(false);
 const CODE_LENGTH = 6;
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): EDPFormSchema[] => {
   return [
     {
-      component: 'VbenInput',
+      component: 'EDPInput',
       componentProps: {
         placeholder: $t('authentication.mobile'),
       },
@@ -29,7 +29,7 @@ const formSchema = computed((): VbenFormSchema[] => {
         }),
     },
     {
-      component: 'VbenPinInput',
+      component: 'EDPPinInput',
       componentProps: {
         codeLength: CODE_LENGTH,
         createText: (countdown: number) => {

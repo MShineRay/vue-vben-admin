@@ -326,7 +326,7 @@ export const MOCK_MENU_LIST = [
       {
         id: 901,
         pid: 9,
-        name: 'VbenDocument',
+        name: 'EDPDocument',
         path: '/edp-admin/document',
         component: 'IFrameView',
         type: 'embedded',
@@ -340,21 +340,21 @@ export const MOCK_MENU_LIST = [
       {
         id: 902,
         pid: 9,
-        name: 'VbenGithub',
+        name: 'EDPGithub',
         path: '/edp-admin/github',
         component: 'IFrameView',
         type: 'link',
         status: 1,
         meta: {
           icon: 'carbon:logo-github',
-          link: 'https://github.com/vbenjs/vue-edp-admin',
+          link: 'https://github.com/edpjs/vue-edp-admin',
           title: 'Github',
         },
       },
       {
         id: 903,
         pid: 9,
-        name: 'VbenAntdv',
+        name: 'EDPAntdv',
         path: '/edp-admin/antdv',
         component: 'IFrameView',
         type: 'link',

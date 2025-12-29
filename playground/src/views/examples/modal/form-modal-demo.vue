@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-import { useVbenModal } from '@edp/common-ui';
+import { useEDPModal } from '@edp/common-ui';
 
 import { message } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useEDPForm } from '#/adapter/form';
 
 defineOptions({
   name: 'FormModelDemo',
 });
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useEDPForm({
   handleSubmit: onSubmit,
   schema: [
     {
@@ -47,7 +47,7 @@ const [Form, formApi] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useEDPModal({
   fullscreenButton: false,
   onCancel() {
     modalApi.close();

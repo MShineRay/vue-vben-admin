@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { useVbenModal } from '@edp/common-ui';
+import { useEDPModal } from '@edp/common-ui';
 
 import { message } from 'ant-design-vue';
 
-const [Modal, modalApi] = useVbenModal({
+const [Modal, modalApi] = useEDPModal({
   draggable: true,
   onCancel() {
     modalApi.close();

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@edp/common-ui';
+import type { EDPFormSchema } from '@edp/common-ui';
 import type { Recordable } from '@edp/types';
 
 import { computed, ref } from 'vue';
@@ -11,10 +11,10 @@ defineOptions({ name: 'ForgetPassword' });
 
 const loading = ref(false);
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): EDPFormSchema[] => {
   return [
     {
-      component: 'VbenInput',
+      component: 'EDPInput',
       componentProps: {
         placeholder: 'example@example.com',
       },

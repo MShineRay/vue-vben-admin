@@ -4,7 +4,7 @@ import type { MenuRecordRaw } from '@edp-core/typings';
 import type { NormalMenuProps } from './normal-menu';
 
 import { useNamespace } from '@edp-core/composables';
-import { VbenIcon } from '@edp-core/shadcn-ui';
+import { EDPIcon } from '@edp-core/shadcn-ui';
 
 interface Props extends NormalMenuProps {}
 
@@ -50,7 +50,7 @@ function menuIcon(menu: MenuRecordRaw) {
         @click="() => emit('select', menu)"
         @mouseenter="() => emit('enter', menu)"
       >
-        <VbenIcon :class="e('icon')" :icon="menuIcon(menu)" fallback />
+        <EDPIcon :class="e('icon')" :icon="menuIcon(menu)" fallback />
 
         <span :class="e('name')" class="truncate"> {{ menu.name }}</span>
       </li>

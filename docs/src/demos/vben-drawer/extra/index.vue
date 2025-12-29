@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { useVbenDrawer, VbenButton } from '@edp/common-ui';
+import { useEDPDrawer, EDPButton } from '@edp/common-ui';
 
 import ExtraDrawer from './drawer.vue';
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useEDPDrawer({
   // 连接抽离的组件
   connectedComponent: ExtraDrawer,
 });
@@ -16,6 +16,6 @@ function open() {
 <template>
   <div>
     <Drawer />
-    <VbenButton @click="open">Open</VbenButton>
+    <EDPButton @click="open">Open</EDPButton>
   </div>
 </template>

@@ -1,15 +1,15 @@
 import type {
-  VbenFormSchema as FormSchema,
-  VbenFormProps,
+  EDPFormSchema as FormSchema,
+  EDPFormProps,
 } from '@edp/common-ui';
 
 import type { ComponentType } from './component';
 
-import { setupVbenForm, useVbenForm as useForm, z } from '@edp/common-ui';
+import { setupEDPForm, useEDPForm as useForm, z } from '@edp/common-ui';
 import { $t } from '@edp/locales';
 
-async function initSetupVbenForm() {
-  setupVbenForm<ComponentType>({
+async function initSetupEDPForm() {
+  setupEDPForm<ComponentType>({
     config: {
       modelPropNameMap: {
         Upload: 'fileList',
@@ -33,9 +33,9 @@ async function initSetupVbenForm() {
   });
 }
 
-const useVbenForm = useForm<ComponentType>;
+const useEDPForm = useForm<ComponentType>;
 
-export { initSetupVbenForm, useVbenForm, z };
+export { initSetupEDPForm, useEDPForm, z };
 
-export type VbenFormSchema = FormSchema<ComponentType>;
-export type { VbenFormProps };
+export type EDPFormSchema = FormSchema<ComponentType>;
+export type { EDPFormProps };

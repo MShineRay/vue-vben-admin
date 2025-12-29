@@ -9,7 +9,7 @@ import { useDebounceFn } from '@vueuse/core';
 import { Button, Card, message, Spin, Tag } from 'ant-design-vue';
 import dayjs from 'dayjs';
 
-import { useVbenForm, z } from '#/adapter/form';
+import { useEDPForm, z } from '#/adapter/form';
 import { getAllMenusApi } from '#/api';
 import { upload_file } from '#/api/examples/upload';
 import { $t } from '#/locales';
@@ -33,7 +33,7 @@ function fetchRemoteOptions({ keyword = '选项' }: Record<string, any>) {
   });
 }
 
-const [BaseForm, baseFormApi] = useVbenForm({
+const [BaseForm, baseFormApi] = useEDPForm({
   // 所有表单项共用，可单独在表单内覆盖
   commonConfig: {
     // 在label后显示一个冒号
@@ -400,7 +400,7 @@ function handleSetFormValue() {
         name: 'example.png',
         status: 'done',
         uid: '-1',
-        url: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp',
+        url: 'https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-v1.webp',
       },
     ],
     mentions: '@afc163',

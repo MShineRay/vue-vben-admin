@@ -3,10 +3,10 @@
 <template>
   <div class="vp-doc edp-contributors">
     <p>Contributors</p>
-    <a href="https://github.com/vbenjs/vue-edp-admin/graphs/contributors">
+    <a href="https://github.com/edpjs/vue-edp-admin/graphs/contributors">
       <img
         alt="Contributors"
-        src="https://opencollective.com/vbenjs/contributors.svg?button=false"
+        src="https://opencollective.com/edpjs/contributors.svg?button=false"
       />
     </a>
   </div>

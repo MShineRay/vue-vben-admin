@@ -15,19 +15,19 @@ export * from '@edp-core/popup-ui';
 
 // 给文档用
 export {
-  VbenAvatar,
-  VbenButton,
-  VbenButtonGroup,
-  VbenCheckbox,
-  VbenCheckButtonGroup,
-  VbenCountToAnimator,
-  VbenFullScreen,
-  VbenInputPassword,
-  VbenLoading,
-  VbenLogo,
-  VbenPinInput,
-  VbenSelect,
-  VbenSpinner,
+  EDPAvatar,
+  EDPButton,
+  EDPButtonGroup,
+  EDPCheckbox,
+  EDPCheckButtonGroup,
+  EDPCountToAnimator,
+  EDPFullScreen,
+  EDPInputPassword,
+  EDPLoading,
+  EDPLogo,
+  EDPPinInput,
+  EDPSelect,
+  EDPSpinner,
 } from '@edp-core/shadcn-ui';
 
 export type { FlattenedItem } from '@edp-core/shadcn-ui';

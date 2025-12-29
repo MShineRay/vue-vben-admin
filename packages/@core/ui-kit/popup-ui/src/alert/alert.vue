@@ -21,9 +21,9 @@ import {
   AlertDialogContent,
   AlertDialogDescription,
   AlertDialogTitle,
-  VbenButton,
-  VbenLoading,
-  VbenRenderContent,
+  EDPButton,
+  EDPLoading,
+  EDPRenderContent,
 } from '@edp-core/shadcn-ui';
 import { globalShareState } from '@edp-core/shared/global-state';
 import { cn } from '@edp-core/shared/utils';
@@ -161,7 +161,7 @@ async function handleOpenChange(val: boolean) {
             <component :is="getIconRender" class="mr-2" />
             <span class="flex-auto">{{ $t(title) }}</span>
             <AlertDialogCancel v-if="showCancel" as-child>
-              <VbenButton
+              <EDPButton
                 variant="ghost"
                 size="icon"
                 class="rounded-full"
@@ -169,24 +169,24 @@ async function handleOpenChange(val: boolean) {
                 @click="handleCancel"
               >
                 <X class="size-4 text-muted-foreground" />
-              </VbenButton>
+              </EDPButton>
             </AlertDialogCancel>
           </div>
         </AlertDialogTitle>
         <AlertDialogDescription>
           <div class="m-4 min-h-[30px]">
-            <VbenRenderContent :content="content" render-br />
+            <EDPRenderContent :content="content" render-br />
           </div>
-          <VbenLoading v-if="loading && contentMasking" :spinning="loading" />
+          <EDPLoading v-if="loading && contentMasking" :spinning="loading" />
         </AlertDialogDescription>
         <div
           class="flex items-center justify-end gap-x-2"
           :class="`justify-${buttonAlign}`"
         >
-          <VbenRenderContent :content="footer" />
+          <EDPRenderContent :content="footer" />
           <AlertDialogCancel v-if="showCancel" as-child>
             <component
-              :is="components.DefaultButton || VbenButton"
+              :is="components.DefaultButton || EDPButton"
               :disabled="loading"
               variant="ghost"
               @click="handleCancel"
@@ -196,7 +196,7 @@ async function handleOpenChange(val: boolean) {
           </AlertDialogCancel>
           <AlertDialogAction as-child>
             <component
-              :is="components.PrimaryButton || VbenButton"
+              :is="components.PrimaryButton || EDPButton"
               :loading="loading"
               @click="handleConfirm"
             >

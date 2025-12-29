@@ -4,7 +4,7 @@ import type { CaptchaPoint, PointSelectionCaptchaProps } from '../types';
 import { RotateCw } from '@edp/icons';
 import { $t } from '@edp/locales';
 
-import { VbenButton, VbenIconButton } from '@edp-core/shadcn-ui';
+import { EDPButton, EDPIconButton } from '@edp-core/shadcn-ui';
 
 import { useCaptchaPoints } from '../hooks/useCaptchaPoints';
 import CaptchaCard from './point-selection-captcha-card.vue';
@@ -126,14 +126,14 @@ function handleConfirm() {
     </template>
 
     <template #extra>
-      <VbenIconButton
+      <EDPIconButton
         :aria-label="$t('ui.captcha.refreshAriaLabel')"
         class="ml-1"
         @click="handleRefresh"
       >
         <RotateCw class="size-5" />
-      </VbenIconButton>
-      <VbenButton
+      </EDPIconButton>
+      <EDPButton
         v-if="showConfirm"
         :aria-label="$t('ui.captcha.confirmAriaLabel')"
         class="ml-2"
@@ -141,7 +141,7 @@ function handleConfirm() {
         @click="handleConfirm"
       >
         {{ $t('ui.captcha.confirm') }}
-      </VbenButton>
+      </EDPButton>
     </template>
 
     <div

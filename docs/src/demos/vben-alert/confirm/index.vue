@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { h, ref } from 'vue';
 
-import { alert, confirm, VbenButton } from '@edp/common-ui';
+import { alert, confirm, EDPButton } from '@edp/common-ui';
 
 import { Checkbox, message } from 'ant-design-vue';
 
@@ -67,9 +67,9 @@ function showAsyncConfirm() {
 </script>
 <template>
   <div class="flex gap-4">
-    <VbenButton @click="showConfirm">Confirm</VbenButton>
-    <VbenButton @click="showIconConfirm">Confirm With Icon</VbenButton>
-    <VbenButton @click="showfooterConfirm">Confirm With Footer</VbenButton>
-    <VbenButton @click="showAsyncConfirm">Async Confirm</VbenButton>
+    <EDPButton @click="showConfirm">Confirm</EDPButton>
+    <EDPButton @click="showIconConfirm">Confirm With Icon</EDPButton>
+    <EDPButton @click="showfooterConfirm">Confirm With Footer</EDPButton>
+    <EDPButton @click="showAsyncConfirm">Async Confirm</EDPButton>
   </div>
 </template>

@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-import { useVbenDrawer } from '@edp/common-ui';
+import { useEDPDrawer } from '@edp/common-ui';
 
-import { useVbenForm } from '#/adapter/form';
+import { useEDPForm } from '#/adapter/form';
 
 defineOptions({
   name: 'FormDrawerDemo',
 });
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useEDPForm({
   schema: [
     {
       component: 'Input',
@@ -30,7 +30,7 @@ const [Form, formApi] = useVbenForm({
   ],
   showDefaultActions: false,
 });
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useEDPDrawer({
   onCancel() {
     drawerApi.close();
   },

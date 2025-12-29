@@ -4,7 +4,7 @@ import { useRouter } from 'vue-router';
 
 import { $t } from '@edp/locales';
 
-import { VbenButton } from '@edp-core/shadcn-ui';
+import { EDPButton } from '@edp-core/shadcn-ui';
 
 import { useQRCode } from '@vueuse/integrations/useQRCode';
 
@@ -93,13 +93,13 @@ function goToLogin() {
       </p>
     </div>
 
-    <VbenButton
+    <EDPButton
       v-if="showBack"
       class="mt-4 w-full"
       variant="outline"
       @click="goToLogin()"
     >
       {{ $t('common.back') }}
-    </VbenButton>
+    </EDPButton>
   </div>
 </template>

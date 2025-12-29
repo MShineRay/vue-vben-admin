@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { useVbenModal } from '@edp/common-ui';
+import { useEDPModal } from '@edp/common-ui';
 
-const [Modal] = useVbenModal({
+const [Modal] = useEDPModal({
   draggable: true,
 });
 </script>

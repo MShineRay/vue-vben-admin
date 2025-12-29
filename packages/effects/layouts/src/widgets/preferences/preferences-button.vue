@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { Settings } from '@edp/icons';
 
-import { VbenIconButton } from '@edp-core/shadcn-ui';
+import { EDPIconButton } from '@edp-core/shadcn-ui';
 
 import Preferences from './preferences.vue';
 
@@ -13,8 +13,8 @@ function clearPreferencesAndLogout() {
 </script>
 <template>
   <Preferences @clear-preferences-and-logout="clearPreferencesAndLogout">
-    <VbenIconButton class="hover:animate-[shrink_0.3s_ease-in-out]">
+    <EDPIconButton class="hover:animate-[shrink_0.3s_ease-in-out]">
       <Settings class="text-foreground size-4" />
-    </VbenIconButton>
+    </EDPIconButton>
   </Preferences>
 </template>

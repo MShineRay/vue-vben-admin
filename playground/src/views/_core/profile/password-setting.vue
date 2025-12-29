@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { VbenFormSchema } from '#/adapter/form';
+import type { EDPFormSchema } from '#/adapter/form';
 
 import { computed, ref } from 'vue';
 
@@ -9,12 +9,12 @@ import { message } from 'ant-design-vue';
 
 const profilePasswordSettingRef = ref();
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): EDPFormSchema[] => {
   return [
     {
       fieldName: 'oldPassword',
       label: '旧密码',
-      component: 'VbenInputPassword',
+      component: 'EDPInputPassword',
       componentProps: {
         placeholder: '请输入旧密码',
       },
@@ -22,7 +22,7 @@ const formSchema = computed((): VbenFormSchema[] => {
     {
       fieldName: 'newPassword',
       label: '新密码',
-      component: 'VbenInputPassword',
+      component: 'EDPInputPassword',
       componentProps: {
         passwordStrength: true,
         placeholder: '请输入新密码',
@@ -31,7 +31,7 @@ const formSchema = computed((): VbenFormSchema[] => {
     {
       fieldName: 'confirmPassword',
       label: '确认密码',
-      component: 'VbenInputPassword',
+      component: 'EDPInputPassword',
       componentProps: {
         passwordStrength: true,
         placeholder: '请再次输入新密码',

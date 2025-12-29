@@ -7,7 +7,7 @@ import { useRoute } from 'vue-router';
 import { preferences } from '@edp/preferences';
 import { useTabbarStore } from '@edp/stores';
 
-import { VbenSpinner } from '@edp-core/shadcn-ui';
+import { EDPSpinner } from '@edp-core/shadcn-ui';
 
 defineOptions({ name: 'IFrameRouterView' });
 
@@ -74,7 +74,7 @@ function showSpinning(index: number) {
         v-show="routeShow(item)"
         class="relative size-full"
       >
-        <VbenSpinner :spinning="showSpinning(index)" />
+        <EDPSpinner :spinning="showSpinning(index)" />
         <iframe
           :src="item.meta.iframeSrc as string"
           class="size-full"

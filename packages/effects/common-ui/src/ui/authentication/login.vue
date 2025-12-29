@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Recordable } from '@edp/types';
 
-import type { VbenFormSchema } from '@edp-core/form-ui';
+import type { EDPFormSchema } from '@edp-core/form-ui';
 
 import type { AuthenticationProps } from './types';
 
@@ -10,14 +10,14 @@ import { useRouter } from 'vue-router';
 
 import { $t } from '@edp/locales';
 
-import { useVbenForm } from '@edp-core/form-ui';
-import { VbenButton, VbenCheckbox } from '@edp-core/shadcn-ui';
+import { useEDPForm } from '@edp-core/form-ui';
+import { EDPButton, EDPCheckbox } from '@edp-core/shadcn-ui';
 
 import Title from './auth-title.vue';
 import ThirdPartyLogin from './third-party-login.vue';
 
 interface Props extends AuthenticationProps {
-  formSchema?: VbenFormSchema[];
+  formSchema?: EDPFormSchema[];
 }
 
 defineOptions({
@@ -46,7 +46,7 @@ const emit = defineEmits<{
   submit: [Recordable<any>];
 }>();
 
-const [Form, formApi] = useVbenForm(
+const [Form, formApi] = useEDPForm(
   reactive({
     commonConfig: {
       hideLabel: true,
@@ -115,13 +115,13 @@ defineExpose({
       class="mb-6 flex justify-between"
     >
       <div class="flex-center">
-        <VbenCheckbox
+        <EDPCheckbox
           v-if="showRememberMe"
           v-model="rememberMe"
           name="rememberMe"
         >
           {{ $t('authentication.rememberMe') }}
-        </VbenCheckbox>
+        </EDPCheckbox>
       </div>
 
       <span
@@ -132,7 +132,7 @@ defineExpose({
         {{ $t('authentication.forgetPassword') }}
       </span>
     </div>
-    <VbenButton
+    <EDPButton
       :class="{
         'cursor-wait': loading,
       }"
@@ -142,28 +142,28 @@ defineExpose({
       @click="handleSubmit"
     >
       {{ submitButtonText || $t('common.login') }}
-    </VbenButton>
+    </EDPButton>
 
     <div
       v-if="showCodeLogin || showQrcodeLogin"
       class="mb-2 mt-4 flex items-center justify-between"
     >
-      <VbenButton
+      <EDPButton
         v-if="showCodeLogin"
         class="w-1/2"
         variant="outline"
         @click="handleGo(codeLoginPath)"
       >
         {{ $t('authentication.mobileLogin') }}
-      </VbenButton>
-      <VbenButton
+      </EDPButton>
+      <EDPButton
         v-if="showQrcodeLogin"
         class="ml-4 w-1/2"
         variant="outline"
         @click="handleGo(qrCodeLoginPath)"
       >
         {{ $t('authentication.qrcodeLogin') }}
-      </VbenButton>
+      </EDPButton>
     </div>
 
     <!-- 第三方登录 -->

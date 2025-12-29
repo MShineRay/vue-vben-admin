@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@edp/common-ui';
+import type { EDPFormSchema } from '@edp/common-ui';
 import type { BasicOption } from '@edp/types';
 
 import { computed, markRaw } from 'vue';
@@ -28,10 +28,10 @@ const MOCK_USER_OPTIONS: BasicOption[] = [
   },
 ];
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): EDPFormSchema[] => {
   return [
     {
-      component: 'VbenSelect',
+      component: 'EDPSelect',
       componentProps: {
         options: MOCK_USER_OPTIONS,
         placeholder: $t('authentication.selectAccount'),
@@ -45,7 +45,7 @@ const formSchema = computed((): VbenFormSchema[] => {
         .default('edp'),
     },
     {
-      component: 'VbenInput',
+      component: 'EDPInput',
       componentProps: {
         placeholder: $t('authentication.usernameTip'),
       },
@@ -70,7 +70,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       rules: z.string().min(1, { message: $t('authentication.usernameTip') }),
     },
     {
-      component: 'VbenInputPassword',
+      component: 'EDPInputPassword',
       componentProps: {
         placeholder: $t('authentication.password'),
       },

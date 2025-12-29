@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import { useVbenDrawer, VbenButton } from '@edp/common-ui';
+import { useEDPDrawer, EDPButton } from '@edp/common-ui';
 
-const [Drawer, drawerApi] = useVbenDrawer();
+const [Drawer, drawerApi] = useEDPDrawer();
 </script>
 <template>
   <div>
-    <VbenButton @click="() => drawerApi.open()">Open</VbenButton>
+    <EDPButton @click="() => drawerApi.open()">Open</EDPButton>
     <Drawer class="w-[600px]" title="基础示例"> drawer content </Drawer>
   </div>
 </template>

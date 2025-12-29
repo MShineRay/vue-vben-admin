@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { VbenSpinner } from '@edp-core/shadcn-ui';
+import { EDPSpinner } from '@edp-core/shadcn-ui';
 import { cn } from '@edp-core/shared/utils';
 
 interface SpinnerProps {
@@ -20,7 +20,7 @@ const props = defineProps<SpinnerProps>();
 <template>
   <div :class="cn('relative min-h-20', props.class)">
     <slot></slot>
-    <VbenSpinner
+    <EDPSpinner
       :min-loading-time="props.minLoadingTime"
       :spinning="props.spinning"
     />

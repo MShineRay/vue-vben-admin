@@ -3,18 +3,18 @@ import type { ChangeEvent } from 'ant-design-vue/es/_util/EventInterface';
 
 import type { Recordable } from '@edp/types';
 
-import type { VbenFormSchema } from '#/adapter/form';
+import type { EDPFormSchema } from '#/adapter/form';
 
 import { computed, h, ref } from 'vue';
 
-import { useVbenDrawer } from '@edp/common-ui';
+import { useEDPDrawer } from '@edp/common-ui';
 import { IconifyIcon } from '@edp/icons';
 import { $te } from '@edp/locales';
 import { getPopupContainer } from '@edp/utils';
 
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core';
 
-import { useVbenForm, z } from '#/adapter/form';
+import { useEDPForm, z } from '#/adapter/form';
 import {
   createMenu,
   getMenuList,
@@ -33,7 +33,7 @@ const emit = defineEmits<{
 }>();
 const formData = ref<SystemMenuApi.SystemMenu>();
 const titleSuffix = ref<string>();
-const schema: VbenFormSchema[] = [
+const schema: EDPFormSchema[] = [
   {
     component: 'RadioGroup',
     componentProps: {
@@ -433,7 +433,7 @@ const schema: VbenFormSchema[] = [
 const breakpoints = useBreakpoints(breakpointsTailwind);
 const isHorizontal = computed(() => breakpoints.greaterOrEqual('md').value);
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useEDPForm({
   commonConfig: {
     colon: true,
     formItemClass: 'col-span-2 md:col-span-1',
@@ -442,7 +442,7 @@ const [Form, formApi] = useVbenForm({
   showDefaultActions: false,
   wrapperClass: 'grid-cols-2 gap-x-4',
 });
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useEDPDrawer({
   onConfirm: onSubmit,
   onOpenChange(isOpen) {
     if (isOpen) {

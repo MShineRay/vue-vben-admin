@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { message } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useEDPForm } from '#/adapter/form';
 
-const [Form] = useVbenForm({
+const [Form] = useEDPForm({
   // 提交函数
   handleSubmit: onSubmit,
   schema: [

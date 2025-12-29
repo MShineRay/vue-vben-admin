@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { useVbenDrawer } from '@edp/common-ui';
+import { useEDPDrawer } from '@edp/common-ui';
 
 const data = ref();
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useEDPDrawer({
   onCancel() {
     drawerApi.close();
   },

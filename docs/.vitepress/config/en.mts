@@ -16,7 +16,7 @@ export const en = defineConfig({
     },
     editLink: {
       pattern:
-        'https://github.com/vbenjs/vue-edp-admin/edit/main/docs/src/:path',
+        'https://github.com/edpjs/vue-edp-admin/edit/main/docs/src/:path',
       text: 'Edit this page on GitHub',
     },
     footer: {
@@ -198,15 +198,15 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/vbenjs/vue-edp-admin/releases',
+          link: 'https://github.com/edpjs/vue-edp-admin/releases',
           text: 'Changelog',
         },
         {
-          link: 'https://github.com/orgs/vbenjs/projects/5',
+          link: 'https://github.com/orgs/edpjs/projects/5',
           text: 'Roadmap',
         },
         {
-          link: 'https://github.com/vbenjs/vue-edp-admin/blob/main/.github/contributing.md',
+          link: 'https://github.com/edpjs/vue-edp-admin/blob/main/.github/contributing.md',
           text: 'Contribution',
         },
       ],

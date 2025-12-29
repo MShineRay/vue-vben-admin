@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { Arrayable } from '@vueuse/core';
 
-import type { ValueType, VbenButtonGroupProps } from './button';
+import type { ValueType, EDPButtonGroupProps } from './button';
 
 import { computed, ref, watch } from 'vue';
 
@@ -10,11 +10,11 @@ import { cn, isFunction } from '@edp-core/shared/utils';
 
 import { objectOmit } from '@vueuse/core';
 
-import { VbenRenderContent } from '../render-content';
-import VbenButtonGroup from './button-group.vue';
+import { EDPRenderContent } from '../render-content';
+import EDPButtonGroup from './button-group.vue';
 import Button from './button.vue';
 
-const props = withDefaults(defineProps<VbenButtonGroupProps>(), {
+const props = withDefaults(defineProps<EDPButtonGroupProps>(), {
   gap: 0,
   multiple: false,
   showIcon: true,
@@ -105,7 +105,7 @@ async function onBtnClick(value: ValueType) {
 }
 </script>
 <template>
-  <VbenButtonGroup
+  <EDPButtonGroup
     :size="props.size"
     :gap="props.gap"
     class="edp-check-button-group"
@@ -139,10 +139,10 @@ async function onBtnClick(value: ValueType) {
         </slot>
       </div>
       <slot name="option" :label="btn.label" :value="btn.value" :data="btn">
-        <VbenRenderContent :content="btn.label" />
+        <EDPRenderContent :content="btn.label" />
       </slot>
     </Button>
-  </VbenButtonGroup>
+  </EDPButtonGroup>
 </template>
 <style lang="scss" scoped>
 .edp-check-button-group {

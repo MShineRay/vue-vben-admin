@@ -7,7 +7,7 @@ import type { AlertProps, BeforeCloseScope, PromptProps } from './alert';
 import { h, nextTick, ref, render } from 'vue';
 
 import { useSimpleLocale } from '@edp-core/composables';
-import { Input, VbenRenderContent } from '@edp-core/shadcn-ui';
+import { Input, EDPRenderContent } from '@edp-core/shadcn-ui';
 import { isFunction, isString } from '@edp-core/shared/utils';
 
 import Alert from './alert.vue';
@@ -16,18 +16,18 @@ const alerts = ref<Array<{ container: HTMLElement; instance: Component }>>([]);
 
 const { $t } = useSimpleLocale();
 
-export function vbenAlert(options: AlertProps): Promise<void>;
-export function vbenAlert(
+export function edpAlert(options: AlertProps): Promise<void>;
+export function edpAlert(
   message: string,
   options?: Partial<AlertProps>,
 ): Promise<void>;
-export function vbenAlert(
+export function edpAlert(
   message: string,
   title?: string,
   options?: Partial<AlertProps>,
 ): Promise<void>;
 
-export function vbenAlert(
+export function edpAlert(
   arg0: AlertProps | string,
   arg1?: Partial<AlertProps> | string,
   arg2?: Partial<AlertProps>,
@@ -95,18 +95,18 @@ export function vbenAlert(
   });
 }
 
-export function vbenConfirm(options: AlertProps): Promise<void>;
-export function vbenConfirm(
+export function edpConfirm(options: AlertProps): Promise<void>;
+export function edpConfirm(
   message: string,
   options?: Partial<AlertProps>,
 ): Promise<void>;
-export function vbenConfirm(
+export function edpConfirm(
   message: string,
   title?: string,
   options?: Partial<AlertProps>,
 ): Promise<void>;
 
-export function vbenConfirm(
+export function edpConfirm(
   arg0: AlertProps | string,
   arg1?: Partial<AlertProps> | string,
   arg2?: Partial<AlertProps>,
@@ -116,20 +116,20 @@ export function vbenConfirm(
   };
   if (!arg1) {
     return isString(arg0)
-      ? vbenAlert(arg0, defaultProps)
-      : vbenAlert({ ...defaultProps, ...arg0 });
+      ? edpAlert(arg0, defaultProps)
+      : edpAlert({ ...defaultProps, ...arg0 });
   } else if (!arg2) {
     return isString(arg1)
-      ? vbenAlert(arg0 as string, arg1, defaultProps)
-      : vbenAlert(arg0 as string, { ...defaultProps, ...arg1 });
+      ? edpAlert(arg0 as string, arg1, defaultProps)
+      : edpAlert(arg0 as string, { ...defaultProps, ...arg1 });
   }
-  return vbenAlert(arg0 as string, arg1 as string, {
+  return edpAlert(arg0 as string, arg1 as string, {
     ...defaultProps,
     ...arg2,
   });
 }
 
-export async function vbenPrompt<T = any>(
+export async function edpPrompt<T = any>(
   options: PromptProps<T>,
 ): Promise<T | undefined> {
   const {
@@ -145,7 +145,7 @@ export async function vbenPrompt<T = any>(
   const modelValue = ref<T | undefined>(defaultValue);
   const inputComponentRef = ref<null | VNode>(null);
   const staticContents: Component[] = [
-    h(VbenRenderContent, { content, renderBr: true }),
+    h(EDPRenderContent, { content, renderBr: true }),
   ];
 
   const modelPropName = _modelPropName || 'modelValue';
@@ -230,7 +230,7 @@ export async function vbenPrompt<T = any>(
     },
   };
 
-  await vbenConfirm(props);
+  await edpConfirm(props);
   return modelValue.value;
 }
 

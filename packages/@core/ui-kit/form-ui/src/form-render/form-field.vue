@@ -12,8 +12,8 @@ import {
   FormField,
   FormItem,
   FormMessage,
-  VbenRenderContent,
-  VbenTooltip,
+  EDPRenderContent,
+  EDPTooltip,
 } from '@edp-core/shadcn-ui';
 import { cn, isFunction, isObject, isString } from '@edp-core/shared/utils';
 
@@ -321,7 +321,7 @@ onUnmounted(() => {
         :style="labelStyle"
       >
         <template v-if="label">
-          <VbenRenderContent :content="label" />
+          <EDPRenderContent :content="label" />
         </template>
       </FormLabel>
       <div class="flex-auto overflow-hidden p-[1px]">
@@ -350,14 +350,14 @@ onUnmounted(() => {
                   :key="name"
                   #[name]="renderSlotProps"
                 >
-                  <VbenRenderContent
+                  <EDPRenderContent
                     :content="customContentRender[name]"
                     v-bind="{ ...renderSlotProps, formContext: slotProps }"
                   />
                 </template>
                 <!-- <slot></slot> -->
               </component>
-              <VbenTooltip
+              <EDPTooltip
                 v-if="compact && isInValid"
                 :delay-duration="300"
                 side="left"
@@ -374,15 +374,15 @@ onUnmounted(() => {
                   </slot>
                 </template>
                 <FormMessage />
-              </VbenTooltip>
+              </EDPTooltip>
             </slot>
           </FormControl>
           <!-- 自定义后缀 -->
           <div v-if="suffix" class="ml-1">
-            <VbenRenderContent :content="suffix" />
+            <EDPRenderContent :content="suffix" />
           </div>
           <FormDescription v-if="description" class="ml-1">
-            <VbenRenderContent :content="description" />
+            <EDPRenderContent :content="description" />
           </FormDescription>
         </div>
 

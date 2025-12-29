@@ -35,7 +35,7 @@ export const shared = defineConfig({
   srcDir: 'src',
   themeConfig: {
     i18nRouting: true,
-    logo: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp',
+    logo: 'https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-v1.webp',
     search: {
       options: {
         locales: {
@@ -46,7 +46,7 @@ export const shared = defineConfig({
     },
     siteTitle: 'EDP Admin',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vbenjs/vue-edp-admin' },
+      { icon: 'github', link: 'https://github.com/edpjs/vue-edp-admin' },
     ],
   },
   title: 'EDP Admin',
@@ -88,7 +88,7 @@ export const shared = defineConfig({
             username: 'likui628',
           },
         ],
-        repoURL: () => 'https://github.com/vbenjs/vue-edp-admin',
+        repoURL: () => 'https://github.com/edpjs/vue-edp-admin',
       }),
       GitChangelogMarkdownSection(),
       viteArchiverPlugin({ outputDir: '.vitepress' }),
@@ -111,7 +111,7 @@ export const shared = defineConfig({
 
 function head(): HeadConfig[] {
   return [
-    ['meta', { content: 'Vbenjs Team', name: 'author' }],
+    ['meta', { content: 'EDPjs Team', name: 'author' }],
     [
       'meta',
       {
@@ -148,18 +148,18 @@ function pwa(): PwaOptions {
       icons: [
         {
           sizes: '192x192',
-          src: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/pwa-icon-192.png',
+          src: 'https://unpkg.com/@edpjs/static-source@0.1.7/source/pwa-icon-192.png',
           type: 'image/png',
         },
         {
           sizes: '512x512',
-          src: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/pwa-icon-512.png',
+          src: 'https://unpkg.com/@edpjs/static-source@0.1.7/source/pwa-icon-512.png',
           type: 'image/png',
         },
       ],
       id: '/',
       name: 'EDP Admin Doc',
-      short_name: 'vben_admin_doc',
+      short_name: 'edp_admin_doc',
       theme_color: '#ffffff',
     },
     outDir: resolve(process.cwd(), '.vitepress/dist'),

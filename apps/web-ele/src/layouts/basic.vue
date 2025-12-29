@@ -5,7 +5,7 @@ import { computed, ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
 import { AuthenticationLoginExpiredModal } from '@edp/common-ui';
-import { VBEN_DOC_URL, VBEN_GITHUB_URL } from '@edp/constants';
+import { EDP_DOC_URL, EDP_GITHUB_URL } from '@edp/constants';
 import { useWatermark } from '@edp/hooks';
 import { BookOpenText, CircleHelp, SvgGithubIcon } from '@edp/icons';
 import {
@@ -94,7 +94,7 @@ const menus = computed(() => [
   },
   {
     handler: () => {
-      openWindow(VBEN_DOC_URL, {
+      openWindow(EDP_DOC_URL, {
         target: '_blank',
       });
     },
@@ -103,7 +103,7 @@ const menus = computed(() => [
   },
   {
     handler: () => {
-      openWindow(VBEN_GITHUB_URL, {
+      openWindow(EDP_GITHUB_URL, {
         target: '_blank',
       });
     },
@@ -112,7 +112,7 @@ const menus = computed(() => [
   },
   {
     handler: () => {
-      openWindow(`${VBEN_GITHUB_URL}/issues`, {
+      openWindow(`${EDP_GITHUB_URL}/issues`, {
         target: '_blank',
       });
     },

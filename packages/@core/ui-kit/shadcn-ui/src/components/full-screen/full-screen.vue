@@ -3,7 +3,7 @@ import { Maximize, Minimize } from '@edp-core/icons';
 
 import { useFullscreen } from '@vueuse/core';
 
-import { VbenIconButton } from '../button';
+import { EDPIconButton } from '../button';
 
 defineOptions({ name: 'FullScreen' });
 
@@ -21,11 +21,11 @@ isFullscreen.value = !!(
 );
 </script>
 <template>
-  <VbenIconButton
+  <EDPIconButton
     class="hover:animate-[shrink_0.3s_ease-in-out]"
     @click="toggle"
   >
     <Minimize v-if="isFullscreen" class="size-4 text-foreground" />
     <Maximize v-else class="size-4 text-foreground" />
-  </VbenIconButton>
+  </EDPIconButton>
 </template>

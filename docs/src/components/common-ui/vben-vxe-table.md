@@ -29,13 +29,13 @@ outline: deep
 ```ts
 import { h } from 'vue';
 
-import { setupVbenVxeTable, useVbenVxeGrid } from '@edp/plugins/vxe-table';
+import { setupEDPVxeTable, useEDPVxeGrid } from '@edp/plugins/vxe-table';
 
 import { Button, Image } from 'ant-design-vue';
 
-import { useVbenForm } from './form';
+import { useEDPForm } from './form';
 
-setupVbenVxeTable({
+setupEDPVxeTable({
   configVxeTable: (vxeUI) => {
     vxeUI.setConfig({
       grid: {
@@ -88,10 +88,10 @@ setupVbenVxeTable({
     // 这里可以自行扩展 vxe-table 的全局配置，比如自定义格式化
     // vxeUI.formats.add
   },
-  useVbenForm,
+  useEDPForm,
 });
 
-export { useVbenVxeGrid };
+export { useEDPVxeGrid };
 
 export type * from '@edp/plugins/vxe-table';
 ```
@@ -100,7 +100,7 @@ export type * from '@edp/plugins/vxe-table';
 
 ## 基础表格
 
-使用 `useVbenVxeGrid` 创建最基础的表格。
+使用 `useEDPVxeGrid` 创建最基础的表格。
 
 <DemoPreview dir="demos/edp-vxe-table/basic" />
 
@@ -169,10 +169,10 @@ vxeUI.renderer.add('CellLink', {
 
 ### 定制分隔条
 
-当你启用表单搜索时，在表单和表格之间会显示一个分隔条。这个分隔条使用了默认的组件背景色，并且横向贯穿整个Vben Vxe Table在视觉上融入了页面的默认背景中。如果你在Vben Vxe Table的外层包裹了一个不同背景色的容器（如将其放在一个Card内），默认的表单和表格之间的分隔条可能就显得格格不入了，下面的代码演示了如何定制这个分隔条。
+当你启用表单搜索时，在表单和表格之间会显示一个分隔条。这个分隔条使用了默认的组件背景色，并且横向贯穿整个EDP Vxe Table在视觉上融入了页面的默认背景中。如果你在EDP Vxe Table的外层包裹了一个不同背景色的容器（如将其放在一个Card内），默认的表单和表格之间的分隔条可能就显得格格不入了，下面的代码演示了如何定制这个分隔条。
 
 ```ts
-const [Grid] = useVbenVxeGrid({
+const [Grid] = useEDPVxeGrid({
   formOptions: {},
   gridOptions: {},
   // 完全移除分隔条
@@ -208,15 +208,15 @@ const [Grid] = useVbenVxeGrid({
 
 ## API
 
-`useVbenVxeGrid` 返回一个数组，第一个元素是表格组件，第二个元素是表格的方法。
+`useEDPVxeGrid` 返回一个数组，第一个元素是表格组件，第二个元素是表格的方法。
 
 ```vue
 <script setup lang="ts">
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useEDPVxeGrid } from '#/adapter/vxe-table';
 
 // Grid 为表格组件
 // gridApi 为表格的方法
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useEDPVxeGrid({
   gridOptions: {},
   formOptions: {},
   gridEvents: {},
@@ -232,7 +232,7 @@ const [Grid, gridApi] = useVbenVxeGrid({
 
 ### GridApi
 
-useVbenVxeGrid 返回的第二个参数，是一个对象，包含了一些表单的方法。
+useEDPVxeGrid 返回的第二个参数，是一个对象，包含了一些表单的方法。
 
 | 方法名 | 描述 | 类型 | 说明 |
 | --- | --- | --- | --- |
@@ -241,12 +241,12 @@ useVbenVxeGrid 返回的第二个参数，是一个对象，包含了一些表�
 | reload | 重载表格，会进行初始化 | `(params:any)=>void` | - |
 | query | 重载表格，会保留当前分页 | `(params:any)=>void` | - |
 | grid | vxe-table grid实例 | `VxeGridInstance` | - |
-| formApi | vbenForm api实例 | `FormApi` | - |
+| formApi | edpForm api实例 | `FormApi` | - |
 | toggleSearchForm | 设置搜索表单显示状态 | `(show?: boolean)=>boolean` | 当省略参数时，则将表单在显示和隐藏两种状态之间切换 |
 
 ## Props
 
-所有属性都可以传入 `useVbenVxeGrid` 的第一个参数中。
+所有属性都可以传入 `useEDPVxeGrid` 的第一个参数中。
 
 | 属性名 | 描述 | 类型 | 版本要求 |
 | --- | --- | --- | --- |
@@ -255,7 +255,7 @@ useVbenVxeGrid 返回的第二个参数，是一个对象，包含了一些表�
 | gridClass | grid组件的class | `string` | - |
 | gridOptions | grid组件的参数 | `VxeTableGridProps` | - |
 | gridEvents | grid组件的触发的事件 | `VxeGridListeners` | - |
-| formOptions | 表单参数 | `VbenFormProps` | - |
+| formOptions | 表单参数 | `EDPFormProps` | - |
 | showSearchForm | 是否显示搜索表单 | `boolean` | - |
 | separator | 搜索表单与表格主体之间的分隔条 | `boolean\|SeparatorOptions` | >5.5.4 |
 

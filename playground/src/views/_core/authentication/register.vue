@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { VbenFormSchema } from '@edp/common-ui';
+import type { EDPFormSchema } from '@edp/common-ui';
 import type { Recordable } from '@edp/types';
 
 import { computed, h, ref } from 'vue';
@@ -11,10 +11,10 @@ defineOptions({ name: 'Register' });
 
 const loading = ref(false);
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): EDPFormSchema[] => {
   return [
     {
-      component: 'VbenInput',
+      component: 'EDPInput',
       componentProps: {
         placeholder: $t('authentication.usernameTip'),
       },
@@ -23,7 +23,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       rules: z.string().min(1, { message: $t('authentication.usernameTip') }),
     },
     {
-      component: 'VbenInputPassword',
+      component: 'EDPInputPassword',
       componentProps: {
         passwordStrength: true,
         placeholder: $t('authentication.password'),
@@ -38,7 +38,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       rules: z.string().min(1, { message: $t('authentication.passwordTip') }),
     },
     {
-      component: 'VbenInputPassword',
+      component: 'EDPInputPassword',
       componentProps: {
         placeholder: $t('authentication.confirmPassword'),
       },
@@ -58,7 +58,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       label: $t('authentication.confirmPassword'),
     },
     {
-      component: 'VbenCheckbox',
+      component: 'EDPCheckbox',
       fieldName: 'agreePolicy',
       renderComponentContent: () => ({
         default: () =>

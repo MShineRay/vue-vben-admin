@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { message } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useEDPForm } from '#/adapter/form';
 
-const [QueryForm] = useVbenForm({
+const [QueryForm] = useEDPForm({
   // 默认展开
   collapsed: false,
   // 所有表单项共用，可单独在表单内覆盖

@@ -13,7 +13,7 @@ import { ElLoading } from 'element-plus';
 import { $t, setupI18n } from '#/locales';
 
 import { initComponentAdapter } from './adapter/component';
-import { initSetupVbenForm } from './adapter/form';
+import { initSetupEDPForm } from './adapter/form';
 import App from './app.vue';
 import { router } from './router';
 
@@ -22,7 +22,7 @@ async function bootstrap(namespace: string) {
   await initComponentAdapter();
 
   // 初始化表单组件
-  await initSetupVbenForm();
+  await initSetupEDPForm();
 
   // // 设置弹窗的默认配置
   // setDefaultModalProps({
@@ -37,9 +37,9 @@ async function bootstrap(namespace: string) {
   // 注册Element Plus提供的v-loading指令
   app.directive('loading', ElLoading.directive);
 
-  // 注册Vben提供的v-loading和v-spinning指令
+  // 注册EDP提供的v-loading和v-spinning指令
   registerLoadingDirective(app, {
-    loading: false, // Vben提供的v-loading指令和Element Plus提供的v-loading指令二选一即可，此处false表示不注册Vben提供的v-loading指令
+    loading: false, // EDP提供的v-loading指令和Element Plus提供的v-loading指令二选一即可，此处false表示不注册EDP提供的v-loading指令
     spinning: 'spinning',
   });
 

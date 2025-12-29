@@ -2,10 +2,10 @@
   "name": "@edp/playground",
   "version": "5.5.9",
   "homepage": "https://edp.pro",
-  "bugs": "https://github.com/vbenjs/vue-edp-admin/issues",
+  "bugs": "https://github.com/edpjs/vue-edp-admin/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-edp-admin.git",
+    "url": "git+https://github.com/edpjs/vue-edp-admin.git",
     "directory": "playground"
   },
   "license": "MIT",

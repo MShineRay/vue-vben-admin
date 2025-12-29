@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 import { h } from 'vue';
 
-import { Page, useVbenDrawer } from '@edp/common-ui';
+import { Page, useEDPDrawer } from '@edp/common-ui';
 
 import { ElButton, ElCard, ElCheckbox, ElMessage } from 'element-plus';
 
-import { useVbenForm } from '#/adapter/form';
+import { useEDPForm } from '#/adapter/form';
 import { getAllMenusApi } from '#/api';
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useEDPForm({
   commonConfig: {
     // 所有表单项
     componentProps: {
@@ -155,7 +155,7 @@ const [Form, formApi] = useVbenForm({
   ],
 });
 
-const [Drawer, drawerApi] = useVbenDrawer();
+const [Drawer, drawerApi] = useEDPDrawer();
 function setFormValues() {
   formApi.setValues({
     string: 'string',

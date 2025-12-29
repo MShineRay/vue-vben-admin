@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import { useVbenModal, VbenButton } from '@edp/common-ui';
+import { useEDPModal, EDPButton } from '@edp/common-ui';
 
-const [Modal, modalApi] = useVbenModal();
+const [Modal, modalApi] = useEDPModal();
 </script>
 <template>
   <div>
-    <VbenButton @click="() => modalApi.open()">Open</VbenButton>
+    <EDPButton @click="() => modalApi.open()">Open</EDPButton>
     <Modal class="w-[600px]" title="基础示例"> modal content </Modal>
   </div>
 </template>

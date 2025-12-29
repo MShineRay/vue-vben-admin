@@ -32,7 +32,7 @@ git -v
 
 ```bash [GitHub]
 # Clone the code
-git clone https://github.com/vbenjs/vue-edp-admin.git
+git clone https://github.com/edpjs/vue-edp-admin.git
 ```
 
 ```bash [Gitee]

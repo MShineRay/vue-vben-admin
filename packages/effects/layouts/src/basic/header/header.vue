@@ -6,7 +6,7 @@ import { RotateCw } from '@edp/icons';
 import { preferences, usePreferences } from '@edp/preferences';
 import { useAccessStore } from '@edp/stores';
 
-import { VbenFullScreen, VbenIconButton } from '@edp-core/shadcn-ui';
+import { EDPFullScreen, EDPIconButton } from '@edp-core/shadcn-ui';
 
 import {
   GlobalSearch,
@@ -126,9 +126,9 @@ function clearPreferencesAndLogout() {
   >
     <slot :name="slot.name">
       <template v-if="slot.name === 'refresh'">
-        <VbenIconButton class="my-0 mr-1 rounded-md" @click="refresh">
+        <EDPIconButton class="my-0 mr-1 rounded-md" @click="refresh">
           <RotateCw class="size-4" />
-        </VbenIconButton>
+        </EDPIconButton>
       </template>
     </slot>
   </template>
@@ -171,7 +171,7 @@ function clearPreferencesAndLogout() {
           <LanguageToggle class="mr-1" />
         </template>
         <template v-else-if="slot.name === 'fullscreen'">
-          <VbenFullScreen class="mr-1" />
+          <EDPFullScreen class="mr-1" />
         </template>
         <template v-else-if="slot.name === 'timezone'">
           <TimezoneButton class="mr-1 mt-[2px]" />

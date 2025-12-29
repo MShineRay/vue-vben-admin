@@ -7,11 +7,11 @@ import { Page } from '@edp/common-ui';
 
 import { Button, Card, message, Space } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useEDPForm } from '#/adapter/form';
 
 const isReverseActionButtons = ref(false);
 
-const [BaseForm, formApi] = useVbenForm({
+const [BaseForm, formApi] = useEDPForm({
   // 翻转操作按钮的位置
   actionButtonsReverse: isReverseActionButtons.value,
   // 所有表单项共用，可单独在表单内覆盖

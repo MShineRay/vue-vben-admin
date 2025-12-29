@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import { useVbenModal, VbenButton } from '@edp/common-ui';
+import { useEDPModal, EDPButton } from '@edp/common-ui';
 
-const [SlideModal, slideModalApi] = useVbenModal({
+const [SlideModal, slideModalApi] = useEDPModal({
   animationType: 'slide',
 });
 
-const [ScaleModal, scaleModalApi] = useVbenModal({
+const [ScaleModal, scaleModalApi] = useEDPModal({
   animationType: 'scale',
 });
 
@@ -21,8 +21,8 @@ function openScaleModal() {
 <template>
   <div class="space-y-4">
     <div class="flex gap-4">
-      <VbenButton @click="openSlideModal">滑动动画</VbenButton>
-      <VbenButton @click="openScaleModal">缩放动画</VbenButton>
+      <EDPButton @click="openSlideModal">滑动动画</EDPButton>
+      <EDPButton @click="openScaleModal">缩放动画</EDPButton>
     </div>
 
     <SlideModal title="滑动动画示例" class="w-[500px]">

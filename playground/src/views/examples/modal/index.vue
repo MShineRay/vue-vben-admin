@@ -7,7 +7,7 @@ import {
   confirm,
   Page,
   prompt,
-  useVbenModal,
+  useEDPModal,
 } from '@edp/common-ui';
 
 import { Button, Card, Flex, message } from 'ant-design-vue';
@@ -25,41 +25,41 @@ import SharedDataDemo from './shared-data-demo.vue';
 
 defineOptions({ name: 'ModalExample' });
 
-const [BaseModal, baseModalApi] = useVbenModal({
+const [BaseModal, baseModalApi] = useEDPModal({
   // 连接抽离的组件
   connectedComponent: BaseDemo,
 });
 
-const [InContentModal, inContentModalApi] = useVbenModal({
+const [InContentModal, inContentModalApi] = useEDPModal({
   // 连接抽离的组件
   connectedComponent: InContentModalDemo,
 });
 
-const [AutoHeightModal, autoHeightModalApi] = useVbenModal({
+const [AutoHeightModal, autoHeightModalApi] = useEDPModal({
   connectedComponent: AutoHeightDemo,
 });
 
-const [DragModal, dragModalApi] = useVbenModal({
+const [DragModal, dragModalApi] = useEDPModal({
   connectedComponent: DragDemo,
 });
 
-const [DynamicModal, dynamicModalApi] = useVbenModal({
+const [DynamicModal, dynamicModalApi] = useEDPModal({
   connectedComponent: DynamicDemo,
 });
 
-const [SharedDataModal, sharedModalApi] = useVbenModal({
+const [SharedDataModal, sharedModalApi] = useEDPModal({
   connectedComponent: SharedDataDemo,
 });
 
-const [FormModal, formModalApi] = useVbenModal({
+const [FormModal, formModalApi] = useEDPModal({
   connectedComponent: FormModalDemo,
 });
 
-const [NestedModal, nestedModalApi] = useVbenModal({
+const [NestedModal, nestedModalApi] = useEDPModal({
   connectedComponent: NestedDemo,
 });
 
-const [BlurModal, blurModalApi] = useVbenModal({
+const [BlurModal, blurModalApi] = useEDPModal({
   connectedComponent: BlurDemo,
 });
 

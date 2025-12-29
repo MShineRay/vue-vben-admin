@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import { useVbenModal } from '@edp/common-ui';
+import { useEDPModal } from '@edp/common-ui';
 
 import { Button } from 'ant-design-vue';
 
 import DragDemo from './drag-demo.vue';
 
-const [Modal] = useVbenModal({
+const [Modal] = useEDPModal({
   destroyOnClose: true,
 });
-const [BaseModal, baseModalApi] = useVbenModal({
+const [BaseModal, baseModalApi] = useEDPModal({
   connectedComponent: DragDemo,
 });
 

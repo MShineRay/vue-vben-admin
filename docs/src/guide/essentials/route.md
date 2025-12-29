@@ -10,7 +10,7 @@ outline: deep
 
 路由分为核心路由、静态路由和动态路由，核心路由是框架内置的路由，包含了根路由、登录路由、404路由等；静态路由是在项目启动时就已经确定的路由；动态路由一般是在用户登录后，根据用户的权限动态生成的路由。
 
-静态路由和动态路由都会走权限控制，可以通过配置路由的 `meta` 属性中的 `authority` 字段来控制权限，可以参考[路由权限控制](https://github.com/vbenjs/vue-edp-admin/blob/main/playground/src/router/routes/modules/demos.ts)。
+静态路由和动态路由都会走权限控制，可以通过配置路由的 `meta` 属性中的 `authority` 字段来控制权限，可以参考[路由权限控制](https://github.com/edpjs/vue-edp-admin/blob/main/playground/src/router/routes/modules/demos.ts)。
 
 ### 核心路由
 
@@ -60,7 +60,7 @@ const externalRoutes: RouteRecordRaw[] = mergeRouteModules(externalRouteFiles); 
 ```ts
 import type { RouteRecordRaw } from 'vue-router';
 
-import { VBEN_LOGO_URL } from '@edp/constants';
+import { EDP_LOGO_URL } from '@edp/constants';
 
 import { $t } from '#/locales';
 
@@ -69,16 +69,16 @@ const routes: RouteRecordRaw[] = [
     meta: {
       badgeType: 'dot',
       badgeVariants: 'destructive',
-      icon: VBEN_LOGO_URL,
+      icon: EDP_LOGO_URL,
       order: 9999,
       title: $t('page.edp.title'),
     },
-    name: 'VbenProject',
+    name: 'EDPProject',
     path: '/edp-admin',
     redirect: '/edp-admin/about',
     children: [
       {
-        name: 'VbenAbout',
+        name: 'EDPAbout',
         path: '/edp-admin/about',
         component: () => import('#/views/_core/about/index.vue'),
         meta: {
@@ -231,7 +231,7 @@ export default routes;
 ```ts
 import type { RouteRecordRaw } from 'vue-router';
 
-import { VBEN_LOGO_URL } from '@edp/constants';
+import { EDP_LOGO_URL } from '@edp/constants';
 
 import { $t } from '#/locales';
 

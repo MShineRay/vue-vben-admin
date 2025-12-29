@@ -4,7 +4,7 @@ import type {
   VxeTableGridOptions,
 } from '#/adapter/vxe-table';
 
-import { Page, useVbenDrawer } from '@edp/common-ui';
+import { Page, useEDPDrawer } from '@edp/common-ui';
 import { IconifyIcon, Plus } from '@edp/icons';
 import { $t } from '@edp/locales';
 
@@ -12,18 +12,18 @@ import { MenuBadge } from '@edp-core/menu-ui';
 
 import { Button, message } from 'ant-design-vue';
 
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useEDPVxeGrid } from '#/adapter/vxe-table';
 import { deleteMenu, getMenuList, SystemMenuApi } from '#/api/system/menu';
 
 import { useColumns } from './data';
 import Form from './modules/form.vue';
 
-const [FormDrawer, formDrawerApi] = useVbenDrawer({
+const [FormDrawer, formDrawerApi] = useEDPDrawer({
   connectedComponent: Form,
   destroyOnClose: true,
 });
 
-const [Grid, gridApi] = useVbenVxeGrid({
+const [Grid, gridApi] = useEDPVxeGrid({
   gridOptions: {
     columns: useColumns(onActionClick),
     height: 'auto',

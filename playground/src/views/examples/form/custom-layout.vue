@@ -5,11 +5,11 @@ import { Page } from '@edp/common-ui';
 
 import { Card } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useEDPForm } from '#/adapter/form';
 
 import DocButton from '../doc-button.vue';
 
-const [CustomLayoutForm] = useVbenForm({
+const [CustomLayoutForm] = useEDPForm({
   // 所有表单项共用，可单独在表单内覆盖
   commonConfig: {
     // 所有表单项

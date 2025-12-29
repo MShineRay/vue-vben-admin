@@ -7,12 +7,12 @@ import type { SystemRoleApi } from '#/api/system/role';
 
 import { computed, nextTick, ref } from 'vue';
 
-import { Tree, useVbenDrawer } from '@edp/common-ui';
+import { Tree, useEDPDrawer } from '@edp/common-ui';
 import { IconifyIcon } from '@edp/icons';
 
 import { Spin } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useEDPForm } from '#/adapter/form';
 import { getMenuList } from '#/api/system/menu';
 import { createRole, updateRole } from '#/api/system/role';
 import { $t } from '#/locales';
@@ -23,7 +23,7 @@ const emits = defineEmits(['success']);
 
 const formData = ref<SystemRoleApi.SystemRole>();
 
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useEDPForm({
   schema: useFormSchema(),
   showDefaultActions: false,
 });
@@ -32,7 +32,7 @@ const permissions = ref<DataNode[]>([]);
 const loadingPermissions = ref(false);
 
 const id = ref();
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useEDPDrawer({
   async onConfirm() {
     const { valid } = await formApi.validate();
     if (!valid) return;

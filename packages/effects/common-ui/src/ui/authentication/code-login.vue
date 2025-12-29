@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import type { Recordable } from '@edp/types';
 
-import type { VbenFormSchema } from '@edp-core/form-ui';
+import type { EDPFormSchema } from '@edp-core/form-ui';
 
 import { computed, reactive } from 'vue';
 import { useRouter } from 'vue-router';
 
 import { $t } from '@edp/locales';
 
-import { useVbenForm } from '@edp-core/form-ui';
-import { VbenButton } from '@edp-core/shadcn-ui';
+import { useEDPForm } from '@edp-core/form-ui';
+import { EDPButton } from '@edp-core/shadcn-ui';
 
 import Title from './auth-title.vue';
 
 interface Props {
-  formSchema: VbenFormSchema[];
+  formSchema: EDPFormSchema[];
   /**
    * @zh_CN 是否处于加载处理状态
    */
@@ -60,7 +60,7 @@ const emit = defineEmits<{
 
 const router = useRouter();
 
-const [Form, formApi] = useVbenForm(
+const [Form, formApi] = useEDPForm(
   reactive({
     commonConfig: {
       hideLabel: true,
@@ -103,7 +103,7 @@ defineExpose({
       </template>
     </Title>
     <Form />
-    <VbenButton
+    <EDPButton
       :class="{
         'cursor-wait': loading,
       }"
@@ -114,14 +114,14 @@ defineExpose({
       <slot name="submitButtonText">
         {{ submitButtonText || $t('common.login') }}
       </slot>
-    </VbenButton>
-    <VbenButton
+    </EDPButton>
+    <EDPButton
       v-if="showBack"
       class="mt-4 w-full"
       variant="outline"
       @click="goToLogin()"
     >
       {{ $t('common.back') }}
-    </VbenButton>
+    </EDPButton>
   </div>
 </template>

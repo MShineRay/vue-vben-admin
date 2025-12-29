@@ -8,7 +8,7 @@ import { useRoute, useRouter } from 'vue-router';
 
 import { $t } from '@edp/locales';
 
-import { VbenBreadcrumbView } from '@edp-core/shadcn-ui';
+import { EDPBreadcrumbView } from '@edp-core/shadcn-ui';
 
 interface Props {
   hideWhenOnlyOne?: boolean;
@@ -64,7 +64,7 @@ function handleSelect(path: string) {
 }
 </script>
 <template>
-  <VbenBreadcrumbView
+  <EDPBreadcrumbView
     :breadcrumbs="breadcrumbs"
     :show-icon="showIcon"
     :style-type="type"

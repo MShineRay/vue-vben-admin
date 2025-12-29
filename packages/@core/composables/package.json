@@ -1,12 +1,6 @@
 {
   "name": "@edp-core/composables",
   "version": "5.5.9",
-  
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-edp-admin.git",
-    "directory": "packages/@core/composables"
-  },
   "license": "MIT",
   "type": "module",
   "scripts": {

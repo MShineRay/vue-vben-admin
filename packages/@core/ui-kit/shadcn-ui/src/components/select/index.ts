@@ -1,1 +1,1 @@
-export { default as VbenSelect } from './select.vue';
+export { default as EDPSelect } from './select.vue';

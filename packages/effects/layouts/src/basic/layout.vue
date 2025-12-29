@@ -17,8 +17,8 @@ import {
 import { useAccessStore } from '@edp/stores';
 import { cloneDeep, mapTree } from '@edp/utils';
 
-import { VbenAdminLayout } from '@edp-core/layout-ui';
-import { VbenBackTop, VbenLogo } from '@edp-core/shadcn-ui';
+import { EDPAdminLayout } from '@edp-core/layout-ui';
+import { EDPBackTop, EDPLogo } from '@edp-core/shadcn-ui';
 
 import { Breadcrumb, CheckUpdates, Preferences } from '../widgets';
 import { LayoutContent, LayoutContentSpinner } from './content';
@@ -198,7 +198,7 @@ const headerSlots = computed(() => {
 </script>
 
 <template>
-  <VbenAdminLayout
+  <EDPAdminLayout
     v-model:sidebar-extra-visible="sidebarExtraVisible"
     :content-compact="preferences.app.contentCompact"
     :content-compact-width="preferences.app.contentCompactWidth"
@@ -253,7 +253,7 @@ const headerSlots = computed(() => {
   >
     <!-- logo -->
     <template #logo>
-      <VbenLogo
+      <EDPLogo
         v-if="preferences.logo.enable"
         :fit="preferences.logo.fit"
         :class="logoClass"
@@ -267,7 +267,7 @@ const headerSlots = computed(() => {
         <template v-if="$slots['logo-text']" #text>
           <slot name="logo-text"></slot>
         </template>
-      </VbenLogo>
+      </EDPLogo>
     </template>
     <!-- 头部区域 -->
     <template #header>
@@ -348,7 +348,7 @@ const headerSlots = computed(() => {
       />
     </template>
     <template #side-extra-title>
-      <VbenLogo
+      <EDPLogo
         v-if="preferences.logo.enable"
         :fit="preferences.logo.fit"
         :src="preferences.logo.source"
@@ -359,7 +359,7 @@ const headerSlots = computed(() => {
         <template v-if="$slots['logo-text']" #text>
           <slot name="logo-text"></slot>
         </template>
-      </VbenLogo>
+      </EDPLogo>
     </template>
 
     <template #tabbar>
@@ -406,7 +406,7 @@ const headerSlots = computed(() => {
           @clear-preferences-and-logout="clearPreferencesAndLogout"
         />
       </template>
-      <VbenBackTop />
+      <EDPBackTop />
     </template>
-  </VbenAdminLayout>
+  </EDPAdminLayout>
 </template>

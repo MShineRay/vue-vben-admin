@@ -1,15 +1,15 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { useVbenDrawer } from '@edp/common-ui';
+import { useEDPDrawer } from '@edp/common-ui';
 
 import { Input, message } from 'ant-design-vue';
 
-import { useVbenForm } from '#/adapter/form';
+import { useEDPForm } from '#/adapter/form';
 
 const value = ref('');
 
-const [Form] = useVbenForm({
+const [Form] = useEDPForm({
   schema: [
     {
       component: 'Input',
@@ -24,7 +24,7 @@ const [Form] = useVbenForm({
   showDefaultActions: false,
 });
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useEDPDrawer({
   destroyOnClose: false,
   onCancel() {
     drawerApi.close();

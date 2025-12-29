@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { AuthPageLayoutType } from '@edp/types';
 
-import type { VbenDropdownMenuItem } from '@edp-core/shadcn-ui';
+import type { EDPDropdownMenuItem } from '@edp-core/shadcn-ui';
 
 import { computed } from 'vue';
 
@@ -13,13 +13,13 @@ import {
   usePreferences,
 } from '@edp/preferences';
 
-import { VbenDropdownRadioMenu, VbenIconButton } from '@edp-core/shadcn-ui';
+import { EDPDropdownRadioMenu, EDPIconButton } from '@edp-core/shadcn-ui';
 
 defineOptions({
   name: 'AuthenticationLayoutToggle',
 });
 
-const menus = computed((): VbenDropdownMenuItem[] => [
+const menus = computed((): EDPDropdownMenuItem[] => [
   {
     icon: PanelLeft,
     label: $t('authentication.layout.alignLeft'),
@@ -50,15 +50,15 @@ function handleUpdate(value: string | undefined) {
 </script>
 
 <template>
-  <VbenDropdownRadioMenu
+  <EDPDropdownRadioMenu
     :menus="menus"
     :model-value="preferences.app.authPageLayout"
     @update:model-value="handleUpdate"
   >
-    <VbenIconButton>
+    <EDPIconButton>
       <PanelRight v-if="authPanelRight" class="size-4" />
       <PanelLeft v-if="authPanelLeft" class="size-4" />
       <InspectionPanel v-if="authPanelCenter" class="size-4" />
-    </VbenIconButton>
-  </VbenDropdownRadioMenu>
+    </EDPIconButton>
+  </EDPDropdownRadioMenu>
 </template>

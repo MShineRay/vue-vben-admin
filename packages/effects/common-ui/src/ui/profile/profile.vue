@@ -8,7 +8,7 @@ import {
   Tabs,
   TabsList,
   TabsTrigger,
-  VbenAvatar,
+  EDPAvatar,
 } from '@edp-core/shadcn-ui';
 
 import { Page } from '../../components';
@@ -29,7 +29,7 @@ const tabsValue = defineModel<string>('modelValue');
     <div class="flex h-full w-full">
       <Card class="w-1/6 flex-none">
         <div class="mt-4 flex h-40 flex-col items-center justify-center gap-4">
-          <VbenAvatar
+          <EDPAvatar
             :src="userInfo?.avatar ?? preferences.app.defaultAvatar"
             class="size-20"
           />

@@ -7,10 +7,10 @@ import { Bell, CircleCheckBig, CircleX, MailCheck } from '@edp/icons';
 import { $t } from '@edp/locales';
 
 import {
-  VbenButton,
-  VbenIconButton,
-  VbenPopover,
-  VbenScrollbar,
+  EDPButton,
+  EDPIconButton,
+  EDPPopover,
+  EDPScrollbar,
 } from '@edp-core/shadcn-ui';
 
 import { useToggle } from '@vueuse/core';
@@ -87,34 +87,34 @@ function navigateTo(
 }
 </script>
 <template>
-  <VbenPopover
+  <EDPPopover
     v-model:open="open"
     content-class="relative right-2 w-[360px] p-0"
   >
     <template #trigger>
       <div class="flex-center mr-2 h-full" @click.stop="toggle()">
-        <VbenIconButton class="bell-button text-foreground relative">
+        <EDPIconButton class="bell-button text-foreground relative">
           <span
             v-if="dot"
             class="bg-primary absolute right-0.5 top-0.5 h-2 w-2 rounded"
           ></span>
           <Bell class="size-4" />
-        </VbenIconButton>
+        </EDPIconButton>
       </div>
     </template>
 
     <div class="relative">
       <div class="flex items-center justify-between p-4 py-3">
         <div class="text-foreground">{{ $t('ui.widgets.notifications') }}</div>
-        <VbenIconButton
+        <EDPIconButton
           :disabled="notifications.length <= 0"
           :tooltip="$t('ui.widgets.markAllAsRead')"
           @click="handleMakeAll"
         >
           <MailCheck class="size-4" />
-        </VbenIconButton>
+        </EDPIconButton>
       </div>
-      <VbenScrollbar v-if="notifications.length > 0">
+      <EDPScrollbar v-if="notifications.length > 0">
         <ul class="!flex max-h-[360px] w-full flex-col">
           <template v-for="item in notifications" :key="item.id ?? item.title">
             <li
@@ -146,7 +146,7 @@ function navigateTo(
               <div
                 class="absolute right-3 top-1/2 flex -translate-y-1/2 flex-col gap-2"
               >
-                <VbenIconButton
+                <EDPIconButton
                   v-if="!item.isRead"
                   size="xs"
                   variant="ghost"
@@ -155,8 +155,8 @@ function navigateTo(
                   @click.stop="emit('read', item)"
                 >
                   <CircleCheckBig class="size-4" />
-                </VbenIconButton>
-                <VbenIconButton
+                </EDPIconButton>
+                <EDPIconButton
                   v-if="item.isRead"
                   size="xs"
                   variant="ghost"
@@ -165,12 +165,12 @@ function navigateTo(
                   @click.stop="emit('remove', item)"
                 >
                   <CircleX class="size-4" />
-                </VbenIconButton>
+                </EDPIconButton>
               </div>
             </li>
           </template>
         </ul>
-      </VbenScrollbar>
+      </EDPScrollbar>
 
       <template v-else>
         <div class="flex-center text-muted-foreground min-h-[150px] w-full">
@@ -181,20 +181,20 @@ function navigateTo(
       <div
         class="border-border flex items-center justify-between border-t px-4 py-3"
       >
-        <VbenButton
+        <EDPButton
           :disabled="notifications.length <= 0"
           size="sm"
           variant="ghost"
           @click="handleClear"
         >
           {{ $t('ui.widgets.clearNotifications') }}
-        </VbenButton>
-        <VbenButton size="sm" @click="handleViewAll">
+        </EDPButton>
+        <EDPButton size="sm" @click="handleViewAll">
           {{ $t('ui.widgets.viewAll') }}
-        </VbenButton>
+        </EDPButton>
       </div>
     </div>
-  </VbenPopover>
+  </EDPPopover>
 </template>
 
 <style scoped>

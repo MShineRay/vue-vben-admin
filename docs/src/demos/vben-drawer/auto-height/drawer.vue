@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-import { useVbenDrawer, VbenButton } from '@edp/common-ui';
+import { useEDPDrawer, EDPButton } from '@edp/common-ui';
 
 const list = ref<number[]>([]);
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useEDPDrawer({
   onCancel() {
     drawerApi.close();
   },
@@ -37,9 +37,9 @@ function handleUpdate(len: number) {
       {{ item }}
     </div>
     <template #prepend-footer>
-      <VbenButton type="link" @click="handleUpdate(6)">
+      <EDPButton type="link" @click="handleUpdate(6)">
         点击更新数据
-      </VbenButton>
+      </EDPButton>
     </template>
   </Drawer>
 </template>

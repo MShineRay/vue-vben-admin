@@ -5,7 +5,7 @@ import { useSlots } from 'vue';
 
 import { CircleHelp } from '@edp/icons';
 
-import { VbenCheckButtonGroup, VbenTooltip } from '@edp-core/shadcn-ui';
+import { EDPCheckButtonGroup, EDPTooltip } from '@edp-core/shadcn-ui';
 
 defineOptions({
   name: 'PreferenceCheckboxItem',
@@ -44,14 +44,14 @@ const slots = useSlots();
     <span class="flex items-center text-sm">
       <slot></slot>
 
-      <VbenTooltip v-if="slots.tip" side="bottom">
+      <EDPTooltip v-if="slots.tip" side="bottom">
         <template #trigger>
           <CircleHelp class="ml-1 size-3 cursor-help" />
         </template>
         <slot name="tip"></slot>
-      </VbenTooltip>
+      </EDPTooltip>
     </span>
-    <VbenCheckButtonGroup
+    <EDPCheckButtonGroup
       v-model="inputValue"
       class="h-8 w-[165px]"
       :options="items"

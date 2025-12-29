@@ -8,8 +8,8 @@ import { h } from 'vue';
 import { IconifyIcon } from '@edp/icons';
 import { $te } from '@edp/locales';
 import {
-  setupVbenVxeTable,
-  useVbenVxeGrid as useGrid,
+  setupEDPVxeTable,
+  useEDPVxeGrid as useGrid,
 } from '@edp/plugins/vxe-table';
 import { get, isFunction, isString } from '@edp/utils';
 
@@ -18,9 +18,9 @@ import { Button, Image, Popconfirm, Switch, Tag } from 'ant-design-vue';
 
 import { $t } from '#/locales';
 
-import { useVbenForm } from './form';
+import { useEDPForm } from './form';
 
-setupVbenVxeTable({
+setupEDPVxeTable({
   configVxeTable: (vxeUI) => {
     vxeUI.setConfig({
       grid: {
@@ -281,10 +281,10 @@ setupVbenVxeTable({
     // 这里可以自行扩展 vxe-table 的全局配置，比如自定义格式化
     // vxeUI.formats.add
   },
-  useVbenForm,
+  useEDPForm,
 });
 
-export const useVbenVxeGrid = <T extends Record<string, any>>(
+export const useEDPVxeGrid = <T extends Record<string, any>>(
   ...rest: Parameters<typeof useGrid<T, ComponentType>>
 ) => useGrid<T, ComponentType>(...rest);
 

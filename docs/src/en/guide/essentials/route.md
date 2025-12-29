@@ -66,7 +66,7 @@ The configuration method of static routes and dynamic routes is the same. Below 
 ```ts
 import type { RouteRecordRaw } from 'vue-router';
 
-import { VBEN_LOGO_URL } from '@edp/constants';
+import { EDP_LOGO_URL } from '@edp/constants';
 
 import { BasicLayout } from '#/layouts';
 import { $t } from '#/locales';
@@ -76,16 +76,16 @@ const routes: RouteRecordRaw[] = [
     meta: {
       badgeType: 'dot',
       badgeVariants: 'destructive',
-      icon: VBEN_LOGO_URL,
+      icon: EDP_LOGO_URL,
       order: 9999,
       title: $t('page.edp.title'),
     },
-    name: 'VbenProject',
+    name: 'EDPProject',
     path: '/edp-admin',
     redirect: '/edp-admin/about',
     children: [
       {
-        name: 'VbenAbout',
+        name: 'EDPAbout',
         path: '/edp-admin/about',
         component: () => import('#/views/_core/about/index.vue'),
         meta: {
@@ -240,7 +240,7 @@ Add a route object in the corresponding route file, as follows:
 ```ts
 import type { RouteRecordRaw } from 'vue-router';
 
-import { VBEN_LOGO_URL } from '@edp/constants';
+import { EDP_LOGO_URL } from '@edp/constants';
 
 import { BasicLayout } from '#/layouts';
 import { $t } from '#/locales';

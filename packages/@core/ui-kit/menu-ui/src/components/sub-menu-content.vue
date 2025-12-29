@@ -5,7 +5,7 @@ import { computed } from 'vue';
 
 import { useNamespace } from '@edp-core/composables';
 import { ChevronDown, ChevronRight } from '@edp-core/icons';
-import { VbenIcon } from '@edp-core/shadcn-ui';
+import { EDPIcon } from '@edp-core/shadcn-ui';
 
 import { useMenuContext } from '../hooks';
 
@@ -82,7 +82,7 @@ const iconArrowStyle = computed(() => {
   >
     <slot></slot>
 
-    <VbenIcon
+    <EDPIcon
       v-if="!isMenuMore"
       :class="nsMenu.e('icon')"
       :icon="icon"

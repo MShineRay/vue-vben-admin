@@ -10,7 +10,7 @@ import type {
 
 import type { SetupContext } from 'vue';
 
-import type { VbenFormProps } from '@edp-core/form-ui';
+import type { EDPFormProps } from '@edp-core/form-ui';
 
 import type { ExtendedVxeGridApi, VxeGridProps } from './types';
 
@@ -37,7 +37,7 @@ import {
   mergeWithArrayOverride,
 } from '@edp/utils';
 
-import { VbenHelpTooltip, VbenLoading } from '@edp-core/shadcn-ui';
+import { EDPHelpTooltip, EDPLoading } from '@edp-core/shadcn-ui';
 
 import { VxeButton } from 'vxe-pc-ui';
 import { VxeGrid, VxeUI } from 'vxe-table';
@@ -327,7 +327,7 @@ watch(
   formOptions,
   () => {
     formApi.setState((prev) => {
-      const finalFormOptions: VbenFormProps = mergeWithArrayOverride(
+      const finalFormOptions: EDPFormProps = mergeWithArrayOverride(
         {},
         formOptions.value,
         prev,
@@ -379,9 +379,9 @@ onUnmounted(() => {
         <slot v-if="showTableTitle" name="table-title">
           <div class="mr-1 pl-1 text-[1rem]">
             {{ tableTitle }}
-            <VbenHelpTooltip v-if="tableTitleHelp" trigger-class="pb-1">
+            <EDPHelpTooltip v-if="tableTitleHelp" trigger-class="pb-1">
               {{ tableTitleHelp }}
-            </VbenHelpTooltip>
+            </EDPHelpTooltip>
           </div>
         </slot>
         <slot name="toolbar-actions" v-bind="slotProps"> </slot>
@@ -464,7 +464,7 @@ onUnmounted(() => {
       <!-- loading -->
       <template #loading>
         <slot name="loading">
-          <VbenLoading :spinning="true" />
+          <EDPLoading :spinning="true" />
         </slot>
       </template>
       <!-- 统一控状态 -->

@@ -26,16 +26,16 @@ outline: deep
 
 ```ts
 import type {
-  VbenFormSchema as FormSchema,
-  VbenFormProps,
+  EDPFormSchema as FormSchema,
+  EDPFormProps,
 } from '@edp/common-ui';
 
 import type { ComponentType } from './component';
 
-import { setupVbenForm, useVbenForm as useForm, z } from '@edp/common-ui';
+import { setupEDPForm, useEDPForm as useForm, z } from '@edp/common-ui';
 import { $t } from '@edp/locales';
 
-setupVbenForm<ComponentType>({
+setupEDPForm<ComponentType>({
   config: {
     // ant design vue组件库默认都是 v-model:value
     baseModelPropName: 'value',
@@ -65,11 +65,11 @@ setupVbenForm<ComponentType>({
   },
 });
 
-const useVbenForm = useForm<ComponentType>;
+const useEDPForm = useForm<ComponentType>;
 
-export { useVbenForm, z };
-export type VbenFormSchema = FormSchema<ComponentType>;
-export type { VbenFormProps };
+export { useEDPForm, z };
+export type EDPFormSchema = FormSchema<ComponentType>;
+export type { EDPFormProps };
 ```
 
 :::
@@ -240,7 +240,7 @@ export { initComponentAdapter };
 
 :::
 
-使用 `useVbenForm` 创建最基础的表单。
+使用 `useEDPForm` 创建最基础的表单。
 
 <DemoPreview dir="demos/edp-form/basic" />
 
@@ -278,15 +278,15 @@ _注意_ 需要指定 `dependencies` 的 `triggerFields` 属性，设置由谁�
 
 ## API
 
-`useVbenForm` 返回一个数组，第一个元素是表单组件，第二个元素是表单的方法。
+`useEDPForm` 返回一个数组，第一个元素是表单组件，第二个元素是表单的方法。
 
 ```vue
 <script setup lang="ts">
-import { useVbenForm } from '#/adapter/form';
+import { useEDPForm } from '#/adapter/form';
 
 // Form 为弹窗组件
 // formApi 为弹窗的方法
-const [Form, formApi] = useVbenForm({
+const [Form, formApi] = useEDPForm({
   // 属性
   // 事件
 });
@@ -299,7 +299,7 @@ const [Form, formApi] = useVbenForm({
 
 ### FormApi
 
-useVbenForm 返回的第二个参数，是一个对象，包含了一些表单的方法。
+useEDPForm 返回的第二个参数，是一个对象，包含了一些表单的方法。
 
 | 方法名 | 描述 | 类型 | 版本号 |
 | --- | --- | --- | --- |
@@ -314,15 +314,15 @@ useVbenForm 返回的第二个参数，是一个对象，包含了一些表单�
 | resetValidate | 重置表单校验 | `()=>Promise<void>` | - |
 | updateSchema | 更新formSchema | `(schema:FormSchema[])=>void` | - |
 | setFieldValue | 设置字段值 | `(field: string, value: any, shouldValidate?: boolean)=>Promise<void>` | - |
-| setState | 设置组件状态（props） | `(stateOrFn:\| ((prev: VbenFormProps) => Partial<VbenFormProps>)\| Partial<VbenFormProps>)=>Promise<void>` | - |
-| getState | 获取组件状态（props） | `()=>Promise<VbenFormProps>` | - |
+| setState | 设置组件状态（props） | `(stateOrFn:\| ((prev: EDPFormProps) => Partial<EDPFormProps>)\| Partial<EDPFormProps>)=>Promise<void>` | - |
+| getState | 获取组件状态（props） | `()=>Promise<EDPFormProps>` | - |
 | form | 表单对象实例，可以操作表单，见 [useForm](https://vee-validate.logaretm.com/v4/api/use-form/) | - | - |
 | getFieldComponentRef | 获取指定字段的组件实例 | `<T=unknown>(fieldName: string)=>T` | >5.5.3 |
 | getFocusedField | 获取当前已获得焦点的字段 | `()=>string\|undefined` | >5.5.3 |
 
 ## Props
 
-所有属性都可以传入 `useVbenForm` 的第一个参数中。
+所有属性都可以传入 `useEDPForm` 的第一个参数中。
 
 | 属性名 | 描述 | 类型 | 默认值 |
 | --- | --- | --- | --- |

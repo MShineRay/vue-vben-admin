@@ -1,10 +1,10 @@
 import type { LayoutType } from '@edp-core/typings';
 
-import type { VbenLayoutProps } from '../edp-layout';
+import type { EDPLayoutProps } from '../edp-layout';
 
 import { computed } from 'vue';
 
-export function useLayout(props: VbenLayoutProps) {
+export function useLayout(props: EDPLayoutProps) {
   const currentLayout = computed(() =>
     props.isMobile ? 'sidebar-nav' : (props.layout as LayoutType),
   );

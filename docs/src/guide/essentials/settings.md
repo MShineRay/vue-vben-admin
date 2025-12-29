@@ -91,11 +91,11 @@ VITE_ARCHIVER=true
 `_app.config.js` 是一个动态配置文件，可以在项目构建之后，根据不同的环境动态修改配置。内容如下：
 
 ```ts
-window._VBEN_ADMIN_PRO_APP_CONF_ = {
+window._EDP_ADMIN_PRO_APP_CONF_ = {
   VITE_GLOB_API_URL: 'https://mock-napi.edp.pro/api',
 };
-Object.freeze(window._VBEN_ADMIN_PRO_APP_CONF_);
-Object.defineProperty(window, '_VBEN_ADMIN_PRO_APP_CONF_', {
+Object.freeze(window._EDP_ADMIN_PRO_APP_CONF_);
+Object.defineProperty(window, '_EDP_ADMIN_PRO_APP_CONF_', {
   configurable: false,
   writable: false,
 });
@@ -126,7 +126,7 @@ const { apiURL } = useAppConfig(import.meta.env, import.meta.env.PROD);
 - 在 `packages/types/global.d.ts`,新增对应的类型定义，如：
 
   ```ts
-  export interface VbenAdminProAppConfigRaw {
+  export interface EDPAdminProAppConfigRaw {
     VITE_GLOB_API_URL: string;
     VITE_GLOB_OTHER_API_URL: string; // [!code ++]
   }
@@ -144,10 +144,10 @@ const { apiURL } = useAppConfig(import.meta.env, import.meta.env.PROD);
     env: Record<string, any>,
     isProduction: boolean,
   ): ApplicationConfig {
-    // 生产环境下，直接使用 window._VBEN_ADMIN_PRO_APP_CONF_ 全局变量
+    // 生产环境下，直接使用 window._EDP_ADMIN_PRO_APP_CONF_ 全局变量
     const config = isProduction
-      ? window._VBEN_ADMIN_PRO_APP_CONF_
-      : (env as VbenAdminProAppConfigRaw);
+      ? window._EDP_ADMIN_PRO_APP_CONF_
+      : (env as EDPAdminProAppConfigRaw);
 
     const { VITE_GLOB_API_URL, VITE_GLOB_OTHER_API_URL } = config; // [!code ++]
 
@@ -213,7 +213,7 @@ const defaultPreferences: Preferences = {
     contentPaddingRight: 0,
     contentPaddingTop: 0,
     defaultAvatar:
-      'https://unpkg.com/@vbenjs/static-source@0.1.7/source/avatar-v1.webp',
+      'https://unpkg.com/@edpjs/static-source@0.1.7/source/avatar-v1.webp',
     defaultHomePath: '/analytics',
     dynamicTitle: true,
     enableCheckUpdates: true,
@@ -259,8 +259,8 @@ const defaultPreferences: Preferences = {
   logo: {
     enable: true,
     fit: 'contain',
-    source: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp',
-    // sourceDark: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-dark.webp', // 可选：暗色主题logo
+    source: 'https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-v1.webp',
+    // sourceDark: 'https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-dark.webp', // 可选：暗色主题logo
   },
   navigation: {
     accordion: true,

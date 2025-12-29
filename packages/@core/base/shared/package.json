@@ -1,12 +1,6 @@
 {
   "name": "@edp-core/shared",
   "version": "5.5.9",
-  
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-edp-admin.git",
-    "directory": "packages/@edp-core/base/shared"
-  },
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -79,6 +73,7 @@
   },
   "dependencies": {
     "@ctrl/tinycolor": "catalog:",
+    "@fingerprintjs/fingerprintjs": "catalog:",
     "@tanstack/vue-store": "catalog:",
     "@vue/shared": "catalog:",
     "clsx": "catalog:",
@@ -86,9 +81,13 @@
     "defu": "catalog:",
     "es-toolkit": "catalog:",
     "lodash.clonedeep": "catalog:",
+    "lodash.get": "catalog:",
+    "lodash.isequal": "catalog:",
+    "lodash.set": "catalog:",
     "nprogress": "catalog:",
     "tailwind-merge": "catalog:",
-    "theme-colors": "catalog:"
+    "theme-colors": "catalog:",
+    "uuid": "catalog:"
   },
   "devDependencies": {
     "@types/lodash.clonedeep": "catalog:",

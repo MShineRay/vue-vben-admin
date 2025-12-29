@@ -1,10 +1,10 @@
 {
   "name": "@edp-core/preferences",
   "version": "5.5.9",
-  
+
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-edp-admin.git",
+    "url": "git+https://github.com/edpjs/vue-edp-admin.git",
     "directory": "packages/@core/preferences"
   },
   "license": "MIT",

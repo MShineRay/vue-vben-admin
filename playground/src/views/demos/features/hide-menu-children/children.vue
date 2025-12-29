@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Fallback, VbenButton } from '@edp/common-ui';
+import { Fallback, EDPButton } from '@edp/common-ui';
 import { useTabs } from '@edp/hooks';
 import { X } from '@edp/icons';
 
@@ -14,10 +14,10 @@ const { closeCurrentTab } = useTabs();
     show-back
   >
     <template #action>
-      <VbenButton size="lg" @click="closeCurrentTab()">
+      <EDPButton size="lg" @click="closeCurrentTab()">
         <X class="mr-2 size-4" />
         关闭当前标签页
-      </VbenButton>
+      </EDPButton>
     </template>
   </Fallback>
 </template>

@@ -5,9 +5,9 @@ import { computed, reactive } from 'vue';
 
 import { $t } from '@edp/locales';
 
-import { useVbenForm, z } from '@edp-core/form-ui';
-import { useVbenModal } from '@edp-core/popup-ui';
-import { VbenAvatar, VbenButton } from '@edp-core/shadcn-ui';
+import { useEDPForm, z } from '@edp-core/form-ui';
+import { useEDPModal } from '@edp-core/popup-ui';
+import { EDPAvatar, EDPButton } from '@edp-core/shadcn-ui';
 
 interface Props {
   avatar?: string;
@@ -28,7 +28,7 @@ const emit = defineEmits<{
 }>();
 
 const [Form, { resetForm, validate, getValues, getFieldComponentRef }] =
-  useVbenForm(
+  useEDPForm(
     reactive({
       commonConfig: {
         hideLabel: true,
@@ -36,7 +36,7 @@ const [Form, { resetForm, validate, getValues, getFieldComponentRef }] =
       },
       schema: computed(() => [
         {
-          component: 'VbenInputPassword' as const,
+          component: 'EDPInputPassword' as const,
           componentProps: {
             placeholder: $t('ui.widgets.lockScreen.placeholder'),
           },
@@ -52,7 +52,7 @@ const [Form, { resetForm, validate, getValues, getFieldComponentRef }] =
     }),
   );
 
-const [Modal] = useVbenModal({
+const [Modal] = useEDPModal({
   onConfirm() {
     handleSubmit();
   },
@@ -91,7 +91,7 @@ async function handleSubmit() {
     >
       <div class="w-full">
         <div class="ml-2 flex w-full flex-col items-center">
-          <VbenAvatar
+          <EDPAvatar
             :src="avatar"
             class="size-20"
             dot-class="bottom-0 right-1 border-2 size-4 bg-green-500"
@@ -101,9 +101,9 @@ async function handleSubmit() {
           </div>
         </div>
         <Form />
-        <VbenButton class="mt-1 w-full" @click="handleSubmit">
+        <EDPButton class="mt-1 w-full" @click="handleSubmit">
           {{ $t('ui.widgets.lockScreen.screenButton') }}
-        </VbenButton>
+        </EDPButton>
       </div>
     </div>
   </Modal>

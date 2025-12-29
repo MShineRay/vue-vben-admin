@@ -8,7 +8,7 @@ import { SearchX, X } from '@edp/icons';
 import { $t } from '@edp/locales';
 import { mapTree, traverseTreeValues, uniqueByField } from '@edp/utils';
 
-import { VbenIcon, VbenScrollbar } from '@edp-core/shadcn-ui';
+import { EDPIcon, EDPScrollbar } from '@edp-core/shadcn-ui';
 import { isHttpUrl } from '@edp-core/shared/utils';
 
 import { onKeyStroke, useLocalStorage, useThrottleFn } from '@vueuse/core';
@@ -222,7 +222,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <VbenScrollbar>
+  <EDPScrollbar>
     <div class="!flex h-full justify-center px-2 sm:max-h-[450px]">
       <!-- 无搜索结果 -->
       <div
@@ -268,7 +268,7 @@ onMounted(() => {
           @click="handleEnter"
           @mouseenter="handleMouseenter"
         >
-          <VbenIcon
+          <EDPIcon
             :icon="item.icon"
             class="mr-2 size-5 flex-shrink-0"
             fallback
@@ -284,5 +284,5 @@ onMounted(() => {
         </li>
       </ul>
     </div>
-  </VbenScrollbar>
+  </EDPScrollbar>
 </template>

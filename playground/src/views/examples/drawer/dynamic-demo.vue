@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { useVbenDrawer } from '@edp/common-ui';
+import { useEDPDrawer } from '@edp/common-ui';
 
 import { Button, message } from 'ant-design-vue';
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useEDPDrawer({
   onCancel() {
     drawerApi.close();
   },

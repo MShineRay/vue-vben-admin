@@ -1,2 +1,2 @@
 export type * from './edp-layout';
-export { default as VbenAdminLayout } from './edp-layout.vue';
+export { default as EDPAdminLayout } from './edp-layout.vue';

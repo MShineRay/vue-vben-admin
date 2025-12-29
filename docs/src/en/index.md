@@ -8,7 +8,7 @@ hero:
   text: Enterprise-Level Management System Framework
   tagline: Fully Upgraded, Ready to Use, Simple and Efficient
   image:
-    src: https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp
+    src: https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-v1.webp
     alt: EDP Admin
   actions:
     - theme: brand
@@ -19,7 +19,7 @@ hero:
       link: https://www.edp.pro
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vbenjs/vue-edp-admin
+      link: https://github.com/edpjs/vue-edp-admin
 
 features:
   - icon: 🚀
@@ -73,4 +73,4 @@ features:
     linkText: Official Site
 ---
 
-<VbenContributors />
+<EDPContributors />

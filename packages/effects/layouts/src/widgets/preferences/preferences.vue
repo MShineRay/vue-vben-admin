@@ -6,12 +6,12 @@ import { $t, loadLocaleMessages } from '@edp/locales';
 import { preferences, updatePreferences } from '@edp/preferences';
 import { capitalizeFirstLetter } from '@edp/utils';
 
-import { useVbenDrawer } from '@edp-core/popup-ui';
-import { VbenButton } from '@edp-core/shadcn-ui';
+import { useEDPDrawer } from '@edp-core/popup-ui';
+import { EDPButton } from '@edp-core/shadcn-ui';
 
 import PreferencesDrawer from './preferences-drawer.vue';
 
-const [Drawer, drawerApi] = useVbenDrawer({
+const [Drawer, drawerApi] = useEDPDrawer({
   connectedComponent: PreferencesDrawer,
 });
 
@@ -60,12 +60,12 @@ const listen = computed(() => {
 
     <div @click="() => drawerApi.open()">
       <slot>
-        <VbenButton
+        <EDPButton
           :title="$t('preferences.title')"
           class="bg-primary flex-col-center size-10 cursor-pointer rounded-l-lg rounded-r-none border-none"
         >
           <Settings class="size-5" />
-        </VbenButton>
+        </EDPButton>
       </slot>
     </div>
   </div>

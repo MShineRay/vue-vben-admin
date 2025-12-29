@@ -3,7 +3,7 @@ import type { TabsEmits, TabsProps } from './types';
 
 import { useForwardPropsEmits } from '@edp-core/composables';
 import { ChevronLeft, ChevronRight } from '@edp-core/icons';
-import { VbenScrollbar } from '@edp-core/shadcn-ui';
+import { EDPScrollbar } from '@edp-core/shadcn-ui';
 
 import { Tabs, TabsChrome } from './components';
 import { useTabsDrag } from './use-tabs-drag';
@@ -68,7 +68,7 @@ useTabsDrag(props, emit);
       }"
       class="size-full flex-1 overflow-hidden"
     >
-      <VbenScrollbar
+      <EDPScrollbar
         ref="scrollbarRef"
         :shadow-bottom="false"
         :shadow-top="false"
@@ -87,7 +87,7 @@ useTabsDrag(props, emit);
         />
 
         <Tabs v-else v-bind="{ ...forward, ...$attrs, ...$props }" />
-      </VbenScrollbar>
+      </EDPScrollbar>
     </div>
 
     <!-- 右侧滚动按钮 -->

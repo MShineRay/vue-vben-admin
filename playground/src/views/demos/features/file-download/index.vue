@@ -38,7 +38,7 @@ function getResponse() {
         @click="
           downloadFileFromUrl({
             source:
-              'https://codeload.github.com/vbenjs/vue-edp-admin-doc/zip/main',
+              'https://codeload.github.com/edpjs/vue-edp-admin-doc/zip/main',
             target: '_self',
           })
         "
@@ -53,7 +53,7 @@ function getResponse() {
         @click="
           downloadFileFromImageUrl({
             source:
-              'https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp',
+              'https://unpkg.com/@edpjs/static-source@0.1.7/source/logo-v1.webp',
             fileName: 'edp-logo.png',
           })
         "

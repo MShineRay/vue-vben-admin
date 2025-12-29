@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { BasicOption } from '@edp/types';
 
-import type { VbenFormSchema } from '#/adapter/form';
+import type { EDPFormSchema } from '#/adapter/form';
 
 import { computed, onMounted, ref } from 'vue';
 
@@ -26,7 +26,7 @@ const MOCK_ROLES_OPTIONS: BasicOption[] = [
   },
 ];
 
-const formSchema = computed((): VbenFormSchema[] => {
+const formSchema = computed((): EDPFormSchema[] => {
   return [
     {
       fieldName: 'realName',

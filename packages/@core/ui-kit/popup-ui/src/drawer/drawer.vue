@@ -26,10 +26,10 @@ import {
   SheetFooter,
   SheetHeader,
   SheetTitle,
-  VbenButton,
-  VbenHelpTooltip,
-  VbenIconButton,
-  VbenLoading,
+  EDPButton,
+  EDPHelpTooltip,
+  EDPIconButton,
+  EDPLoading,
   VisuallyHidden,
 } from '@edp-core/shadcn-ui';
 import { ELEMENT_ID_MAIN_CONTENT } from '@edp-core/shared/constants';
@@ -226,9 +226,9 @@ const getForceMount = computed(() => {
             class="ml-[2px] cursor-pointer rounded-full opacity-80 transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary"
           >
             <slot name="close-icon">
-              <VbenIconButton>
+              <EDPIconButton>
                 <X class="size-4" />
-              </VbenIconButton>
+              </EDPIconButton>
             </slot>
           </SheetClose>
           <Separator
@@ -241,9 +241,9 @@ const getForceMount = computed(() => {
             <slot name="title">
               {{ title }}
 
-              <VbenHelpTooltip v-if="titleTooltip" trigger-class="pb-1">
+              <EDPHelpTooltip v-if="titleTooltip" trigger-class="pb-1">
                 {{ titleTooltip }}
-              </VbenHelpTooltip>
+              </EDPHelpTooltip>
             </slot>
           </SheetTitle>
           <SheetDescription v-if="description" class="mt-1 text-xs">
@@ -267,9 +267,9 @@ const getForceMount = computed(() => {
             class="ml-[2px] cursor-pointer rounded-full opacity-80 transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary"
           >
             <slot name="close-icon">
-              <VbenIconButton>
+              <EDPIconButton>
                 <X class="size-4" />
-              </VbenIconButton>
+              </EDPIconButton>
             </slot>
           </SheetClose>
         </div>
@@ -290,7 +290,7 @@ const getForceMount = computed(() => {
       >
         <slot></slot>
       </div>
-      <VbenLoading v-if="showLoading || submitting" spinning />
+      <EDPLoading v-if="showLoading || submitting" spinning />
       <SheetFooter
         v-if="showFooter"
         :class="
@@ -303,7 +303,7 @@ const getForceMount = computed(() => {
         <slot name="prepend-footer"></slot>
         <slot name="footer">
           <component
-            :is="components.DefaultButton || VbenButton"
+            :is="components.DefaultButton || EDPButton"
             v-if="showCancelButton"
             variant="ghost"
             :disabled="submitting"
@@ -315,7 +315,7 @@ const getForceMount = computed(() => {
           </component>
           <slot name="center-footer"></slot>
           <component
-            :is="components.PrimaryButton || VbenButton"
+            :is="components.PrimaryButton || EDPButton"
             v-if="showConfirmButton"
             :loading="confirmLoading || submitting"
             @click="() => drawerApi?.onConfirm()"

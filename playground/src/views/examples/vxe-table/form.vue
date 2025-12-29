@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { VbenFormProps } from '#/adapter/form';
+import type { EDPFormProps } from '#/adapter/form';
 import type { VxeTableGridOptions } from '#/adapter/vxe-table';
 
 import { Page } from '@edp/common-ui';
@@ -7,7 +7,7 @@ import { Page } from '@edp/common-ui';
 import { message } from 'ant-design-vue';
 import dayjs from 'dayjs';
 
-import { useVbenVxeGrid } from '#/adapter/vxe-table';
+import { useEDPVxeGrid } from '#/adapter/vxe-table';
 import { getExampleTableApi } from '#/api';
 
 interface RowType {
@@ -19,7 +19,7 @@ interface RowType {
   releaseDate: string;
 }
 
-const formOptions: VbenFormProps = {
+const formOptions: EDPFormProps = {
   // 默认展开
   collapsed: false,
   fieldMappingTime: [['date', ['start', 'end']]],
@@ -114,7 +114,7 @@ const gridOptions: VxeTableGridOptions<RowType> = {
   },
 };
 
-const [Grid] = useVbenVxeGrid({
+const [Grid] = useEDPVxeGrid({
   formOptions,
   gridOptions,
 });

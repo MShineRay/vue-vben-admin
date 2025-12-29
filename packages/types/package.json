@@ -1,12 +1,6 @@
 {
   "name": "@edp/types",
   "version": "5.5.9",
-  
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-edp-admin.git",
-    "directory": "packages/types"
-  },
   "license": "MIT",
   "type": "module",
   "exports": {

@@ -16,7 +16,7 @@ export const zh = defineConfig({
     },
     editLink: {
       pattern:
-        'https://github.com/vbenjs/vue-edp-admin/edit/main/docs/src/:path',
+        'https://github.com/edpjs/vue-edp-admin/edit/main/docs/src/:path',
       text: '在 GitHub 上编辑此页面',
     },
     footer: {
@@ -267,15 +267,15 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/vbenjs/vue-edp-admin/releases',
+          link: 'https://github.com/edpjs/vue-edp-admin/releases',
           text: '更新日志',
         },
         {
-          link: 'https://github.com/orgs/vbenjs/projects/5',
+          link: 'https://github.com/orgs/edpjs/projects/5',
           text: '路线图',
         },
         {
-          link: 'https://github.com/vbenjs/vue-edp-admin/blob/main/.github/contributing.md',
+          link: 'https://github.com/edpjs/vue-edp-admin/blob/main/.github/contributing.md',
           text: '贡献',
         },
       ],

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { VbenCountToAnimator } from '@edp/common-ui';
+import { EDPCountToAnimator } from '@edp/common-ui';
 </script>
 <template>
-  <VbenCountToAnimator :duration="3000" :end-val="30000" :start-val="1" />
+  <EDPCountToAnimator :duration="3000" :end-val="30000" :start-val="1" />
 </template>
